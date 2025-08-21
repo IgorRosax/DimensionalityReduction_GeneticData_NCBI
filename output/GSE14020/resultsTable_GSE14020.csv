@@ -1,174 +1,444 @@
 "","id","method","k_reduction","perp","AgreeAvg","Phi_Fx","numberOfExecutions","varElapsedTime","meanElapsedTime","Accuracy","Sensitivity","Specificity","Precision","Recall","F1","best_K_evaluation","LCMC_Nk","LCMC_Mk","LCMC_Mk_Adjusted"
-"DiffusionMaps","DiffusionMaps","DiffusionMaps",NA,NA,0.68,0.33,3,0,0.085,0.75,NA,NA,NA,NA,NA,2,0.759,0.379,0.308
-"DRR","DRR","DRR",NA,NA,0.58,0.14,3,0.001,2.647,0.375,NA,NA,NA,NA,NA,3,0.69,0.23,0.123
-"HSLMDS [k=11] [kQuality=10] (Rcpp)","HSLMDS [k=11] [kQuality=10] (Rcpp)","HSLMDS (Rcpp)",11,NA,0.71,0.39,3,0,0.124,0.5,NA,NA,NA,NA,NA,11,8.103,0.737,0.344
-"HSLMDS [k=11] [kQuality=11] (Rcpp)","HSLMDS [k=11] [kQuality=11] (Rcpp)","HSLMDS (Rcpp)",11,NA,0.71,0.39,3,0,0.123,0.5,NA,NA,NA,NA,NA,11,8.103,0.737,0.344
-"HSLMDS [k=11] [kQuality=12] (Rcpp)","HSLMDS [k=11] [kQuality=12] (Rcpp)","HSLMDS (Rcpp)",11,NA,0.71,0.39,3,0,0.123,0.5,NA,NA,NA,NA,NA,11,8.103,0.737,0.344
-"HSLMDS [k=11] [kQuality=13] (Rcpp)","HSLMDS [k=11] [kQuality=13] (Rcpp)","HSLMDS (Rcpp)",11,NA,0.71,0.39,3,0,0.124,0.5,NA,NA,NA,NA,NA,11,8.103,0.737,0.344
-"HSLMDS [k=11] [kQuality=14] (Rcpp)","HSLMDS [k=11] [kQuality=14] (Rcpp)","HSLMDS (Rcpp)",11,NA,0.71,0.39,3,0,0.124,0.5,NA,NA,NA,NA,NA,11,8.103,0.737,0.344
-"HSLMDS [k=11] [kQuality=8] (Rcpp)","HSLMDS [k=11] [kQuality=8] (Rcpp)","HSLMDS (Rcpp)",11,NA,0.71,0.39,3,0,0.123,0.5,NA,NA,NA,NA,NA,11,8.103,0.737,0.344
-"HSLMDS [k=11] [kQuality=9] (Rcpp)","HSLMDS [k=11] [kQuality=9] (Rcpp)","HSLMDS (Rcpp)",11,NA,0.71,0.39,3,0,0.124,0.5,NA,NA,NA,NA,NA,11,7.931,0.721,0.328
-"HSLMDS [k=14] [kQuality=11] (Rcpp)","HSLMDS [k=14] [kQuality=11] (Rcpp)","HSLMDS (Rcpp)",14,NA,0.71,0.4,3,0,0.192,0.625,NA,NA,NA,NA,NA,11,8.069,0.734,0.341
-"HSLMDS [k=14] [kQuality=12] (Rcpp)","HSLMDS [k=14] [kQuality=12] (Rcpp)","HSLMDS (Rcpp)",14,NA,0.71,0.4,3,0,0.191,0.625,NA,NA,NA,NA,NA,11,8.069,0.734,0.341
-"HSLMDS [k=14] [kQuality=13] (Rcpp)","HSLMDS [k=14] [kQuality=13] (Rcpp)","HSLMDS (Rcpp)",14,NA,0.71,0.4,3,0,0.192,0.625,NA,NA,NA,NA,NA,12,9.069,0.756,0.327
-"HSLMDS [k=14] [kQuality=14] (Rcpp)","HSLMDS [k=14] [kQuality=14] (Rcpp)","HSLMDS (Rcpp)",14,NA,0.71,0.4,3,0,0.191,0.625,NA,NA,NA,NA,NA,12,9.069,0.756,0.327
-"HSLMDS [k=14] [kQuality=15] (Rcpp)","HSLMDS [k=14] [kQuality=15] (Rcpp)","HSLMDS (Rcpp)",14,NA,0.71,0.4,3,0,0.191,0.625,NA,NA,NA,NA,NA,11,8.069,0.734,0.341
-"HSLMDS [k=14] [kQuality=16] (Rcpp)","HSLMDS [k=14] [kQuality=16] (Rcpp)","HSLMDS (Rcpp)",14,NA,0.71,0.4,3,0,0.191,0.625,NA,NA,NA,NA,NA,11,8.069,0.734,0.341
-"HSLMDS [k=14] [kQuality=17] (Rcpp)","HSLMDS [k=14] [kQuality=17] (Rcpp)","HSLMDS (Rcpp)",14,NA,0.71,0.4,3,0,0.191,0.625,NA,NA,NA,NA,NA,11,8.069,0.734,0.341
-"HSLMDS [k=17] [kQuality=14] (Rcpp)","HSLMDS [k=17] [kQuality=14] (Rcpp)","HSLMDS (Rcpp)",17,NA,0.72,0.42,3,0,0.186,0.75,NA,NA,NA,NA,NA,12,8.966,0.747,0.319
-"HSLMDS [k=17] [kQuality=15] (Rcpp)","HSLMDS [k=17] [kQuality=15] (Rcpp)","HSLMDS (Rcpp)",17,NA,0.72,0.42,3,0,0.187,0.75,NA,NA,NA,NA,NA,12,8.966,0.747,0.319
-"HSLMDS [k=17] [kQuality=16] (Rcpp)","HSLMDS [k=17] [kQuality=16] (Rcpp)","HSLMDS (Rcpp)",17,NA,0.72,0.42,3,0,0.187,0.5,NA,NA,NA,NA,NA,12,8.828,0.736,0.307
-"HSLMDS [k=17] [kQuality=17] (Rcpp)","HSLMDS [k=17] [kQuality=17] (Rcpp)","HSLMDS (Rcpp)",17,NA,0.72,0.42,3,0,0.188,0.5,NA,NA,NA,NA,NA,12,8.828,0.736,0.307
-"HSLMDS [k=17] [kQuality=18] (Rcpp)","HSLMDS [k=17] [kQuality=18] (Rcpp)","HSLMDS (Rcpp)",17,NA,0.72,0.42,3,0,0.188,0.5,NA,NA,NA,NA,NA,12,8.828,0.736,0.307
-"HSLMDS [k=17] [kQuality=19] (Rcpp)","HSLMDS [k=17] [kQuality=19] (Rcpp)","HSLMDS (Rcpp)",17,NA,0.72,0.42,3,0,0.188,0.5,NA,NA,NA,NA,NA,12,8.828,0.736,0.307
-"HSLMDS [k=17] [kQuality=20] (Rcpp)","HSLMDS [k=17] [kQuality=20] (Rcpp)","HSLMDS (Rcpp)",17,NA,0.7,0.39,3,0,0.186,0.375,NA,NA,NA,NA,NA,10,6.379,0.638,0.281
-"HSLMDS [k=20] [kQuality=17] (Rcpp)","HSLMDS [k=20] [kQuality=17] (Rcpp)","HSLMDS (Rcpp)",20,NA,0.72,0.41,3,0,0.149,0.375,NA,NA,NA,NA,NA,9,5.828,0.648,0.326
-"HSLMDS [k=20] [kQuality=18] (Rcpp)","HSLMDS [k=20] [kQuality=18] (Rcpp)","HSLMDS (Rcpp)",20,NA,0.72,0.41,3,0,0.15,0.375,NA,NA,NA,NA,NA,9,5.828,0.648,0.326
-"HSLMDS [k=20] [kQuality=19] (Rcpp)","HSLMDS [k=20] [kQuality=19] (Rcpp)","HSLMDS (Rcpp)",20,NA,0.71,0.4,3,0,0.15,0.625,NA,NA,NA,NA,NA,11,7.828,0.712,0.319
-"HSLMDS [k=20] [kQuality=20] (Rcpp)","HSLMDS [k=20] [kQuality=20] (Rcpp)","HSLMDS (Rcpp)",20,NA,0.71,0.4,3,0,0.15,0.625,NA,NA,NA,NA,NA,11,7.828,0.712,0.319
-"HSLMDS [k=20] [kQuality=21] (Rcpp)","HSLMDS [k=20] [kQuality=21] (Rcpp)","HSLMDS (Rcpp)",20,NA,0.71,0.4,3,0,0.15,0.625,NA,NA,NA,NA,NA,11,7.828,0.712,0.319
-"HSLMDS [k=20] [kQuality=22] (Rcpp)","HSLMDS [k=20] [kQuality=22] (Rcpp)","HSLMDS (Rcpp)",20,NA,0.71,0.4,3,0,0.15,0.625,NA,NA,NA,NA,NA,11,7.828,0.712,0.319
-"HSLMDS [k=20] [kQuality=23] (Rcpp)","HSLMDS [k=20] [kQuality=23] (Rcpp)","HSLMDS (Rcpp)",20,NA,0.72,0.41,3,0,0.149,0.375,NA,NA,NA,NA,NA,9,5.828,0.648,0.326
-"HSLMDS [k=22] [kQuality=19] (Rcpp)","HSLMDS [k=22] [kQuality=19] (Rcpp)","HSLMDS (Rcpp)",22,NA,0.72,0.42,3,0,0.185,0.625,NA,NA,NA,NA,NA,9,5.966,0.663,0.341
-"HSLMDS [k=22] [kQuality=20] (Rcpp)","HSLMDS [k=22] [kQuality=20] (Rcpp)","HSLMDS (Rcpp)",22,NA,0.72,0.42,3,0,0.185,0.625,NA,NA,NA,NA,NA,9,5.966,0.663,0.341
-"HSLMDS [k=22] [kQuality=21] (Rcpp)","HSLMDS [k=22] [kQuality=21] (Rcpp)","HSLMDS (Rcpp)",22,NA,0.72,0.42,3,0,0.186,0.625,NA,NA,NA,NA,NA,9,5.966,0.663,0.341
-"HSLMDS [k=22] [kQuality=22] (Rcpp)","HSLMDS [k=22] [kQuality=22] (Rcpp)","HSLMDS (Rcpp)",22,NA,0.72,0.42,3,0,0.185,0.5,NA,NA,NA,NA,NA,9,5.862,0.651,0.33
-"HSLMDS [k=22] [kQuality=23] (Rcpp)","HSLMDS [k=22] [kQuality=23] (Rcpp)","HSLMDS (Rcpp)",22,NA,0.72,0.42,3,0,0.184,0.625,NA,NA,NA,NA,NA,9,5.966,0.663,0.341
-"HSLMDS [k=22] [kQuality=24] (Rcpp)","HSLMDS [k=22] [kQuality=24] (Rcpp)","HSLMDS (Rcpp)",22,NA,0.72,0.42,3,0,0.183,0.625,NA,NA,NA,NA,NA,9,5.966,0.663,0.341
-"HSLMDS [k=22] [kQuality=25] (Rcpp)","HSLMDS [k=22] [kQuality=25] (Rcpp)","HSLMDS (Rcpp)",22,NA,0.72,0.42,3,0,0.186,0.625,NA,NA,NA,NA,NA,9,5.966,0.663,0.341
-"HSLMDS [k=25] [kQuality=22] (Rcpp)","HSLMDS [k=25] [kQuality=22] (Rcpp)","HSLMDS (Rcpp)",25,NA,0.69,0.36,3,0,0.201,0.5,NA,NA,NA,NA,NA,6,2.862,0.477,0.263
-"HSLMDS [k=25] [kQuality=23] (Rcpp)","HSLMDS [k=25] [kQuality=23] (Rcpp)","HSLMDS (Rcpp)",25,NA,0.7,0.37,3,0,0.201,0.75,NA,NA,NA,NA,NA,8,4.586,0.573,0.288
-"HSLMDS [k=25] [kQuality=24] (Rcpp)","HSLMDS [k=25] [kQuality=24] (Rcpp)","HSLMDS (Rcpp)",25,NA,0.69,0.37,3,0,0.202,0.5,NA,NA,NA,NA,NA,12,8.345,0.695,0.267
-"HSLMDS [k=25] [kQuality=25] (Rcpp)","HSLMDS [k=25] [kQuality=25] (Rcpp)","HSLMDS (Rcpp)",25,NA,0.69,0.36,3,0,0.201,0.5,NA,NA,NA,NA,NA,6,2.862,0.477,0.263
-"HSLMDS [k=25] [kQuality=26] (Rcpp)","HSLMDS [k=25] [kQuality=26] (Rcpp)","HSLMDS (Rcpp)",25,NA,0.69,0.37,3,0,0.202,0.5,NA,NA,NA,NA,NA,12,8.345,0.695,0.267
-"HSLMDS [k=25] [kQuality=27] (Rcpp)","HSLMDS [k=25] [kQuality=27] (Rcpp)","HSLMDS (Rcpp)",25,NA,0.7,0.37,3,0,0.2,0.75,NA,NA,NA,NA,NA,8,4.586,0.573,0.288
-"HSLMDS [k=25] [kQuality=28] (Rcpp)","HSLMDS [k=25] [kQuality=28] (Rcpp)","HSLMDS (Rcpp)",25,NA,0.7,0.37,3,0,0.2,0.75,NA,NA,NA,NA,NA,8,4.586,0.573,0.288
-"HSLMDS [k=28] [kQuality=25] (Rcpp)","HSLMDS [k=28] [kQuality=25] (Rcpp)","HSLMDS (Rcpp)",28,NA,0.67,0.32,3,0,0.178,0.75,NA,NA,NA,NA,NA,8,4.207,0.526,0.24
-"HSLMDS [k=28] [kQuality=26] (Rcpp)","HSLMDS [k=28] [kQuality=26] (Rcpp)","HSLMDS (Rcpp)",28,NA,0.67,0.32,3,0,0.179,0.5,NA,NA,NA,NA,NA,2,0.69,0.345,0.273
-"HSLMDS [k=28] [kQuality=27] (Rcpp)","HSLMDS [k=28] [kQuality=27] (Rcpp)","HSLMDS (Rcpp)",28,NA,0.67,0.32,3,0,0.18,0.5,NA,NA,NA,NA,NA,2,0.69,0.345,0.273
-"HSLMDS [k=28] [kQuality=28] (Rcpp)","HSLMDS [k=28] [kQuality=28] (Rcpp)","HSLMDS (Rcpp)",28,NA,0.67,0.31,3,0,0.178,0.625,NA,NA,NA,NA,NA,1,0.276,0.276,0.24
-"HSLMDS [k=3] [kQuality=1] (Rcpp)","HSLMDS [k=3] [kQuality=1] (Rcpp)","HSLMDS (Rcpp)",3,NA,0.68,0.34,3,0,0.178,0.625,NA,NA,NA,NA,NA,3,1.448,0.483,0.376
-"HSLMDS [k=3] [kQuality=2] (Rcpp)","HSLMDS [k=3] [kQuality=2] (Rcpp)","HSLMDS (Rcpp)",3,NA,0.68,0.33,3,0,0.18,0.625,NA,NA,NA,NA,NA,3,1.448,0.483,0.376
-"HSLMDS [k=3] [kQuality=3] (Rcpp)","HSLMDS [k=3] [kQuality=3] (Rcpp)","HSLMDS (Rcpp)",3,NA,0.68,0.33,3,0,0.176,0.625,NA,NA,NA,NA,NA,3,1.448,0.483,0.376
-"HSLMDS [k=3] [kQuality=4] (Rcpp)","HSLMDS [k=3] [kQuality=4] (Rcpp)","HSLMDS (Rcpp)",3,NA,0.68,0.33,3,0,0.176,0.625,NA,NA,NA,NA,NA,3,1.448,0.483,0.376
-"HSLMDS [k=3] [kQuality=5] (Rcpp)","HSLMDS [k=3] [kQuality=5] (Rcpp)","HSLMDS (Rcpp)",3,NA,0.68,0.34,3,0,0.178,0.625,NA,NA,NA,NA,NA,3,1.448,0.483,0.376
-"HSLMDS [k=3] [kQuality=6] (Rcpp)","HSLMDS [k=3] [kQuality=6] (Rcpp)","HSLMDS (Rcpp)",3,NA,0.68,0.33,3,0,0.178,0.625,NA,NA,NA,NA,NA,3,1.448,0.483,0.376
-"HSLMDS [k=6] [kQuality=3] (Rcpp)","HSLMDS [k=6] [kQuality=3] (Rcpp)","HSLMDS (Rcpp)",6,NA,0.71,0.41,3,0,0.163,0.75,NA,NA,NA,NA,NA,3,1.31,0.437,0.33
-"HSLMDS [k=6] [kQuality=4] (Rcpp)","HSLMDS [k=6] [kQuality=4] (Rcpp)","HSLMDS (Rcpp)",6,NA,0.71,0.41,3,0,0.164,0.75,NA,NA,NA,NA,NA,3,1.31,0.437,0.33
-"HSLMDS [k=6] [kQuality=5] (Rcpp)","HSLMDS [k=6] [kQuality=5] (Rcpp)","HSLMDS (Rcpp)",6,NA,0.71,0.41,3,0,0.165,0.75,NA,NA,NA,NA,NA,3,1.31,0.437,0.33
-"HSLMDS [k=6] [kQuality=6] (Rcpp)","HSLMDS [k=6] [kQuality=6] (Rcpp)","HSLMDS (Rcpp)",6,NA,0.71,0.39,3,0,0.165,0.625,NA,NA,NA,NA,NA,7,4.069,0.581,0.331
-"HSLMDS [k=6] [kQuality=7] (Rcpp)","HSLMDS [k=6] [kQuality=7] (Rcpp)","HSLMDS (Rcpp)",6,NA,0.7,0.38,3,0,0.165,0.5,NA,NA,NA,NA,NA,7,4.138,0.591,0.341
-"HSLMDS [k=6] [kQuality=8] (Rcpp)","HSLMDS [k=6] [kQuality=8] (Rcpp)","HSLMDS (Rcpp)",6,NA,0.7,0.38,3,0,0.165,0.5,NA,NA,NA,NA,NA,7,4.138,0.591,0.341
-"HSLMDS [k=6] [kQuality=9] (Rcpp)","HSLMDS [k=6] [kQuality=9] (Rcpp)","HSLMDS (Rcpp)",6,NA,0.71,0.41,3,0,0.164,0.75,NA,NA,NA,NA,NA,3,1.31,0.437,0.33
-"HSLMDS [k=9] [kQuality=10] (Rcpp)","HSLMDS [k=9] [kQuality=10] (Rcpp)","HSLMDS (Rcpp)",9,NA,0.73,0.43,3,0,0.141,0.625,NA,NA,NA,NA,NA,10,7.103,0.71,0.353
-"HSLMDS [k=9] [kQuality=11] (Rcpp)","HSLMDS [k=9] [kQuality=11] (Rcpp)","HSLMDS (Rcpp)",9,NA,0.73,0.43,3,0,0.141,0.625,NA,NA,NA,NA,NA,10,7.103,0.71,0.353
-"HSLMDS [k=9] [kQuality=12] (Rcpp)","HSLMDS [k=9] [kQuality=12] (Rcpp)","HSLMDS (Rcpp)",9,NA,0.73,0.43,3,0,0.141,0.625,NA,NA,NA,NA,NA,10,7.103,0.71,0.353
-"HSLMDS [k=9] [kQuality=6] (Rcpp)","HSLMDS [k=9] [kQuality=6] (Rcpp)","HSLMDS (Rcpp)",9,NA,0.72,0.42,3,0,0.142,0.625,NA,NA,NA,NA,NA,9,6,0.667,0.345
-"HSLMDS [k=9] [kQuality=7] (Rcpp)","HSLMDS [k=9] [kQuality=7] (Rcpp)","HSLMDS (Rcpp)",9,NA,0.73,0.43,3,0,0.141,0.625,NA,NA,NA,NA,NA,10,7.103,0.71,0.353
-"HSLMDS [k=9] [kQuality=8] (Rcpp)","HSLMDS [k=9] [kQuality=8] (Rcpp)","HSLMDS (Rcpp)",9,NA,0.73,0.43,3,0,0.142,0.625,NA,NA,NA,NA,NA,10,7.103,0.71,0.353
-"HSLMDS [k=9] [kQuality=9] (Rcpp)","HSLMDS [k=9] [kQuality=9] (Rcpp)","HSLMDS (Rcpp)",9,NA,0.73,0.43,3,0,0.141,0.625,NA,NA,NA,NA,NA,10,7.103,0.71,0.353
-"HSMDS (Rcpp)","HSMDS (Rcpp)","HSMDS (Rcpp)",NA,NA,0.74,0.47,3,0,0.292,0.375,NA,NA,NA,NA,NA,10,7.069,0.707,0.35
-"Isomap [k=11]","Isomap [k=11]","Isomap",11,NA,0.66,0.3,3,0,0.048,0.5,NA,NA,NA,NA,NA,10,6.069,0.607,0.25
-"Isomap [k=14]","Isomap [k=14]","Isomap",14,NA,0.7,0.37,3,0,0.049,0.5,NA,NA,NA,NA,NA,8,4.586,0.573,0.288
-"Isomap [k=17]","Isomap [k=17]","Isomap",17,NA,0.7,0.38,3,0,0.049,0.5,NA,NA,NA,NA,NA,8,4.517,0.565,0.279
-"Isomap [k=20]","Isomap [k=20]","Isomap",20,NA,0.71,0.4,3,0,0.051,0.5,NA,NA,NA,NA,NA,11,7.862,0.715,0.322
-"Isomap [k=22]","Isomap [k=22]","Isomap",22,NA,0.71,0.41,3,0,0.049,0.375,NA,NA,NA,NA,NA,10,7.034,0.703,0.346
-"Isomap [k=25]","Isomap [k=25]","Isomap",25,NA,0.69,0.36,3,0,0.05,0.5,NA,NA,NA,NA,NA,4,1.655,0.414,0.271
-"Isomap [k=28]","Isomap [k=28]","Isomap",28,NA,0.67,0.31,3,0,0.05,0.625,NA,NA,NA,NA,NA,2,0.759,0.379,0.308
-"Isomap [k=3]","Isomap [k=3]","Isomap",3,NA,0.67,0.31,3,0,0.047,0.5,NA,NA,NA,NA,NA,7,3.655,0.522,0.272
-"Isomap [k=6]","Isomap [k=6]","Isomap",6,NA,0.66,0.3,3,0,0.048,0.875,NA,NA,NA,NA,NA,5,2.207,0.441,0.263
-"Isomap [k=9]","Isomap [k=9]","Isomap",9,NA,0.67,0.31,3,0,0.049,0.625,NA,NA,NA,NA,NA,8,4.552,0.569,0.283
-"kPCA","kPCA","kPCA",NA,NA,0.5,-0.03,3,0,0.026,0.375,NA,NA,NA,NA,NA,2,0.207,0.103,0.032
-"LMDS [k=11] (smacofx R)","LMDS [k=11] (smacofx R)","LMDS (smacofx R)",11,NA,0.67,0.31,3,0,0.157,0.625,NA,NA,NA,NA,NA,2,0.759,0.379,0.308
-"LMDS [k=11] [kQuality=10] (Rcpp)","LMDS [k=11] [kQuality=10] (Rcpp)","LMDS (Rcpp)",11,NA,0.71,0.39,3,0,0.121,0.5,NA,NA,NA,NA,NA,11,8.103,0.737,0.344
-"LMDS [k=11] [kQuality=11] (Rcpp)","LMDS [k=11] [kQuality=11] (Rcpp)","LMDS (Rcpp)",11,NA,0.71,0.39,3,0,0.12,0.5,NA,NA,NA,NA,NA,11,8.103,0.737,0.344
-"LMDS [k=11] [kQuality=12] (Rcpp)","LMDS [k=11] [kQuality=12] (Rcpp)","LMDS (Rcpp)",11,NA,0.71,0.39,3,0,0.121,0.5,NA,NA,NA,NA,NA,11,8.103,0.737,0.344
-"LMDS [k=11] [kQuality=13] (Rcpp)","LMDS [k=11] [kQuality=13] (Rcpp)","LMDS (Rcpp)",11,NA,0.71,0.39,3,0,0.12,0.5,NA,NA,NA,NA,NA,11,8.103,0.737,0.344
-"LMDS [k=11] [kQuality=14] (Rcpp)","LMDS [k=11] [kQuality=14] (Rcpp)","LMDS (Rcpp)",11,NA,0.71,0.39,3,0,0.121,0.5,NA,NA,NA,NA,NA,11,8.103,0.737,0.344
-"LMDS [k=11] [kQuality=8] (Rcpp)","LMDS [k=11] [kQuality=8] (Rcpp)","LMDS (Rcpp)",11,NA,0.71,0.39,3,0,0.121,0.5,NA,NA,NA,NA,NA,11,8.103,0.737,0.344
-"LMDS [k=11] [kQuality=9] (Rcpp)","LMDS [k=11] [kQuality=9] (Rcpp)","LMDS (Rcpp)",11,NA,0.71,0.39,3,0,0.121,0.5,NA,NA,NA,NA,NA,11,7.931,0.721,0.328
-"LMDS [k=14] (smacofx R)","LMDS [k=14] (smacofx R)","LMDS (smacofx R)",14,NA,0.67,0.31,3,0,0.115,0.625,NA,NA,NA,NA,NA,2,0.759,0.379,0.308
-"LMDS [k=14] [kQuality=11] (Rcpp)","LMDS [k=14] [kQuality=11] (Rcpp)","LMDS (Rcpp)",14,NA,0.71,0.4,3,0,0.189,0.625,NA,NA,NA,NA,NA,11,8.069,0.734,0.341
-"LMDS [k=14] [kQuality=12] (Rcpp)","LMDS [k=14] [kQuality=12] (Rcpp)","LMDS (Rcpp)",14,NA,0.71,0.4,3,0,0.188,0.625,NA,NA,NA,NA,NA,11,8.069,0.734,0.341
-"LMDS [k=14] [kQuality=13] (Rcpp)","LMDS [k=14] [kQuality=13] (Rcpp)","LMDS (Rcpp)",14,NA,0.71,0.4,3,0,0.188,0.625,NA,NA,NA,NA,NA,12,9.069,0.756,0.327
-"LMDS [k=14] [kQuality=14] (Rcpp)","LMDS [k=14] [kQuality=14] (Rcpp)","LMDS (Rcpp)",14,NA,0.71,0.4,3,0,0.187,0.625,NA,NA,NA,NA,NA,12,9.069,0.756,0.327
-"LMDS [k=14] [kQuality=15] (Rcpp)","LMDS [k=14] [kQuality=15] (Rcpp)","LMDS (Rcpp)",14,NA,0.71,0.4,3,0,0.188,0.625,NA,NA,NA,NA,NA,11,8.069,0.734,0.341
-"LMDS [k=14] [kQuality=16] (Rcpp)","LMDS [k=14] [kQuality=16] (Rcpp)","LMDS (Rcpp)",14,NA,0.71,0.4,3,0,0.188,0.625,NA,NA,NA,NA,NA,11,8.069,0.734,0.341
-"LMDS [k=14] [kQuality=17] (Rcpp)","LMDS [k=14] [kQuality=17] (Rcpp)","LMDS (Rcpp)",14,NA,0.71,0.4,3,0,0.189,0.625,NA,NA,NA,NA,NA,11,8.069,0.734,0.341
-"LMDS [k=17] (smacofx R)","LMDS [k=17] (smacofx R)","LMDS (smacofx R)",17,NA,0.67,0.31,3,0,0.091,0.625,NA,NA,NA,NA,NA,2,0.759,0.379,0.308
-"LMDS [k=17] [kQuality=14] (Rcpp)","LMDS [k=17] [kQuality=14] (Rcpp)","LMDS (Rcpp)",17,NA,0.72,0.42,3,0,0.184,0.75,NA,NA,NA,NA,NA,12,8.966,0.747,0.319
-"LMDS [k=17] [kQuality=15] (Rcpp)","LMDS [k=17] [kQuality=15] (Rcpp)","LMDS (Rcpp)",17,NA,0.72,0.42,3,0,0.184,0.75,NA,NA,NA,NA,NA,12,8.966,0.747,0.319
-"LMDS [k=17] [kQuality=16] (Rcpp)","LMDS [k=17] [kQuality=16] (Rcpp)","LMDS (Rcpp)",17,NA,0.72,0.42,3,0,0.181,0.5,NA,NA,NA,NA,NA,12,8.828,0.736,0.307
-"LMDS [k=17] [kQuality=17] (Rcpp)","LMDS [k=17] [kQuality=17] (Rcpp)","LMDS (Rcpp)",17,NA,0.72,0.42,3,0,0.184,0.5,NA,NA,NA,NA,NA,12,8.828,0.736,0.307
-"LMDS [k=17] [kQuality=18] (Rcpp)","LMDS [k=17] [kQuality=18] (Rcpp)","LMDS (Rcpp)",17,NA,0.72,0.42,3,0,0.185,0.5,NA,NA,NA,NA,NA,12,8.828,0.736,0.307
-"LMDS [k=17] [kQuality=19] (Rcpp)","LMDS [k=17] [kQuality=19] (Rcpp)","LMDS (Rcpp)",17,NA,0.72,0.42,3,0,0.183,0.5,NA,NA,NA,NA,NA,12,8.828,0.736,0.307
-"LMDS [k=17] [kQuality=20] (Rcpp)","LMDS [k=17] [kQuality=20] (Rcpp)","LMDS (Rcpp)",17,NA,0.7,0.39,3,0,0.184,0.375,NA,NA,NA,NA,NA,10,6.379,0.638,0.281
-"LMDS [k=20] (smacofx R)","LMDS [k=20] (smacofx R)","LMDS (smacofx R)",20,NA,0.67,0.31,3,0,0.139,0.625,NA,NA,NA,NA,NA,2,0.759,0.379,0.308
-"LMDS [k=20] [kQuality=17] (Rcpp)","LMDS [k=20] [kQuality=17] (Rcpp)","LMDS (Rcpp)",20,NA,0.72,0.41,3,0,0.146,0.375,NA,NA,NA,NA,NA,9,5.828,0.648,0.326
-"LMDS [k=20] [kQuality=18] (Rcpp)","LMDS [k=20] [kQuality=18] (Rcpp)","LMDS (Rcpp)",20,NA,0.72,0.41,3,0,0.151,0.375,NA,NA,NA,NA,NA,9,5.828,0.648,0.326
-"LMDS [k=20] [kQuality=19] (Rcpp)","LMDS [k=20] [kQuality=19] (Rcpp)","LMDS (Rcpp)",20,NA,0.71,0.4,3,0,0.147,0.625,NA,NA,NA,NA,NA,11,7.828,0.712,0.319
-"LMDS [k=20] [kQuality=20] (Rcpp)","LMDS [k=20] [kQuality=20] (Rcpp)","LMDS (Rcpp)",20,NA,0.71,0.4,3,0,0.147,0.625,NA,NA,NA,NA,NA,11,7.828,0.712,0.319
-"LMDS [k=20] [kQuality=21] (Rcpp)","LMDS [k=20] [kQuality=21] (Rcpp)","LMDS (Rcpp)",20,NA,0.71,0.4,3,0,0.147,0.625,NA,NA,NA,NA,NA,11,7.828,0.712,0.319
-"LMDS [k=20] [kQuality=22] (Rcpp)","LMDS [k=20] [kQuality=22] (Rcpp)","LMDS (Rcpp)",20,NA,0.71,0.4,3,0,0.147,0.625,NA,NA,NA,NA,NA,11,7.828,0.712,0.319
-"LMDS [k=20] [kQuality=23] (Rcpp)","LMDS [k=20] [kQuality=23] (Rcpp)","LMDS (Rcpp)",20,NA,0.72,0.41,3,0,0.149,0.375,NA,NA,NA,NA,NA,9,5.828,0.648,0.326
-"LMDS [k=22] (smacofx R)","LMDS [k=22] (smacofx R)","LMDS (smacofx R)",22,NA,0.67,0.31,3,0,0.153,0.625,NA,NA,NA,NA,NA,2,0.759,0.379,0.308
-"LMDS [k=22] [kQuality=19] (Rcpp)","LMDS [k=22] [kQuality=19] (Rcpp)","LMDS (Rcpp)",22,NA,0.72,0.42,3,0,0.182,0.625,NA,NA,NA,NA,NA,9,5.966,0.663,0.341
-"LMDS [k=22] [kQuality=20] (Rcpp)","LMDS [k=22] [kQuality=20] (Rcpp)","LMDS (Rcpp)",22,NA,0.72,0.42,3,0,0.182,0.625,NA,NA,NA,NA,NA,9,5.966,0.663,0.341
-"LMDS [k=22] [kQuality=21] (Rcpp)","LMDS [k=22] [kQuality=21] (Rcpp)","LMDS (Rcpp)",22,NA,0.72,0.42,3,0,0.182,0.625,NA,NA,NA,NA,NA,9,5.966,0.663,0.341
-"LMDS [k=22] [kQuality=22] (Rcpp)","LMDS [k=22] [kQuality=22] (Rcpp)","LMDS (Rcpp)",22,NA,0.72,0.42,3,0,0.181,0.5,NA,NA,NA,NA,NA,9,5.862,0.651,0.33
-"LMDS [k=22] [kQuality=23] (Rcpp)","LMDS [k=22] [kQuality=23] (Rcpp)","LMDS (Rcpp)",22,NA,0.72,0.42,3,0,0.182,0.625,NA,NA,NA,NA,NA,9,5.966,0.663,0.341
-"LMDS [k=22] [kQuality=24] (Rcpp)","LMDS [k=22] [kQuality=24] (Rcpp)","LMDS (Rcpp)",22,NA,0.72,0.42,3,0,0.182,0.625,NA,NA,NA,NA,NA,9,5.966,0.663,0.341
-"LMDS [k=22] [kQuality=25] (Rcpp)","LMDS [k=22] [kQuality=25] (Rcpp)","LMDS (Rcpp)",22,NA,0.72,0.42,3,0,0.181,0.625,NA,NA,NA,NA,NA,9,5.966,0.663,0.341
-"LMDS [k=25] (smacofx R)","LMDS [k=25] (smacofx R)","LMDS (smacofx R)",25,NA,0.67,0.31,3,0,0.219,0.625,NA,NA,NA,NA,NA,2,0.759,0.379,0.308
-"LMDS [k=25] [kQuality=22] (Rcpp)","LMDS [k=25] [kQuality=22] (Rcpp)","LMDS (Rcpp)",25,NA,0.69,0.36,3,0,0.199,0.5,NA,NA,NA,NA,NA,6,2.862,0.477,0.263
-"LMDS [k=25] [kQuality=23] (Rcpp)","LMDS [k=25] [kQuality=23] (Rcpp)","LMDS (Rcpp)",25,NA,0.7,0.37,3,0,0.198,0.75,NA,NA,NA,NA,NA,8,4.586,0.573,0.288
-"LMDS [k=25] [kQuality=24] (Rcpp)","LMDS [k=25] [kQuality=24] (Rcpp)","LMDS (Rcpp)",25,NA,0.69,0.37,3,0,0.199,0.5,NA,NA,NA,NA,NA,12,8.345,0.695,0.267
-"LMDS [k=25] [kQuality=25] (Rcpp)","LMDS [k=25] [kQuality=25] (Rcpp)","LMDS (Rcpp)",25,NA,0.69,0.36,3,0,0.198,0.5,NA,NA,NA,NA,NA,6,2.862,0.477,0.263
-"LMDS [k=25] [kQuality=26] (Rcpp)","LMDS [k=25] [kQuality=26] (Rcpp)","LMDS (Rcpp)",25,NA,0.69,0.37,3,0,0.197,0.5,NA,NA,NA,NA,NA,12,8.345,0.695,0.267
-"LMDS [k=25] [kQuality=27] (Rcpp)","LMDS [k=25] [kQuality=27] (Rcpp)","LMDS (Rcpp)",25,NA,0.7,0.37,3,0,0.195,0.75,NA,NA,NA,NA,NA,8,4.586,0.573,0.288
-"LMDS [k=25] [kQuality=28] (Rcpp)","LMDS [k=25] [kQuality=28] (Rcpp)","LMDS (Rcpp)",25,NA,0.7,0.37,3,0,0.198,0.75,NA,NA,NA,NA,NA,8,4.586,0.573,0.288
-"LMDS [k=28] (smacofx R)","LMDS [k=28] (smacofx R)","LMDS (smacofx R)",28,NA,0.67,0.31,3,0,0.197,0.625,NA,NA,NA,NA,NA,2,0.759,0.379,0.308
-"LMDS [k=28] [kQuality=25] (Rcpp)","LMDS [k=28] [kQuality=25] (Rcpp)","LMDS (Rcpp)",28,NA,0.67,0.32,3,0,0.175,0.75,NA,NA,NA,NA,NA,8,4.207,0.526,0.24
-"LMDS [k=28] [kQuality=26] (Rcpp)","LMDS [k=28] [kQuality=26] (Rcpp)","LMDS (Rcpp)",28,NA,0.67,0.32,3,0,0.175,0.5,NA,NA,NA,NA,NA,2,0.69,0.345,0.273
-"LMDS [k=28] [kQuality=27] (Rcpp)","LMDS [k=28] [kQuality=27] (Rcpp)","LMDS (Rcpp)",28,NA,0.67,0.32,3,0,0.178,0.5,NA,NA,NA,NA,NA,2,0.69,0.345,0.273
-"LMDS [k=28] [kQuality=28] (Rcpp)","LMDS [k=28] [kQuality=28] (Rcpp)","LMDS (Rcpp)",28,NA,0.67,0.31,3,0,0.176,0.625,NA,NA,NA,NA,NA,1,0.276,0.276,0.24
-"LMDS [k=3] (smacofx R)","LMDS [k=3] (smacofx R)","LMDS (smacofx R)",3,NA,0.67,0.31,3,0,1,0.625,NA,NA,NA,NA,NA,2,0.759,0.379,0.308
-"LMDS [k=3] [kQuality=1] (Rcpp)","LMDS [k=3] [kQuality=1] (Rcpp)","LMDS (Rcpp)",3,NA,0.68,0.34,3,0,0.176,0.625,NA,NA,NA,NA,NA,3,1.448,0.483,0.376
-"LMDS [k=3] [kQuality=2] (Rcpp)","LMDS [k=3] [kQuality=2] (Rcpp)","LMDS (Rcpp)",3,NA,0.68,0.33,3,0,0.175,0.625,NA,NA,NA,NA,NA,3,1.448,0.483,0.376
-"LMDS [k=3] [kQuality=3] (Rcpp)","LMDS [k=3] [kQuality=3] (Rcpp)","LMDS (Rcpp)",3,NA,0.68,0.33,3,0,0.174,0.625,NA,NA,NA,NA,NA,3,1.448,0.483,0.376
-"LMDS [k=3] [kQuality=4] (Rcpp)","LMDS [k=3] [kQuality=4] (Rcpp)","LMDS (Rcpp)",3,NA,0.68,0.33,3,0,0.174,0.625,NA,NA,NA,NA,NA,3,1.448,0.483,0.376
-"LMDS [k=3] [kQuality=5] (Rcpp)","LMDS [k=3] [kQuality=5] (Rcpp)","LMDS (Rcpp)",3,NA,0.68,0.34,3,0,0.173,0.625,NA,NA,NA,NA,NA,3,1.448,0.483,0.376
-"LMDS [k=3] [kQuality=6] (Rcpp)","LMDS [k=3] [kQuality=6] (Rcpp)","LMDS (Rcpp)",3,NA,0.68,0.33,3,0,0.18,0.625,NA,NA,NA,NA,NA,3,1.448,0.483,0.376
-"LMDS [k=6] (smacofx R)","LMDS [k=6] (smacofx R)","LMDS (smacofx R)",6,NA,0.67,0.31,3,0,0.223,0.625,NA,NA,NA,NA,NA,2,0.759,0.379,0.308
-"LMDS [k=6] [kQuality=3] (Rcpp)","LMDS [k=6] [kQuality=3] (Rcpp)","LMDS (Rcpp)",6,NA,0.71,0.41,3,0,0.161,0.75,NA,NA,NA,NA,NA,3,1.31,0.437,0.33
-"LMDS [k=6] [kQuality=4] (Rcpp)","LMDS [k=6] [kQuality=4] (Rcpp)","LMDS (Rcpp)",6,NA,0.71,0.41,3,0,0.163,0.75,NA,NA,NA,NA,NA,3,1.31,0.437,0.33
-"LMDS [k=6] [kQuality=5] (Rcpp)","LMDS [k=6] [kQuality=5] (Rcpp)","LMDS (Rcpp)",6,NA,0.71,0.41,3,0,0.161,0.75,NA,NA,NA,NA,NA,3,1.31,0.437,0.33
-"LMDS [k=6] [kQuality=6] (Rcpp)","LMDS [k=6] [kQuality=6] (Rcpp)","LMDS (Rcpp)",6,NA,0.71,0.39,3,0,0.162,0.625,NA,NA,NA,NA,NA,7,4.069,0.581,0.331
-"LMDS [k=6] [kQuality=7] (Rcpp)","LMDS [k=6] [kQuality=7] (Rcpp)","LMDS (Rcpp)",6,NA,0.7,0.38,3,0,0.162,0.5,NA,NA,NA,NA,NA,7,4.138,0.591,0.341
-"LMDS [k=6] [kQuality=8] (Rcpp)","LMDS [k=6] [kQuality=8] (Rcpp)","LMDS (Rcpp)",6,NA,0.7,0.38,3,0,0.161,0.5,NA,NA,NA,NA,NA,7,4.138,0.591,0.341
-"LMDS [k=6] [kQuality=9] (Rcpp)","LMDS [k=6] [kQuality=9] (Rcpp)","LMDS (Rcpp)",6,NA,0.71,0.41,3,0,0.164,0.75,NA,NA,NA,NA,NA,3,1.31,0.437,0.33
-"LMDS [k=9] (smacofx R)","LMDS [k=9] (smacofx R)","LMDS (smacofx R)",9,NA,0.67,0.31,3,0,0.214,0.625,NA,NA,NA,NA,NA,2,0.759,0.379,0.308
-"LMDS [k=9] [kQuality=10] (Rcpp)","LMDS [k=9] [kQuality=10] (Rcpp)","LMDS (Rcpp)",9,NA,0.73,0.43,3,0,0.137,0.625,NA,NA,NA,NA,NA,10,7.103,0.71,0.353
-"LMDS [k=9] [kQuality=11] (Rcpp)","LMDS [k=9] [kQuality=11] (Rcpp)","LMDS (Rcpp)",9,NA,0.73,0.43,3,0,0.138,0.625,NA,NA,NA,NA,NA,10,7.103,0.71,0.353
-"LMDS [k=9] [kQuality=12] (Rcpp)","LMDS [k=9] [kQuality=12] (Rcpp)","LMDS (Rcpp)",9,NA,0.73,0.43,3,0,0.138,0.625,NA,NA,NA,NA,NA,10,7.103,0.71,0.353
-"LMDS [k=9] [kQuality=6] (Rcpp)","LMDS [k=9] [kQuality=6] (Rcpp)","LMDS (Rcpp)",9,NA,0.72,0.42,3,0,0.139,0.625,NA,NA,NA,NA,NA,9,6,0.667,0.345
-"LMDS [k=9] [kQuality=7] (Rcpp)","LMDS [k=9] [kQuality=7] (Rcpp)","LMDS (Rcpp)",9,NA,0.73,0.43,3,0,0.138,0.625,NA,NA,NA,NA,NA,10,7.103,0.71,0.353
-"LMDS [k=9] [kQuality=8] (Rcpp)","LMDS [k=9] [kQuality=8] (Rcpp)","LMDS (Rcpp)",9,NA,0.73,0.43,3,0,0.138,0.625,NA,NA,NA,NA,NA,10,7.103,0.71,0.353
-"LMDS [k=9] [kQuality=9] (Rcpp)","LMDS [k=9] [kQuality=9] (Rcpp)","LMDS (Rcpp)",9,NA,0.73,0.43,3,0,0.137,0.625,NA,NA,NA,NA,NA,10,7.103,0.71,0.353
-"MDS (Rcpp)","MDS (Rcpp)","MDS (Rcpp)",NA,NA,0.67,0.31,3,0,0.017,0.625,NA,NA,NA,NA,NA,1,0.276,0.276,0.24
-"smacof_MDS (R)","smacof_MDS (R)","smacof_MDS (R)",NA,NA,0.66,0.3,3,0,0.004,0.625,NA,NA,NA,NA,NA,8,4.276,0.534,0.249
-"PCA_SVD","PCA_SVD","PCA_SVD",NA,NA,0.59,0.16,3,0,0.153,0.375,NA,NA,NA,NA,NA,12,6.759,0.563,0.135
-"PPCA","PPCA","PPCA",NA,NA,0.67,0.31,3,0.088,1.096,0.625,NA,NA,NA,NA,NA,2,0.759,0.379,0.308
-"tSNE [perp=3]","tSNE [perp=3]","tSNE",NA,3,0.63,0.22,3,0,0.057,0.5,NA,NA,NA,NA,NA,1,0.586,0.586,0.55
-"tSNE [perp=6]","tSNE [perp=6]","tSNE",NA,6,0.73,0.43,3,0,0.057,0.625,NA,NA,NA,NA,NA,1,0.759,0.759,0.723
-"tSNE [perp=9]","tSNE [perp=9]","tSNE",NA,9,0.73,0.44,3,0,0.056,0.75,NA,NA,NA,NA,NA,1,0.586,0.586,0.55
-"UMAP [k=11]","UMAP [k=11]","UMAP",11,NA,0.64,0.26,3,0,0.058,0.625,NA,NA,NA,NA,NA,2,0.724,0.362,0.291
-"UMAP [k=14]","UMAP [k=14]","UMAP",14,NA,0.63,0.24,3,0,0.063,0.625,NA,NA,NA,NA,NA,5,2.069,0.414,0.235
-"UMAP [k=17]","UMAP [k=17]","UMAP",17,NA,0.65,0.27,3,0,0.066,0.75,NA,NA,NA,NA,NA,2,0.862,0.431,0.36
-"UMAP [k=20]","UMAP [k=20]","UMAP",20,NA,0.62,0.21,3,0,0.07,0.625,NA,NA,NA,NA,NA,10,5.621,0.562,0.205
-"UMAP [k=22]","UMAP [k=22]","UMAP",22,NA,0.62,0.21,3,0,0.073,0.75,NA,NA,NA,NA,NA,2,0.655,0.328,0.256
-"UMAP [k=25]","UMAP [k=25]","UMAP",25,NA,0.63,0.23,3,0,0.075,0.625,NA,NA,NA,NA,NA,2,0.828,0.414,0.342
-"UMAP [k=28]","UMAP [k=28]","UMAP",28,NA,0.65,0.28,3,0,0.077,0.75,NA,NA,NA,NA,NA,5,2.172,0.434,0.256
-"UMAP [k=3]","UMAP [k=3]","UMAP",3,NA,0.69,0.36,3,0,0.039,0.75,NA,NA,NA,NA,NA,2,0.828,0.414,0.342
-"UMAP [k=6]","UMAP [k=6]","UMAP",6,NA,0.66,0.3,3,0,0.05,0.75,NA,NA,NA,NA,NA,2,0.793,0.397,0.325
-"UMAP [k=9]","UMAP [k=9]","UMAP",9,NA,0.67,0.32,3,0,0.056,0.75,NA,NA,NA,NA,NA,2,0.862,0.431,0.36
+"DiffusionMaps","DiffusionMaps","DiffusionMaps",NA,NA,0.68,0.33,3,0.001,0.102,0.75,NA,NA,NA,NA,NA,2,0.759,0.379,0.308
+"DRR","DRR","DRR",NA,NA,0.59,0.16,3,0.003,2.721,0.375,NA,NA,NA,NA,NA,12,6.828,0.569,0.14
+"HSLMDS [k=10] [kQuality=10] (Rcpp)","HSLMDS [k=10] [kQuality=10] (Rcpp)","HSLMDS (Rcpp)",10,NA,0.71,0.41,1,NA,0.181,0.75,NA,NA,NA,NA,NA,10,6.931,0.693,0.336
+"HSLMDS [k=10] [kQuality=11] (Rcpp)","HSLMDS [k=10] [kQuality=11] (Rcpp)","HSLMDS (Rcpp)",10,NA,0.72,0.41,1,NA,0.181,0.25,NA,NA,NA,NA,NA,11,8.069,0.734,0.341
+"HSLMDS [k=10] [kQuality=12] (Rcpp)","HSLMDS [k=10] [kQuality=12] (Rcpp)","HSLMDS (Rcpp)",10,NA,0.71,0.4,1,NA,0.18,0.25,NA,NA,NA,NA,NA,10,6.931,0.693,0.336
+"HSLMDS [k=10] [kQuality=13] (Rcpp)","HSLMDS [k=10] [kQuality=13] (Rcpp)","HSLMDS (Rcpp)",10,NA,0.71,0.4,1,NA,0.181,0.25,NA,NA,NA,NA,NA,10,6.931,0.693,0.336
+"HSLMDS [k=10] [kQuality=7] (Rcpp)","HSLMDS [k=10] [kQuality=7] (Rcpp)","HSLMDS (Rcpp)",10,NA,0.71,0.41,1,NA,0.18,0.75,NA,NA,NA,NA,NA,10,6.931,0.693,0.336
+"HSLMDS [k=10] [kQuality=8] (Rcpp)","HSLMDS [k=10] [kQuality=8] (Rcpp)","HSLMDS (Rcpp)",10,NA,0.71,0.41,1,NA,0.181,0.75,NA,NA,NA,NA,NA,10,6.931,0.693,0.336
+"HSLMDS [k=10] [kQuality=9] (Rcpp)","HSLMDS [k=10] [kQuality=9] (Rcpp)","HSLMDS (Rcpp)",10,NA,0.72,0.41,1,NA,0.181,0.25,NA,NA,NA,NA,NA,11,8.069,0.734,0.341
+"HSLMDS [k=11] [kQuality=10] (Rcpp)","HSLMDS [k=11] [kQuality=10] (Rcpp)","HSLMDS (Rcpp)",11,NA,0.71,0.39,1,NA,0.124,0.5,NA,NA,NA,NA,NA,11,8.103,0.737,0.344
+"HSLMDS [k=11] [kQuality=11] (Rcpp)","HSLMDS [k=11] [kQuality=11] (Rcpp)","HSLMDS (Rcpp)",11,NA,0.71,0.39,1,NA,0.123,0.5,NA,NA,NA,NA,NA,11,8.103,0.737,0.344
+"HSLMDS [k=11] [kQuality=12] (Rcpp)","HSLMDS [k=11] [kQuality=12] (Rcpp)","HSLMDS (Rcpp)",11,NA,0.71,0.39,1,NA,0.123,0.5,NA,NA,NA,NA,NA,11,8.103,0.737,0.344
+"HSLMDS [k=11] [kQuality=13] (Rcpp)","HSLMDS [k=11] [kQuality=13] (Rcpp)","HSLMDS (Rcpp)",11,NA,0.71,0.39,1,NA,0.123,0.5,NA,NA,NA,NA,NA,11,8.103,0.737,0.344
+"HSLMDS [k=11] [kQuality=14] (Rcpp)","HSLMDS [k=11] [kQuality=14] (Rcpp)","HSLMDS (Rcpp)",11,NA,0.71,0.39,1,NA,0.123,0.5,NA,NA,NA,NA,NA,11,8.103,0.737,0.344
+"HSLMDS [k=11] [kQuality=8] (Rcpp)","HSLMDS [k=11] [kQuality=8] (Rcpp)","HSLMDS (Rcpp)",11,NA,0.71,0.39,1,NA,0.123,0.5,NA,NA,NA,NA,NA,11,8.103,0.737,0.344
+"HSLMDS [k=11] [kQuality=9] (Rcpp)","HSLMDS [k=11] [kQuality=9] (Rcpp)","HSLMDS (Rcpp)",11,NA,0.71,0.39,1,NA,0.122,0.5,NA,NA,NA,NA,NA,11,7.931,0.721,0.328
+"HSLMDS [k=12] [kQuality=10] (Rcpp)","HSLMDS [k=12] [kQuality=10] (Rcpp)","HSLMDS (Rcpp)",12,NA,0.72,0.42,1,NA,0.158,0.5,NA,NA,NA,NA,NA,10,6.966,0.697,0.339
+"HSLMDS [k=12] [kQuality=11] (Rcpp)","HSLMDS [k=12] [kQuality=11] (Rcpp)","HSLMDS (Rcpp)",12,NA,0.72,0.42,1,NA,0.158,0.5,NA,NA,NA,NA,NA,11,8.034,0.73,0.338
+"HSLMDS [k=12] [kQuality=12] (Rcpp)","HSLMDS [k=12] [kQuality=12] (Rcpp)","HSLMDS (Rcpp)",12,NA,0.72,0.42,1,NA,0.158,0.5,NA,NA,NA,NA,NA,11,8.034,0.73,0.338
+"HSLMDS [k=12] [kQuality=13] (Rcpp)","HSLMDS [k=12] [kQuality=13] (Rcpp)","HSLMDS (Rcpp)",12,NA,0.72,0.42,1,NA,0.158,0.5,NA,NA,NA,NA,NA,11,8.034,0.73,0.338
+"HSLMDS [k=12] [kQuality=14] (Rcpp)","HSLMDS [k=12] [kQuality=14] (Rcpp)","HSLMDS (Rcpp)",12,NA,0.72,0.42,1,NA,0.156,0.5,NA,NA,NA,NA,NA,11,8.034,0.73,0.338
+"HSLMDS [k=12] [kQuality=15] (Rcpp)","HSLMDS [k=12] [kQuality=15] (Rcpp)","HSLMDS (Rcpp)",12,NA,0.72,0.42,1,NA,0.158,0.5,NA,NA,NA,NA,NA,11,8.034,0.73,0.338
+"HSLMDS [k=12] [kQuality=9] (Rcpp)","HSLMDS [k=12] [kQuality=9] (Rcpp)","HSLMDS (Rcpp)",12,NA,0.72,0.42,1,NA,0.158,0.5,NA,NA,NA,NA,NA,11,8.034,0.73,0.338
+"HSLMDS [k=13] [kQuality=10] (Rcpp)","HSLMDS [k=13] [kQuality=10] (Rcpp)","HSLMDS (Rcpp)",13,NA,0.72,0.41,1,NA,0.21,0.375,NA,NA,NA,NA,NA,10,6.897,0.69,0.333
+"HSLMDS [k=13] [kQuality=11] (Rcpp)","HSLMDS [k=13] [kQuality=11] (Rcpp)","HSLMDS (Rcpp)",13,NA,0.72,0.41,1,NA,0.214,0.375,NA,NA,NA,NA,NA,10,6.897,0.69,0.333
+"HSLMDS [k=13] [kQuality=12] (Rcpp)","HSLMDS [k=13] [kQuality=12] (Rcpp)","HSLMDS (Rcpp)",13,NA,0.72,0.41,1,NA,0.214,0.375,NA,NA,NA,NA,NA,10,6.897,0.69,0.333
+"HSLMDS [k=13] [kQuality=13] (Rcpp)","HSLMDS [k=13] [kQuality=13] (Rcpp)","HSLMDS (Rcpp)",13,NA,0.72,0.41,1,NA,0.209,0.375,NA,NA,NA,NA,NA,10,6.897,0.69,0.333
+"HSLMDS [k=13] [kQuality=14] (Rcpp)","HSLMDS [k=13] [kQuality=14] (Rcpp)","HSLMDS (Rcpp)",13,NA,0.72,0.41,1,NA,0.214,0.375,NA,NA,NA,NA,NA,10,6.897,0.69,0.333
+"HSLMDS [k=13] [kQuality=15] (Rcpp)","HSLMDS [k=13] [kQuality=15] (Rcpp)","HSLMDS (Rcpp)",13,NA,0.71,0.41,1,NA,0.214,0.625,NA,NA,NA,NA,NA,12,9.069,0.756,0.327
+"HSLMDS [k=13] [kQuality=16] (Rcpp)","HSLMDS [k=13] [kQuality=16] (Rcpp)","HSLMDS (Rcpp)",13,NA,0.71,0.41,1,NA,0.213,0.625,NA,NA,NA,NA,NA,12,9.069,0.756,0.327
+"HSLMDS [k=14] [kQuality=11] (Rcpp)","HSLMDS [k=14] [kQuality=11] (Rcpp)","HSLMDS (Rcpp)",14,NA,0.71,0.4,1,NA,0.191,0.625,NA,NA,NA,NA,NA,11,8.069,0.734,0.341
+"HSLMDS [k=14] [kQuality=12] (Rcpp)","HSLMDS [k=14] [kQuality=12] (Rcpp)","HSLMDS (Rcpp)",14,NA,0.71,0.4,1,NA,0.191,0.625,NA,NA,NA,NA,NA,11,8.069,0.734,0.341
+"HSLMDS [k=14] [kQuality=13] (Rcpp)","HSLMDS [k=14] [kQuality=13] (Rcpp)","HSLMDS (Rcpp)",14,NA,0.71,0.4,1,NA,0.191,0.625,NA,NA,NA,NA,NA,12,9.069,0.756,0.327
+"HSLMDS [k=14] [kQuality=14] (Rcpp)","HSLMDS [k=14] [kQuality=14] (Rcpp)","HSLMDS (Rcpp)",14,NA,0.71,0.4,1,NA,0.19,0.625,NA,NA,NA,NA,NA,12,9.069,0.756,0.327
+"HSLMDS [k=14] [kQuality=15] (Rcpp)","HSLMDS [k=14] [kQuality=15] (Rcpp)","HSLMDS (Rcpp)",14,NA,0.71,0.4,1,NA,0.191,0.625,NA,NA,NA,NA,NA,11,8.069,0.734,0.341
+"HSLMDS [k=14] [kQuality=16] (Rcpp)","HSLMDS [k=14] [kQuality=16] (Rcpp)","HSLMDS (Rcpp)",14,NA,0.71,0.4,1,NA,0.19,0.625,NA,NA,NA,NA,NA,11,8.069,0.734,0.341
+"HSLMDS [k=14] [kQuality=17] (Rcpp)","HSLMDS [k=14] [kQuality=17] (Rcpp)","HSLMDS (Rcpp)",14,NA,0.71,0.4,1,NA,0.199,0.625,NA,NA,NA,NA,NA,11,8.069,0.734,0.341
+"HSLMDS [k=15] [kQuality=12] (Rcpp)","HSLMDS [k=15] [kQuality=12] (Rcpp)","HSLMDS (Rcpp)",15,NA,0.73,0.43,1,NA,0.243,0.625,NA,NA,NA,NA,NA,11,8.034,0.73,0.338
+"HSLMDS [k=15] [kQuality=13] (Rcpp)","HSLMDS [k=15] [kQuality=13] (Rcpp)","HSLMDS (Rcpp)",15,NA,0.73,0.43,1,NA,0.235,0.625,NA,NA,NA,NA,NA,11,8.034,0.73,0.338
+"HSLMDS [k=15] [kQuality=14] (Rcpp)","HSLMDS [k=15] [kQuality=14] (Rcpp)","HSLMDS (Rcpp)",15,NA,0.73,0.43,1,NA,0.244,0.625,NA,NA,NA,NA,NA,11,8.034,0.73,0.338
+"HSLMDS [k=15] [kQuality=15] (Rcpp)","HSLMDS [k=15] [kQuality=15] (Rcpp)","HSLMDS (Rcpp)",15,NA,0.73,0.43,1,NA,0.243,0.625,NA,NA,NA,NA,NA,11,8.034,0.73,0.338
+"HSLMDS [k=15] [kQuality=16] (Rcpp)","HSLMDS [k=15] [kQuality=16] (Rcpp)","HSLMDS (Rcpp)",15,NA,0.73,0.43,1,NA,0.243,0.625,NA,NA,NA,NA,NA,11,8.034,0.73,0.338
+"HSLMDS [k=15] [kQuality=17] (Rcpp)","HSLMDS [k=15] [kQuality=17] (Rcpp)","HSLMDS (Rcpp)",15,NA,0.73,0.43,1,NA,0.241,0.625,NA,NA,NA,NA,NA,11,8.034,0.73,0.338
+"HSLMDS [k=15] [kQuality=18] (Rcpp)","HSLMDS [k=15] [kQuality=18] (Rcpp)","HSLMDS (Rcpp)",15,NA,0.73,0.43,1,NA,0.243,0.625,NA,NA,NA,NA,NA,11,8.034,0.73,0.338
+"HSLMDS [k=16] [kQuality=13] (Rcpp)","HSLMDS [k=16] [kQuality=13] (Rcpp)","HSLMDS (Rcpp)",16,NA,0.72,0.43,1,NA,0.147,0.75,NA,NA,NA,NA,NA,12,9.207,0.767,0.339
+"HSLMDS [k=16] [kQuality=14] (Rcpp)","HSLMDS [k=16] [kQuality=14] (Rcpp)","HSLMDS (Rcpp)",16,NA,0.72,0.43,1,NA,0.148,0.75,NA,NA,NA,NA,NA,12,9.207,0.767,0.339
+"HSLMDS [k=16] [kQuality=15] (Rcpp)","HSLMDS [k=16] [kQuality=15] (Rcpp)","HSLMDS (Rcpp)",16,NA,0.72,0.43,1,NA,0.148,0.75,NA,NA,NA,NA,NA,12,9.207,0.767,0.339
+"HSLMDS [k=16] [kQuality=16] (Rcpp)","HSLMDS [k=16] [kQuality=16] (Rcpp)","HSLMDS (Rcpp)",16,NA,0.73,0.43,1,NA,0.149,0.75,NA,NA,NA,NA,NA,8,4.966,0.621,0.335
+"HSLMDS [k=16] [kQuality=17] (Rcpp)","HSLMDS [k=16] [kQuality=17] (Rcpp)","HSLMDS (Rcpp)",16,NA,0.73,0.43,1,NA,0.148,0.75,NA,NA,NA,NA,NA,8,4.966,0.621,0.335
+"HSLMDS [k=16] [kQuality=18] (Rcpp)","HSLMDS [k=16] [kQuality=18] (Rcpp)","HSLMDS (Rcpp)",16,NA,0.73,0.43,1,NA,0.148,0.75,NA,NA,NA,NA,NA,8,4.966,0.621,0.335
+"HSLMDS [k=16] [kQuality=19] (Rcpp)","HSLMDS [k=16] [kQuality=19] (Rcpp)","HSLMDS (Rcpp)",16,NA,0.73,0.43,1,NA,0.148,0.75,NA,NA,NA,NA,NA,8,4.966,0.621,0.335
+"HSLMDS [k=17] [kQuality=14] (Rcpp)","HSLMDS [k=17] [kQuality=14] (Rcpp)","HSLMDS (Rcpp)",17,NA,0.72,0.42,1,NA,0.185,0.75,NA,NA,NA,NA,NA,12,8.966,0.747,0.319
+"HSLMDS [k=17] [kQuality=15] (Rcpp)","HSLMDS [k=17] [kQuality=15] (Rcpp)","HSLMDS (Rcpp)",17,NA,0.72,0.42,1,NA,0.182,0.75,NA,NA,NA,NA,NA,12,8.966,0.747,0.319
+"HSLMDS [k=17] [kQuality=16] (Rcpp)","HSLMDS [k=17] [kQuality=16] (Rcpp)","HSLMDS (Rcpp)",17,NA,0.72,0.42,1,NA,0.187,0.5,NA,NA,NA,NA,NA,12,8.828,0.736,0.307
+"HSLMDS [k=17] [kQuality=17] (Rcpp)","HSLMDS [k=17] [kQuality=17] (Rcpp)","HSLMDS (Rcpp)",17,NA,0.72,0.42,1,NA,0.183,0.5,NA,NA,NA,NA,NA,12,8.828,0.736,0.307
+"HSLMDS [k=17] [kQuality=18] (Rcpp)","HSLMDS [k=17] [kQuality=18] (Rcpp)","HSLMDS (Rcpp)",17,NA,0.72,0.42,1,NA,0.185,0.5,NA,NA,NA,NA,NA,12,8.828,0.736,0.307
+"HSLMDS [k=17] [kQuality=19] (Rcpp)","HSLMDS [k=17] [kQuality=19] (Rcpp)","HSLMDS (Rcpp)",17,NA,0.72,0.42,1,NA,0.187,0.5,NA,NA,NA,NA,NA,12,8.828,0.736,0.307
+"HSLMDS [k=17] [kQuality=20] (Rcpp)","HSLMDS [k=17] [kQuality=20] (Rcpp)","HSLMDS (Rcpp)",17,NA,0.7,0.39,1,NA,0.187,0.375,NA,NA,NA,NA,NA,10,6.379,0.638,0.281
+"HSLMDS [k=18] [kQuality=15] (Rcpp)","HSLMDS [k=18] [kQuality=15] (Rcpp)","HSLMDS (Rcpp)",18,NA,0.72,0.42,1,NA,0.169,0.625,NA,NA,NA,NA,NA,12,8.931,0.744,0.316
+"HSLMDS [k=18] [kQuality=16] (Rcpp)","HSLMDS [k=18] [kQuality=16] (Rcpp)","HSLMDS (Rcpp)",18,NA,0.72,0.42,1,NA,0.168,0.625,NA,NA,NA,NA,NA,12,8.931,0.744,0.316
+"HSLMDS [k=18] [kQuality=17] (Rcpp)","HSLMDS [k=18] [kQuality=17] (Rcpp)","HSLMDS (Rcpp)",18,NA,0.72,0.42,1,NA,0.163,0.625,NA,NA,NA,NA,NA,12,8.931,0.744,0.316
+"HSLMDS [k=18] [kQuality=18] (Rcpp)","HSLMDS [k=18] [kQuality=18] (Rcpp)","HSLMDS (Rcpp)",18,NA,0.72,0.42,1,NA,0.168,0.625,NA,NA,NA,NA,NA,12,8.931,0.744,0.316
+"HSLMDS [k=18] [kQuality=19] (Rcpp)","HSLMDS [k=18] [kQuality=19] (Rcpp)","HSLMDS (Rcpp)",18,NA,0.71,0.4,1,NA,0.169,0.5,NA,NA,NA,NA,NA,12,8.897,0.741,0.313
+"HSLMDS [k=18] [kQuality=20] (Rcpp)","HSLMDS [k=18] [kQuality=20] (Rcpp)","HSLMDS (Rcpp)",18,NA,0.71,0.4,1,NA,0.167,0.5,NA,NA,NA,NA,NA,12,8.897,0.741,0.313
+"HSLMDS [k=18] [kQuality=21] (Rcpp)","HSLMDS [k=18] [kQuality=21] (Rcpp)","HSLMDS (Rcpp)",18,NA,0.71,0.4,1,NA,0.168,0.5,NA,NA,NA,NA,NA,12,8.897,0.741,0.313
+"HSLMDS [k=19] [kQuality=16] (Rcpp)","HSLMDS [k=19] [kQuality=16] (Rcpp)","HSLMDS (Rcpp)",19,NA,0.72,0.42,1,NA,0.133,0.625,NA,NA,NA,NA,NA,12,9.172,0.764,0.336
+"HSLMDS [k=19] [kQuality=17] (Rcpp)","HSLMDS [k=19] [kQuality=17] (Rcpp)","HSLMDS (Rcpp)",19,NA,0.71,0.39,1,NA,0.139,0.625,NA,NA,NA,NA,NA,12,8.966,0.747,0.319
+"HSLMDS [k=19] [kQuality=18] (Rcpp)","HSLMDS [k=19] [kQuality=18] (Rcpp)","HSLMDS (Rcpp)",19,NA,0.71,0.39,1,NA,0.133,0.625,NA,NA,NA,NA,NA,12,8.966,0.747,0.319
+"HSLMDS [k=19] [kQuality=19] (Rcpp)","HSLMDS [k=19] [kQuality=19] (Rcpp)","HSLMDS (Rcpp)",19,NA,0.72,0.42,1,NA,0.128,0.625,NA,NA,NA,NA,NA,12,9.172,0.764,0.336
+"HSLMDS [k=19] [kQuality=20] (Rcpp)","HSLMDS [k=19] [kQuality=20] (Rcpp)","HSLMDS (Rcpp)",19,NA,0.71,0.39,1,NA,0.133,0.625,NA,NA,NA,NA,NA,12,8.966,0.747,0.319
+"HSLMDS [k=19] [kQuality=21] (Rcpp)","HSLMDS [k=19] [kQuality=21] (Rcpp)","HSLMDS (Rcpp)",19,NA,0.71,0.39,1,NA,0.132,0.625,NA,NA,NA,NA,NA,12,8.966,0.747,0.319
+"HSLMDS [k=19] [kQuality=22] (Rcpp)","HSLMDS [k=19] [kQuality=22] (Rcpp)","HSLMDS (Rcpp)",19,NA,0.71,0.39,1,NA,0.132,0.625,NA,NA,NA,NA,NA,12,8.966,0.747,0.319
+"HSLMDS [k=20] [kQuality=17] (Rcpp)","HSLMDS [k=20] [kQuality=17] (Rcpp)","HSLMDS (Rcpp)",20,NA,0.72,0.41,1,NA,0.149,0.375,NA,NA,NA,NA,NA,9,5.828,0.648,0.326
+"HSLMDS [k=20] [kQuality=18] (Rcpp)","HSLMDS [k=20] [kQuality=18] (Rcpp)","HSLMDS (Rcpp)",20,NA,0.72,0.41,1,NA,0.149,0.375,NA,NA,NA,NA,NA,9,5.828,0.648,0.326
+"HSLMDS [k=20] [kQuality=19] (Rcpp)","HSLMDS [k=20] [kQuality=19] (Rcpp)","HSLMDS (Rcpp)",20,NA,0.71,0.4,1,NA,0.148,0.625,NA,NA,NA,NA,NA,11,7.828,0.712,0.319
+"HSLMDS [k=20] [kQuality=20] (Rcpp)","HSLMDS [k=20] [kQuality=20] (Rcpp)","HSLMDS (Rcpp)",20,NA,0.71,0.4,1,NA,0.15,0.625,NA,NA,NA,NA,NA,11,7.828,0.712,0.319
+"HSLMDS [k=20] [kQuality=21] (Rcpp)","HSLMDS [k=20] [kQuality=21] (Rcpp)","HSLMDS (Rcpp)",20,NA,0.71,0.4,1,NA,0.149,0.625,NA,NA,NA,NA,NA,11,7.828,0.712,0.319
+"HSLMDS [k=20] [kQuality=22] (Rcpp)","HSLMDS [k=20] [kQuality=22] (Rcpp)","HSLMDS (Rcpp)",20,NA,0.71,0.4,1,NA,0.151,0.625,NA,NA,NA,NA,NA,11,7.828,0.712,0.319
+"HSLMDS [k=20] [kQuality=23] (Rcpp)","HSLMDS [k=20] [kQuality=23] (Rcpp)","HSLMDS (Rcpp)",20,NA,0.72,0.41,1,NA,0.15,0.375,NA,NA,NA,NA,NA,9,5.828,0.648,0.326
+"HSLMDS [k=21] [kQuality=18] (Rcpp)","HSLMDS [k=21] [kQuality=18] (Rcpp)","HSLMDS (Rcpp)",21,NA,0.71,0.4,1,NA,0.161,0.375,NA,NA,NA,NA,NA,9,5.793,0.644,0.322
+"HSLMDS [k=21] [kQuality=19] (Rcpp)","HSLMDS [k=21] [kQuality=19] (Rcpp)","HSLMDS (Rcpp)",21,NA,0.71,0.4,1,NA,0.16,0.375,NA,NA,NA,NA,NA,9,5.793,0.644,0.322
+"HSLMDS [k=21] [kQuality=20] (Rcpp)","HSLMDS [k=21] [kQuality=20] (Rcpp)","HSLMDS (Rcpp)",21,NA,0.71,0.4,1,NA,0.161,0.375,NA,NA,NA,NA,NA,9,5.793,0.644,0.322
+"HSLMDS [k=21] [kQuality=21] (Rcpp)","HSLMDS [k=21] [kQuality=21] (Rcpp)","HSLMDS (Rcpp)",21,NA,0.71,0.4,1,NA,0.16,0.375,NA,NA,NA,NA,NA,10,6.862,0.686,0.329
+"HSLMDS [k=21] [kQuality=22] (Rcpp)","HSLMDS [k=21] [kQuality=22] (Rcpp)","HSLMDS (Rcpp)",21,NA,0.71,0.4,1,NA,0.16,0.375,NA,NA,NA,NA,NA,9,5.793,0.644,0.322
+"HSLMDS [k=21] [kQuality=23] (Rcpp)","HSLMDS [k=21] [kQuality=23] (Rcpp)","HSLMDS (Rcpp)",21,NA,0.71,0.4,1,NA,0.16,0.375,NA,NA,NA,NA,NA,9,5.793,0.644,0.322
+"HSLMDS [k=21] [kQuality=24] (Rcpp)","HSLMDS [k=21] [kQuality=24] (Rcpp)","HSLMDS (Rcpp)",21,NA,0.71,0.4,1,NA,0.161,0.375,NA,NA,NA,NA,NA,9,5.793,0.644,0.322
+"HSLMDS [k=22] [kQuality=19] (Rcpp)","HSLMDS [k=22] [kQuality=19] (Rcpp)","HSLMDS (Rcpp)",22,NA,0.72,0.42,1,NA,0.184,0.625,NA,NA,NA,NA,NA,9,5.966,0.663,0.341
+"HSLMDS [k=22] [kQuality=20] (Rcpp)","HSLMDS [k=22] [kQuality=20] (Rcpp)","HSLMDS (Rcpp)",22,NA,0.72,0.42,1,NA,0.183,0.625,NA,NA,NA,NA,NA,9,5.966,0.663,0.341
+"HSLMDS [k=22] [kQuality=21] (Rcpp)","HSLMDS [k=22] [kQuality=21] (Rcpp)","HSLMDS (Rcpp)",22,NA,0.72,0.42,1,NA,0.184,0.625,NA,NA,NA,NA,NA,9,5.966,0.663,0.341
+"HSLMDS [k=22] [kQuality=22] (Rcpp)","HSLMDS [k=22] [kQuality=22] (Rcpp)","HSLMDS (Rcpp)",22,NA,0.72,0.42,1,NA,0.183,0.5,NA,NA,NA,NA,NA,9,5.862,0.651,0.33
+"HSLMDS [k=22] [kQuality=23] (Rcpp)","HSLMDS [k=22] [kQuality=23] (Rcpp)","HSLMDS (Rcpp)",22,NA,0.72,0.42,1,NA,0.184,0.625,NA,NA,NA,NA,NA,9,5.966,0.663,0.341
+"HSLMDS [k=22] [kQuality=24] (Rcpp)","HSLMDS [k=22] [kQuality=24] (Rcpp)","HSLMDS (Rcpp)",22,NA,0.72,0.42,1,NA,0.184,0.625,NA,NA,NA,NA,NA,9,5.966,0.663,0.341
+"HSLMDS [k=22] [kQuality=25] (Rcpp)","HSLMDS [k=22] [kQuality=25] (Rcpp)","HSLMDS (Rcpp)",22,NA,0.72,0.42,1,NA,0.184,0.625,NA,NA,NA,NA,NA,9,5.966,0.663,0.341
+"HSLMDS [k=23] [kQuality=20] (Rcpp)","HSLMDS [k=23] [kQuality=20] (Rcpp)","HSLMDS (Rcpp)",23,NA,0.71,0.41,1,NA,0.187,0.75,NA,NA,NA,NA,NA,8,4.793,0.599,0.313
+"HSLMDS [k=23] [kQuality=21] (Rcpp)","HSLMDS [k=23] [kQuality=21] (Rcpp)","HSLMDS (Rcpp)",23,NA,0.71,0.41,1,NA,0.191,0.75,NA,NA,NA,NA,NA,8,4.793,0.599,0.313
+"HSLMDS [k=23] [kQuality=22] (Rcpp)","HSLMDS [k=23] [kQuality=22] (Rcpp)","HSLMDS (Rcpp)",23,NA,0.71,0.41,1,NA,0.192,0.75,NA,NA,NA,NA,NA,8,4.793,0.599,0.313
+"HSLMDS [k=23] [kQuality=23] (Rcpp)","HSLMDS [k=23] [kQuality=23] (Rcpp)","HSLMDS (Rcpp)",23,NA,0.71,0.41,1,NA,0.191,0.75,NA,NA,NA,NA,NA,8,4.793,0.599,0.313
+"HSLMDS [k=23] [kQuality=24] (Rcpp)","HSLMDS [k=23] [kQuality=24] (Rcpp)","HSLMDS (Rcpp)",23,NA,0.71,0.41,1,NA,0.191,0.75,NA,NA,NA,NA,NA,8,4.793,0.599,0.313
+"HSLMDS [k=23] [kQuality=25] (Rcpp)","HSLMDS [k=23] [kQuality=25] (Rcpp)","HSLMDS (Rcpp)",23,NA,0.71,0.41,1,NA,0.202,0.5,NA,NA,NA,NA,NA,2,0.759,0.379,0.308
+"HSLMDS [k=23] [kQuality=26] (Rcpp)","HSLMDS [k=23] [kQuality=26] (Rcpp)","HSLMDS (Rcpp)",23,NA,0.71,0.41,1,NA,0.189,0.5,NA,NA,NA,NA,NA,2,0.759,0.379,0.308
+"HSLMDS [k=24] [kQuality=21] (Rcpp)","HSLMDS [k=24] [kQuality=21] (Rcpp)","HSLMDS (Rcpp)",24,NA,0.7,0.37,1,NA,0.181,0.75,NA,NA,NA,NA,NA,9,5.483,0.609,0.288
+"HSLMDS [k=24] [kQuality=22] (Rcpp)","HSLMDS [k=24] [kQuality=22] (Rcpp)","HSLMDS (Rcpp)",24,NA,0.69,0.35,1,NA,0.18,0.625,NA,NA,NA,NA,NA,11,7.241,0.658,0.265
+"HSLMDS [k=24] [kQuality=23] (Rcpp)","HSLMDS [k=24] [kQuality=23] (Rcpp)","HSLMDS (Rcpp)",24,NA,0.7,0.37,1,NA,0.179,0.75,NA,NA,NA,NA,NA,9,5.483,0.609,0.288
+"HSLMDS [k=24] [kQuality=24] (Rcpp)","HSLMDS [k=24] [kQuality=24] (Rcpp)","HSLMDS (Rcpp)",24,NA,0.7,0.37,1,NA,0.18,0.75,NA,NA,NA,NA,NA,9,5.483,0.609,0.288
+"HSLMDS [k=24] [kQuality=25] (Rcpp)","HSLMDS [k=24] [kQuality=25] (Rcpp)","HSLMDS (Rcpp)",24,NA,0.7,0.37,1,NA,0.18,0.75,NA,NA,NA,NA,NA,9,5.483,0.609,0.288
+"HSLMDS [k=24] [kQuality=26] (Rcpp)","HSLMDS [k=24] [kQuality=26] (Rcpp)","HSLMDS (Rcpp)",24,NA,0.69,0.35,1,NA,0.18,0.625,NA,NA,NA,NA,NA,11,7.241,0.658,0.265
+"HSLMDS [k=24] [kQuality=27] (Rcpp)","HSLMDS [k=24] [kQuality=27] (Rcpp)","HSLMDS (Rcpp)",24,NA,0.69,0.35,1,NA,0.176,0.625,NA,NA,NA,NA,NA,11,7.241,0.658,0.265
+"HSLMDS [k=25] [kQuality=22] (Rcpp)","HSLMDS [k=25] [kQuality=22] (Rcpp)","HSLMDS (Rcpp)",25,NA,0.69,0.36,1,NA,0.201,0.5,NA,NA,NA,NA,NA,6,2.862,0.477,0.263
+"HSLMDS [k=25] [kQuality=23] (Rcpp)","HSLMDS [k=25] [kQuality=23] (Rcpp)","HSLMDS (Rcpp)",25,NA,0.7,0.37,1,NA,0.206,0.75,NA,NA,NA,NA,NA,8,4.586,0.573,0.288
+"HSLMDS [k=25] [kQuality=24] (Rcpp)","HSLMDS [k=25] [kQuality=24] (Rcpp)","HSLMDS (Rcpp)",25,NA,0.69,0.37,1,NA,0.2,0.5,NA,NA,NA,NA,NA,12,8.345,0.695,0.267
+"HSLMDS [k=25] [kQuality=25] (Rcpp)","HSLMDS [k=25] [kQuality=25] (Rcpp)","HSLMDS (Rcpp)",25,NA,0.69,0.36,1,NA,0.197,0.5,NA,NA,NA,NA,NA,6,2.862,0.477,0.263
+"HSLMDS [k=25] [kQuality=26] (Rcpp)","HSLMDS [k=25] [kQuality=26] (Rcpp)","HSLMDS (Rcpp)",25,NA,0.69,0.37,1,NA,0.197,0.5,NA,NA,NA,NA,NA,12,8.345,0.695,0.267
+"HSLMDS [k=25] [kQuality=27] (Rcpp)","HSLMDS [k=25] [kQuality=27] (Rcpp)","HSLMDS (Rcpp)",25,NA,0.7,0.37,1,NA,0.198,0.75,NA,NA,NA,NA,NA,8,4.586,0.573,0.288
+"HSLMDS [k=25] [kQuality=28] (Rcpp)","HSLMDS [k=25] [kQuality=28] (Rcpp)","HSLMDS (Rcpp)",25,NA,0.7,0.37,1,NA,0.199,0.75,NA,NA,NA,NA,NA,8,4.586,0.573,0.288
+"HSLMDS [k=26] [kQuality=23] (Rcpp)","HSLMDS [k=26] [kQuality=23] (Rcpp)","HSLMDS (Rcpp)",26,NA,0.7,0.38,1,NA,0.225,0.5,NA,NA,NA,NA,NA,2,0.724,0.362,0.291
+"HSLMDS [k=26] [kQuality=24] (Rcpp)","HSLMDS [k=26] [kQuality=24] (Rcpp)","HSLMDS (Rcpp)",26,NA,0.7,0.38,1,NA,0.221,0.5,NA,NA,NA,NA,NA,2,0.724,0.362,0.291
+"HSLMDS [k=26] [kQuality=25] (Rcpp)","HSLMDS [k=26] [kQuality=25] (Rcpp)","HSLMDS (Rcpp)",26,NA,0.7,0.38,1,NA,0.223,0.75,NA,NA,NA,NA,NA,1,0.31,0.31,0.275
+"HSLMDS [k=26] [kQuality=26] (Rcpp)","HSLMDS [k=26] [kQuality=26] (Rcpp)","HSLMDS (Rcpp)",26,NA,0.7,0.38,1,NA,0.219,0.5,NA,NA,NA,NA,NA,2,0.724,0.362,0.291
+"HSLMDS [k=26] [kQuality=27] (Rcpp)","HSLMDS [k=26] [kQuality=27] (Rcpp)","HSLMDS (Rcpp)",26,NA,0.7,0.38,1,NA,0.22,0.5,NA,NA,NA,NA,NA,2,0.724,0.362,0.291
+"HSLMDS [k=26] [kQuality=28] (Rcpp)","HSLMDS [k=26] [kQuality=28] (Rcpp)","HSLMDS (Rcpp)",26,NA,0.7,0.38,1,NA,0.218,0.5,NA,NA,NA,NA,NA,2,0.724,0.362,0.291
+"HSLMDS [k=27] [kQuality=24] (Rcpp)","HSLMDS [k=27] [kQuality=24] (Rcpp)","HSLMDS (Rcpp)",27,NA,0.7,0.38,1,NA,0.249,0.5,NA,NA,NA,NA,NA,1,0.414,0.414,0.378
+"HSLMDS [k=27] [kQuality=25] (Rcpp)","HSLMDS [k=27] [kQuality=25] (Rcpp)","HSLMDS (Rcpp)",27,NA,0.7,0.38,1,NA,0.249,0.5,NA,NA,NA,NA,NA,1,0.414,0.414,0.378
+"HSLMDS [k=27] [kQuality=26] (Rcpp)","HSLMDS [k=27] [kQuality=26] (Rcpp)","HSLMDS (Rcpp)",27,NA,0.7,0.38,1,NA,0.249,0.5,NA,NA,NA,NA,NA,1,0.414,0.414,0.378
+"HSLMDS [k=27] [kQuality=27] (Rcpp)","HSLMDS [k=27] [kQuality=27] (Rcpp)","HSLMDS (Rcpp)",27,NA,0.7,0.38,1,NA,0.258,0.5,NA,NA,NA,NA,NA,1,0.414,0.414,0.378
+"HSLMDS [k=27] [kQuality=28] (Rcpp)","HSLMDS [k=27] [kQuality=28] (Rcpp)","HSLMDS (Rcpp)",27,NA,0.7,0.38,1,NA,0.251,0.5,NA,NA,NA,NA,NA,1,0.414,0.414,0.378
+"HSLMDS [k=28] [kQuality=25] (Rcpp)","HSLMDS [k=28] [kQuality=25] (Rcpp)","HSLMDS (Rcpp)",28,NA,0.67,0.32,1,NA,0.179,0.75,NA,NA,NA,NA,NA,8,4.207,0.526,0.24
+"HSLMDS [k=28] [kQuality=26] (Rcpp)","HSLMDS [k=28] [kQuality=26] (Rcpp)","HSLMDS (Rcpp)",28,NA,0.67,0.32,1,NA,0.175,0.5,NA,NA,NA,NA,NA,2,0.69,0.345,0.273
+"HSLMDS [k=28] [kQuality=27] (Rcpp)","HSLMDS [k=28] [kQuality=27] (Rcpp)","HSLMDS (Rcpp)",28,NA,0.67,0.32,1,NA,0.177,0.5,NA,NA,NA,NA,NA,2,0.69,0.345,0.273
+"HSLMDS [k=28] [kQuality=28] (Rcpp)","HSLMDS [k=28] [kQuality=28] (Rcpp)","HSLMDS (Rcpp)",28,NA,0.67,0.31,1,NA,0.175,0.625,NA,NA,NA,NA,NA,1,0.276,0.276,0.24
+"HSLMDS [k=3] [kQuality=1] (Rcpp)","HSLMDS [k=3] [kQuality=1] (Rcpp)","HSLMDS (Rcpp)",3,NA,0.68,0.34,1,NA,0.18,0.625,NA,NA,NA,NA,NA,3,1.448,0.483,0.376
+"HSLMDS [k=3] [kQuality=2] (Rcpp)","HSLMDS [k=3] [kQuality=2] (Rcpp)","HSLMDS (Rcpp)",3,NA,0.68,0.33,1,NA,0.18,0.625,NA,NA,NA,NA,NA,3,1.448,0.483,0.376
+"HSLMDS [k=3] [kQuality=3] (Rcpp)","HSLMDS [k=3] [kQuality=3] (Rcpp)","HSLMDS (Rcpp)",3,NA,0.68,0.33,1,NA,0.18,0.625,NA,NA,NA,NA,NA,3,1.448,0.483,0.376
+"HSLMDS [k=3] [kQuality=4] (Rcpp)","HSLMDS [k=3] [kQuality=4] (Rcpp)","HSLMDS (Rcpp)",3,NA,0.68,0.33,1,NA,0.175,0.625,NA,NA,NA,NA,NA,3,1.448,0.483,0.376
+"HSLMDS [k=3] [kQuality=5] (Rcpp)","HSLMDS [k=3] [kQuality=5] (Rcpp)","HSLMDS (Rcpp)",3,NA,0.68,0.34,1,NA,0.179,0.625,NA,NA,NA,NA,NA,3,1.448,0.483,0.376
+"HSLMDS [k=3] [kQuality=6] (Rcpp)","HSLMDS [k=3] [kQuality=6] (Rcpp)","HSLMDS (Rcpp)",3,NA,0.68,0.33,1,NA,0.179,0.625,NA,NA,NA,NA,NA,3,1.448,0.483,0.376
+"HSLMDS [k=4] [kQuality=1] (Rcpp)","HSLMDS [k=4] [kQuality=1] (Rcpp)","HSLMDS (Rcpp)",4,NA,0.7,0.38,1,NA,0.222,0.75,NA,NA,NA,NA,NA,2,0.862,0.431,0.36
+"HSLMDS [k=4] [kQuality=2] (Rcpp)","HSLMDS [k=4] [kQuality=2] (Rcpp)","HSLMDS (Rcpp)",4,NA,0.7,0.38,1,NA,0.221,0.75,NA,NA,NA,NA,NA,2,0.862,0.431,0.36
+"HSLMDS [k=4] [kQuality=3] (Rcpp)","HSLMDS [k=4] [kQuality=3] (Rcpp)","HSLMDS (Rcpp)",4,NA,0.7,0.38,1,NA,0.222,0.75,NA,NA,NA,NA,NA,2,0.862,0.431,0.36
+"HSLMDS [k=4] [kQuality=4] (Rcpp)","HSLMDS [k=4] [kQuality=4] (Rcpp)","HSLMDS (Rcpp)",4,NA,0.7,0.38,1,NA,0.223,0.75,NA,NA,NA,NA,NA,2,0.862,0.431,0.36
+"HSLMDS [k=4] [kQuality=5] (Rcpp)","HSLMDS [k=4] [kQuality=5] (Rcpp)","HSLMDS (Rcpp)",4,NA,0.7,0.38,1,NA,0.221,0.75,NA,NA,NA,NA,NA,2,0.862,0.431,0.36
+"HSLMDS [k=4] [kQuality=6] (Rcpp)","HSLMDS [k=4] [kQuality=6] (Rcpp)","HSLMDS (Rcpp)",4,NA,0.69,0.36,1,NA,0.222,0.75,NA,NA,NA,NA,NA,6,3.172,0.529,0.314
+"HSLMDS [k=4] [kQuality=7] (Rcpp)","HSLMDS [k=4] [kQuality=7] (Rcpp)","HSLMDS (Rcpp)",4,NA,0.69,0.36,1,NA,0.218,0.75,NA,NA,NA,NA,NA,6,3.172,0.529,0.314
+"HSLMDS [k=5] [kQuality=2] (Rcpp)","HSLMDS [k=5] [kQuality=2] (Rcpp)","HSLMDS (Rcpp)",5,NA,0.71,0.4,1,NA,0.145,0.5,NA,NA,NA,NA,NA,7,4.138,0.591,0.341
+"HSLMDS [k=5] [kQuality=3] (Rcpp)","HSLMDS [k=5] [kQuality=3] (Rcpp)","HSLMDS (Rcpp)",5,NA,0.71,0.4,1,NA,0.142,0.5,NA,NA,NA,NA,NA,7,4.138,0.591,0.341
+"HSLMDS [k=5] [kQuality=4] (Rcpp)","HSLMDS [k=5] [kQuality=4] (Rcpp)","HSLMDS (Rcpp)",5,NA,0.71,0.4,1,NA,0.145,0.5,NA,NA,NA,NA,NA,7,4.138,0.591,0.341
+"HSLMDS [k=5] [kQuality=5] (Rcpp)","HSLMDS [k=5] [kQuality=5] (Rcpp)","HSLMDS (Rcpp)",5,NA,0.71,0.4,1,NA,0.146,0.5,NA,NA,NA,NA,NA,5,2.655,0.531,0.352
+"HSLMDS [k=5] [kQuality=6] (Rcpp)","HSLMDS [k=5] [kQuality=6] (Rcpp)","HSLMDS (Rcpp)",5,NA,0.71,0.4,1,NA,0.144,0.5,NA,NA,NA,NA,NA,7,4.138,0.591,0.341
+"HSLMDS [k=5] [kQuality=7] (Rcpp)","HSLMDS [k=5] [kQuality=7] (Rcpp)","HSLMDS (Rcpp)",5,NA,0.71,0.4,1,NA,0.144,0.5,NA,NA,NA,NA,NA,5,2.655,0.531,0.352
+"HSLMDS [k=5] [kQuality=8] (Rcpp)","HSLMDS [k=5] [kQuality=8] (Rcpp)","HSLMDS (Rcpp)",5,NA,0.71,0.4,1,NA,0.144,0.5,NA,NA,NA,NA,NA,5,2.655,0.531,0.352
+"HSLMDS [k=6] [kQuality=3] (Rcpp)","HSLMDS [k=6] [kQuality=3] (Rcpp)","HSLMDS (Rcpp)",6,NA,0.71,0.41,1,NA,0.163,0.75,NA,NA,NA,NA,NA,3,1.31,0.437,0.33
+"HSLMDS [k=6] [kQuality=4] (Rcpp)","HSLMDS [k=6] [kQuality=4] (Rcpp)","HSLMDS (Rcpp)",6,NA,0.71,0.41,1,NA,0.171,0.75,NA,NA,NA,NA,NA,3,1.31,0.437,0.33
+"HSLMDS [k=6] [kQuality=5] (Rcpp)","HSLMDS [k=6] [kQuality=5] (Rcpp)","HSLMDS (Rcpp)",6,NA,0.71,0.41,1,NA,0.163,0.75,NA,NA,NA,NA,NA,3,1.31,0.437,0.33
+"HSLMDS [k=6] [kQuality=6] (Rcpp)","HSLMDS [k=6] [kQuality=6] (Rcpp)","HSLMDS (Rcpp)",6,NA,0.71,0.39,1,NA,0.162,0.625,NA,NA,NA,NA,NA,7,4.069,0.581,0.331
+"HSLMDS [k=6] [kQuality=7] (Rcpp)","HSLMDS [k=6] [kQuality=7] (Rcpp)","HSLMDS (Rcpp)",6,NA,0.7,0.38,1,NA,0.163,0.5,NA,NA,NA,NA,NA,7,4.138,0.591,0.341
+"HSLMDS [k=6] [kQuality=8] (Rcpp)","HSLMDS [k=6] [kQuality=8] (Rcpp)","HSLMDS (Rcpp)",6,NA,0.7,0.38,1,NA,0.163,0.5,NA,NA,NA,NA,NA,7,4.138,0.591,0.341
+"HSLMDS [k=6] [kQuality=9] (Rcpp)","HSLMDS [k=6] [kQuality=9] (Rcpp)","HSLMDS (Rcpp)",6,NA,0.71,0.41,1,NA,0.163,0.75,NA,NA,NA,NA,NA,3,1.31,0.437,0.33
+"HSLMDS [k=7] [kQuality=10] (Rcpp)","HSLMDS [k=7] [kQuality=10] (Rcpp)","HSLMDS (Rcpp)",7,NA,0.7,0.38,1,NA,0.166,0.625,NA,NA,NA,NA,NA,7,4.103,0.586,0.336
+"HSLMDS [k=7] [kQuality=4] (Rcpp)","HSLMDS [k=7] [kQuality=4] (Rcpp)","HSLMDS (Rcpp)",7,NA,0.7,0.38,1,NA,0.166,0.625,NA,NA,NA,NA,NA,8,5,0.625,0.339
+"HSLMDS [k=7] [kQuality=5] (Rcpp)","HSLMDS [k=7] [kQuality=5] (Rcpp)","HSLMDS (Rcpp)",7,NA,0.7,0.38,1,NA,0.166,0.625,NA,NA,NA,NA,NA,8,5,0.625,0.339
+"HSLMDS [k=7] [kQuality=6] (Rcpp)","HSLMDS [k=7] [kQuality=6] (Rcpp)","HSLMDS (Rcpp)",7,NA,0.7,0.38,1,NA,0.166,0.625,NA,NA,NA,NA,NA,8,5,0.625,0.339
+"HSLMDS [k=7] [kQuality=7] (Rcpp)","HSLMDS [k=7] [kQuality=7] (Rcpp)","HSLMDS (Rcpp)",7,NA,0.7,0.38,1,NA,0.167,0.625,NA,NA,NA,NA,NA,7,4.103,0.586,0.336
+"HSLMDS [k=7] [kQuality=8] (Rcpp)","HSLMDS [k=7] [kQuality=8] (Rcpp)","HSLMDS (Rcpp)",7,NA,0.7,0.38,1,NA,0.167,0.625,NA,NA,NA,NA,NA,8,5,0.625,0.339
+"HSLMDS [k=7] [kQuality=9] (Rcpp)","HSLMDS [k=7] [kQuality=9] (Rcpp)","HSLMDS (Rcpp)",7,NA,0.7,0.38,1,NA,0.166,0.625,NA,NA,NA,NA,NA,7,4.103,0.586,0.336
+"HSLMDS [k=8] [kQuality=10] (Rcpp)","HSLMDS [k=8] [kQuality=10] (Rcpp)","HSLMDS (Rcpp)",8,NA,0.72,0.43,1,NA,0.186,0.625,NA,NA,NA,NA,NA,9,6.103,0.678,0.357
+"HSLMDS [k=8] [kQuality=11] (Rcpp)","HSLMDS [k=8] [kQuality=11] (Rcpp)","HSLMDS (Rcpp)",8,NA,0.72,0.43,1,NA,0.186,0.625,NA,NA,NA,NA,NA,9,6.103,0.678,0.357
+"HSLMDS [k=8] [kQuality=5] (Rcpp)","HSLMDS [k=8] [kQuality=5] (Rcpp)","HSLMDS (Rcpp)",8,NA,0.72,0.43,1,NA,0.185,0.625,NA,NA,NA,NA,NA,9,6.103,0.678,0.357
+"HSLMDS [k=8] [kQuality=6] (Rcpp)","HSLMDS [k=8] [kQuality=6] (Rcpp)","HSLMDS (Rcpp)",8,NA,0.72,0.41,1,NA,0.185,0.625,NA,NA,NA,NA,NA,10,6.966,0.697,0.339
+"HSLMDS [k=8] [kQuality=7] (Rcpp)","HSLMDS [k=8] [kQuality=7] (Rcpp)","HSLMDS (Rcpp)",8,NA,0.72,0.43,1,NA,0.186,0.625,NA,NA,NA,NA,NA,9,6.103,0.678,0.357
+"HSLMDS [k=8] [kQuality=8] (Rcpp)","HSLMDS [k=8] [kQuality=8] (Rcpp)","HSLMDS (Rcpp)",8,NA,0.72,0.43,1,NA,0.196,0.625,NA,NA,NA,NA,NA,9,6.103,0.678,0.357
+"HSLMDS [k=8] [kQuality=9] (Rcpp)","HSLMDS [k=8] [kQuality=9] (Rcpp)","HSLMDS (Rcpp)",8,NA,0.72,0.43,1,NA,0.185,0.625,NA,NA,NA,NA,NA,9,6.103,0.678,0.357
+"HSLMDS [k=9] [kQuality=10] (Rcpp)","HSLMDS [k=9] [kQuality=10] (Rcpp)","HSLMDS (Rcpp)",9,NA,0.73,0.43,1,NA,0.141,0.625,NA,NA,NA,NA,NA,10,7.103,0.71,0.353
+"HSLMDS [k=9] [kQuality=11] (Rcpp)","HSLMDS [k=9] [kQuality=11] (Rcpp)","HSLMDS (Rcpp)",9,NA,0.73,0.43,1,NA,0.141,0.625,NA,NA,NA,NA,NA,10,7.103,0.71,0.353
+"HSLMDS [k=9] [kQuality=12] (Rcpp)","HSLMDS [k=9] [kQuality=12] (Rcpp)","HSLMDS (Rcpp)",9,NA,0.73,0.43,1,NA,0.139,0.625,NA,NA,NA,NA,NA,10,7.103,0.71,0.353
+"HSLMDS [k=9] [kQuality=6] (Rcpp)","HSLMDS [k=9] [kQuality=6] (Rcpp)","HSLMDS (Rcpp)",9,NA,0.72,0.42,1,NA,0.141,0.625,NA,NA,NA,NA,NA,9,6,0.667,0.345
+"HSLMDS [k=9] [kQuality=7] (Rcpp)","HSLMDS [k=9] [kQuality=7] (Rcpp)","HSLMDS (Rcpp)",9,NA,0.73,0.43,1,NA,0.14,0.625,NA,NA,NA,NA,NA,10,7.103,0.71,0.353
+"HSLMDS [k=9] [kQuality=8] (Rcpp)","HSLMDS [k=9] [kQuality=8] (Rcpp)","HSLMDS (Rcpp)",9,NA,0.73,0.43,1,NA,0.144,0.625,NA,NA,NA,NA,NA,10,7.103,0.71,0.353
+"HSLMDS [k=9] [kQuality=9] (Rcpp)","HSLMDS [k=9] [kQuality=9] (Rcpp)","HSLMDS (Rcpp)",9,NA,0.73,0.43,1,NA,0.14,0.625,NA,NA,NA,NA,NA,10,7.103,0.71,0.353
+"HSMDS (Rcpp)","HSMDS (Rcpp)","HSMDS (Rcpp)",NA,NA,0.74,0.47,3,0,0.294,0.375,NA,NA,NA,NA,NA,10,7.069,0.707,0.35
+"Isomap [k=10]","Isomap [k=10]","Isomap",10,NA,0.66,0.3,1,NA,0.063,0.125,NA,NA,NA,NA,NA,8,4.31,0.539,0.253
+"Isomap [k=11]","Isomap [k=11]","Isomap",11,NA,0.66,0.3,1,NA,0.067,0.5,NA,NA,NA,NA,NA,10,6.069,0.607,0.25
+"Isomap [k=12]","Isomap [k=12]","Isomap",12,NA,0.67,0.32,1,NA,0.067,0.625,NA,NA,NA,NA,NA,9,5.207,0.579,0.257
+"Isomap [k=13]","Isomap [k=13]","Isomap",13,NA,0.69,0.36,1,NA,0.067,0.75,NA,NA,NA,NA,NA,8,4.483,0.56,0.275
+"Isomap [k=14]","Isomap [k=14]","Isomap",14,NA,0.7,0.37,1,NA,0.069,0.5,NA,NA,NA,NA,NA,8,4.586,0.573,0.288
+"Isomap [k=15]","Isomap [k=15]","Isomap",15,NA,0.7,0.37,1,NA,0.07,0.75,NA,NA,NA,NA,NA,8,4.552,0.569,0.283
+"Isomap [k=16]","Isomap [k=16]","Isomap",16,NA,0.7,0.38,1,NA,0.067,0.75,NA,NA,NA,NA,NA,8,4.517,0.565,0.279
+"Isomap [k=17]","Isomap [k=17]","Isomap",17,NA,0.7,0.38,1,NA,0.069,0.5,NA,NA,NA,NA,NA,8,4.517,0.565,0.279
+"Isomap [k=18]","Isomap [k=18]","Isomap",18,NA,0.7,0.37,1,NA,0.069,0.75,NA,NA,NA,NA,NA,11,7.31,0.665,0.272
+"Isomap [k=19]","Isomap [k=19]","Isomap",19,NA,0.71,0.4,1,NA,0.067,0.375,NA,NA,NA,NA,NA,12,8.931,0.744,0.316
+"Isomap [k=20]","Isomap [k=20]","Isomap",20,NA,0.71,0.4,1,NA,0.068,0.5,NA,NA,NA,NA,NA,11,7.862,0.715,0.322
+"Isomap [k=21]","Isomap [k=21]","Isomap",21,NA,0.71,0.39,1,NA,0.069,0.375,NA,NA,NA,NA,NA,10,6.655,0.666,0.308
+"Isomap [k=22]","Isomap [k=22]","Isomap",22,NA,0.71,0.41,1,NA,0.067,0.375,NA,NA,NA,NA,NA,10,7.034,0.703,0.346
+"Isomap [k=23]","Isomap [k=23]","Isomap",23,NA,0.7,0.38,1,NA,0.069,0.5,NA,NA,NA,NA,NA,9,5.517,0.613,0.292
+"Isomap [k=24]","Isomap [k=24]","Isomap",24,NA,0.69,0.37,1,NA,0.069,0.5,NA,NA,NA,NA,NA,8,4.448,0.556,0.27
+"Isomap [k=25]","Isomap [k=25]","Isomap",25,NA,0.69,0.36,1,NA,0.068,0.5,NA,NA,NA,NA,NA,4,1.655,0.414,0.271
+"Isomap [k=26]","Isomap [k=26]","Isomap",26,NA,0.68,0.34,1,NA,0.068,0.375,NA,NA,NA,NA,NA,9,5.207,0.579,0.257
+"Isomap [k=27]","Isomap [k=27]","Isomap",27,NA,0.67,0.32,1,NA,0.068,0.5,NA,NA,NA,NA,NA,2,0.69,0.345,0.273
+"Isomap [k=28]","Isomap [k=28]","Isomap",28,NA,0.67,0.31,1,NA,0.069,0.625,NA,NA,NA,NA,NA,2,0.759,0.379,0.308
+"Isomap [k=3]","Isomap [k=3]","Isomap",3,NA,0.67,0.31,1,NA,0.08,0.5,NA,NA,NA,NA,NA,7,3.655,0.522,0.272
+"Isomap [k=4]","Isomap [k=4]","Isomap",4,NA,0.66,0.3,1,NA,0.065,0.75,NA,NA,NA,NA,NA,3,1.172,0.391,0.284
+"Isomap [k=5]","Isomap [k=5]","Isomap",5,NA,0.67,0.31,1,NA,0.061,0.75,NA,NA,NA,NA,NA,5,2.172,0.434,0.256
+"Isomap [k=6]","Isomap [k=6]","Isomap",6,NA,0.66,0.3,1,NA,0.064,0.875,NA,NA,NA,NA,NA,5,2.207,0.441,0.263
+"Isomap [k=7]","Isomap [k=7]","Isomap",7,NA,0.66,0.3,1,NA,0.063,0.5,NA,NA,NA,NA,NA,7,3.517,0.502,0.252
+"Isomap [k=8]","Isomap [k=8]","Isomap",8,NA,0.66,0.3,1,NA,0.065,0.625,NA,NA,NA,NA,NA,8,4.448,0.556,0.27
+"Isomap [k=9]","Isomap [k=9]","Isomap",9,NA,0.67,0.31,1,NA,0.064,0.625,NA,NA,NA,NA,NA,8,4.552,0.569,0.283
+"kPCA","kPCA","kPCA",NA,NA,0.5,-0.03,3,0,0.044,0.375,NA,NA,NA,NA,NA,2,0.207,0.103,0.032
+"LMDS [k=10] (smacofx R)","LMDS [k=10] (smacofx R)","LMDS (smacofx R)",10,NA,0.67,0.31,1,NA,0.747,0.625,NA,NA,NA,NA,NA,2,0.759,0.379,0.308
+"LMDS [k=10] [kQuality=10] (Rcpp)","LMDS [k=10] [kQuality=10] (Rcpp)","LMDS (Rcpp)",10,NA,0.71,0.41,1,NA,0.178,0.75,NA,NA,NA,NA,NA,10,6.931,0.693,0.336
+"LMDS [k=10] [kQuality=11] (Rcpp)","LMDS [k=10] [kQuality=11] (Rcpp)","LMDS (Rcpp)",10,NA,0.72,0.41,1,NA,0.178,0.25,NA,NA,NA,NA,NA,11,8.069,0.734,0.341
+"LMDS [k=10] [kQuality=12] (Rcpp)","LMDS [k=10] [kQuality=12] (Rcpp)","LMDS (Rcpp)",10,NA,0.71,0.4,1,NA,0.178,0.25,NA,NA,NA,NA,NA,10,6.931,0.693,0.336
+"LMDS [k=10] [kQuality=13] (Rcpp)","LMDS [k=10] [kQuality=13] (Rcpp)","LMDS (Rcpp)",10,NA,0.71,0.4,1,NA,0.179,0.25,NA,NA,NA,NA,NA,10,6.931,0.693,0.336
+"LMDS [k=10] [kQuality=7] (Rcpp)","LMDS [k=10] [kQuality=7] (Rcpp)","LMDS (Rcpp)",10,NA,0.71,0.41,1,NA,0.178,0.75,NA,NA,NA,NA,NA,10,6.931,0.693,0.336
+"LMDS [k=10] [kQuality=8] (Rcpp)","LMDS [k=10] [kQuality=8] (Rcpp)","LMDS (Rcpp)",10,NA,0.71,0.41,1,NA,0.177,0.75,NA,NA,NA,NA,NA,10,6.931,0.693,0.336
+"LMDS [k=10] [kQuality=9] (Rcpp)","LMDS [k=10] [kQuality=9] (Rcpp)","LMDS (Rcpp)",10,NA,0.72,0.41,1,NA,0.178,0.25,NA,NA,NA,NA,NA,11,8.069,0.734,0.341
+"LMDS [k=11] (smacofx R)","LMDS [k=11] (smacofx R)","LMDS (smacofx R)",11,NA,0.67,0.31,1,NA,0.427,0.625,NA,NA,NA,NA,NA,2,0.759,0.379,0.308
+"LMDS [k=11] [kQuality=10] (Rcpp)","LMDS [k=11] [kQuality=10] (Rcpp)","LMDS (Rcpp)",11,NA,0.71,0.39,1,NA,0.121,0.5,NA,NA,NA,NA,NA,11,8.103,0.737,0.344
+"LMDS [k=11] [kQuality=11] (Rcpp)","LMDS [k=11] [kQuality=11] (Rcpp)","LMDS (Rcpp)",11,NA,0.71,0.39,1,NA,0.12,0.5,NA,NA,NA,NA,NA,11,8.103,0.737,0.344
+"LMDS [k=11] [kQuality=12] (Rcpp)","LMDS [k=11] [kQuality=12] (Rcpp)","LMDS (Rcpp)",11,NA,0.71,0.39,1,NA,0.12,0.5,NA,NA,NA,NA,NA,11,8.103,0.737,0.344
+"LMDS [k=11] [kQuality=13] (Rcpp)","LMDS [k=11] [kQuality=13] (Rcpp)","LMDS (Rcpp)",11,NA,0.71,0.39,1,NA,0.12,0.5,NA,NA,NA,NA,NA,11,8.103,0.737,0.344
+"LMDS [k=11] [kQuality=14] (Rcpp)","LMDS [k=11] [kQuality=14] (Rcpp)","LMDS (Rcpp)",11,NA,0.71,0.39,1,NA,0.12,0.5,NA,NA,NA,NA,NA,11,8.103,0.737,0.344
+"LMDS [k=11] [kQuality=8] (Rcpp)","LMDS [k=11] [kQuality=8] (Rcpp)","LMDS (Rcpp)",11,NA,0.71,0.39,1,NA,0.12,0.5,NA,NA,NA,NA,NA,11,8.103,0.737,0.344
+"LMDS [k=11] [kQuality=9] (Rcpp)","LMDS [k=11] [kQuality=9] (Rcpp)","LMDS (Rcpp)",11,NA,0.71,0.39,1,NA,0.12,0.5,NA,NA,NA,NA,NA,11,7.931,0.721,0.328
+"LMDS [k=12] (smacofx R)","LMDS [k=12] (smacofx R)","LMDS (smacofx R)",12,NA,0.67,0.31,1,NA,0.444,0.625,NA,NA,NA,NA,NA,2,0.759,0.379,0.308
+"LMDS [k=12] [kQuality=10] (Rcpp)","LMDS [k=12] [kQuality=10] (Rcpp)","LMDS (Rcpp)",12,NA,0.72,0.42,1,NA,0.155,0.5,NA,NA,NA,NA,NA,10,6.966,0.697,0.339
+"LMDS [k=12] [kQuality=11] (Rcpp)","LMDS [k=12] [kQuality=11] (Rcpp)","LMDS (Rcpp)",12,NA,0.72,0.42,1,NA,0.155,0.5,NA,NA,NA,NA,NA,11,8.034,0.73,0.338
+"LMDS [k=12] [kQuality=12] (Rcpp)","LMDS [k=12] [kQuality=12] (Rcpp)","LMDS (Rcpp)",12,NA,0.72,0.42,1,NA,0.155,0.5,NA,NA,NA,NA,NA,11,8.034,0.73,0.338
+"LMDS [k=12] [kQuality=13] (Rcpp)","LMDS [k=12] [kQuality=13] (Rcpp)","LMDS (Rcpp)",12,NA,0.72,0.42,1,NA,0.16,0.5,NA,NA,NA,NA,NA,11,8.034,0.73,0.338
+"LMDS [k=12] [kQuality=14] (Rcpp)","LMDS [k=12] [kQuality=14] (Rcpp)","LMDS (Rcpp)",12,NA,0.72,0.42,1,NA,0.156,0.5,NA,NA,NA,NA,NA,11,8.034,0.73,0.338
+"LMDS [k=12] [kQuality=15] (Rcpp)","LMDS [k=12] [kQuality=15] (Rcpp)","LMDS (Rcpp)",12,NA,0.72,0.42,1,NA,0.155,0.5,NA,NA,NA,NA,NA,11,8.034,0.73,0.338
+"LMDS [k=12] [kQuality=9] (Rcpp)","LMDS [k=12] [kQuality=9] (Rcpp)","LMDS (Rcpp)",12,NA,0.72,0.42,1,NA,0.154,0.5,NA,NA,NA,NA,NA,11,8.034,0.73,0.338
+"LMDS [k=13] (smacofx R)","LMDS [k=13] (smacofx R)","LMDS (smacofx R)",13,NA,0.67,0.31,1,NA,0.204,0.625,NA,NA,NA,NA,NA,2,0.759,0.379,0.308
+"LMDS [k=13] [kQuality=10] (Rcpp)","LMDS [k=13] [kQuality=10] (Rcpp)","LMDS (Rcpp)",13,NA,0.72,0.41,1,NA,0.204,0.375,NA,NA,NA,NA,NA,10,6.897,0.69,0.333
+"LMDS [k=13] [kQuality=11] (Rcpp)","LMDS [k=13] [kQuality=11] (Rcpp)","LMDS (Rcpp)",13,NA,0.72,0.41,1,NA,0.21,0.375,NA,NA,NA,NA,NA,10,6.897,0.69,0.333
+"LMDS [k=13] [kQuality=12] (Rcpp)","LMDS [k=13] [kQuality=12] (Rcpp)","LMDS (Rcpp)",13,NA,0.72,0.41,1,NA,0.212,0.375,NA,NA,NA,NA,NA,10,6.897,0.69,0.333
+"LMDS [k=13] [kQuality=13] (Rcpp)","LMDS [k=13] [kQuality=13] (Rcpp)","LMDS (Rcpp)",13,NA,0.72,0.41,1,NA,0.21,0.375,NA,NA,NA,NA,NA,10,6.897,0.69,0.333
+"LMDS [k=13] [kQuality=14] (Rcpp)","LMDS [k=13] [kQuality=14] (Rcpp)","LMDS (Rcpp)",13,NA,0.72,0.41,1,NA,0.21,0.375,NA,NA,NA,NA,NA,10,6.897,0.69,0.333
+"LMDS [k=13] [kQuality=15] (Rcpp)","LMDS [k=13] [kQuality=15] (Rcpp)","LMDS (Rcpp)",13,NA,0.71,0.41,1,NA,0.21,0.625,NA,NA,NA,NA,NA,12,9.069,0.756,0.327
+"LMDS [k=13] [kQuality=16] (Rcpp)","LMDS [k=13] [kQuality=16] (Rcpp)","LMDS (Rcpp)",13,NA,0.71,0.41,1,NA,0.211,0.625,NA,NA,NA,NA,NA,12,9.069,0.756,0.327
+"LMDS [k=14] (smacofx R)","LMDS [k=14] (smacofx R)","LMDS (smacofx R)",14,NA,0.67,0.31,1,NA,0.127,0.625,NA,NA,NA,NA,NA,2,0.759,0.379,0.308
+"LMDS [k=14] [kQuality=11] (Rcpp)","LMDS [k=14] [kQuality=11] (Rcpp)","LMDS (Rcpp)",14,NA,0.71,0.4,1,NA,0.188,0.625,NA,NA,NA,NA,NA,11,8.069,0.734,0.341
+"LMDS [k=14] [kQuality=12] (Rcpp)","LMDS [k=14] [kQuality=12] (Rcpp)","LMDS (Rcpp)",14,NA,0.71,0.4,1,NA,0.198,0.625,NA,NA,NA,NA,NA,11,8.069,0.734,0.341
+"LMDS [k=14] [kQuality=13] (Rcpp)","LMDS [k=14] [kQuality=13] (Rcpp)","LMDS (Rcpp)",14,NA,0.71,0.4,1,NA,0.187,0.625,NA,NA,NA,NA,NA,12,9.069,0.756,0.327
+"LMDS [k=14] [kQuality=14] (Rcpp)","LMDS [k=14] [kQuality=14] (Rcpp)","LMDS (Rcpp)",14,NA,0.71,0.4,1,NA,0.187,0.625,NA,NA,NA,NA,NA,12,9.069,0.756,0.327
+"LMDS [k=14] [kQuality=15] (Rcpp)","LMDS [k=14] [kQuality=15] (Rcpp)","LMDS (Rcpp)",14,NA,0.71,0.4,1,NA,0.183,0.625,NA,NA,NA,NA,NA,11,8.069,0.734,0.341
+"LMDS [k=14] [kQuality=16] (Rcpp)","LMDS [k=14] [kQuality=16] (Rcpp)","LMDS (Rcpp)",14,NA,0.71,0.4,1,NA,0.187,0.625,NA,NA,NA,NA,NA,11,8.069,0.734,0.341
+"LMDS [k=14] [kQuality=17] (Rcpp)","LMDS [k=14] [kQuality=17] (Rcpp)","LMDS (Rcpp)",14,NA,0.71,0.4,1,NA,0.188,0.625,NA,NA,NA,NA,NA,11,8.069,0.734,0.341
+"LMDS [k=15] (smacofx R)","LMDS [k=15] (smacofx R)","LMDS (smacofx R)",15,NA,0.67,0.31,1,NA,0.126,0.625,NA,NA,NA,NA,NA,2,0.759,0.379,0.308
+"LMDS [k=15] [kQuality=12] (Rcpp)","LMDS [k=15] [kQuality=12] (Rcpp)","LMDS (Rcpp)",15,NA,0.73,0.43,1,NA,0.241,0.625,NA,NA,NA,NA,NA,11,8.034,0.73,0.338
+"LMDS [k=15] [kQuality=13] (Rcpp)","LMDS [k=15] [kQuality=13] (Rcpp)","LMDS (Rcpp)",15,NA,0.73,0.43,1,NA,0.239,0.625,NA,NA,NA,NA,NA,11,8.034,0.73,0.338
+"LMDS [k=15] [kQuality=14] (Rcpp)","LMDS [k=15] [kQuality=14] (Rcpp)","LMDS (Rcpp)",15,NA,0.73,0.43,1,NA,0.236,0.625,NA,NA,NA,NA,NA,11,8.034,0.73,0.338
+"LMDS [k=15] [kQuality=15] (Rcpp)","LMDS [k=15] [kQuality=15] (Rcpp)","LMDS (Rcpp)",15,NA,0.73,0.43,1,NA,0.241,0.625,NA,NA,NA,NA,NA,11,8.034,0.73,0.338
+"LMDS [k=15] [kQuality=16] (Rcpp)","LMDS [k=15] [kQuality=16] (Rcpp)","LMDS (Rcpp)",15,NA,0.73,0.43,1,NA,0.241,0.625,NA,NA,NA,NA,NA,11,8.034,0.73,0.338
+"LMDS [k=15] [kQuality=17] (Rcpp)","LMDS [k=15] [kQuality=17] (Rcpp)","LMDS (Rcpp)",15,NA,0.73,0.43,1,NA,0.24,0.625,NA,NA,NA,NA,NA,11,8.034,0.73,0.338
+"LMDS [k=15] [kQuality=18] (Rcpp)","LMDS [k=15] [kQuality=18] (Rcpp)","LMDS (Rcpp)",15,NA,0.73,0.43,1,NA,0.241,0.625,NA,NA,NA,NA,NA,11,8.034,0.73,0.338
+"LMDS [k=16] (smacofx R)","LMDS [k=16] (smacofx R)","LMDS (smacofx R)",16,NA,0.67,0.31,1,NA,0.108,0.625,NA,NA,NA,NA,NA,2,0.759,0.379,0.308
+"LMDS [k=16] [kQuality=13] (Rcpp)","LMDS [k=16] [kQuality=13] (Rcpp)","LMDS (Rcpp)",16,NA,0.72,0.43,1,NA,0.145,0.75,NA,NA,NA,NA,NA,12,9.207,0.767,0.339
+"LMDS [k=16] [kQuality=14] (Rcpp)","LMDS [k=16] [kQuality=14] (Rcpp)","LMDS (Rcpp)",16,NA,0.72,0.43,1,NA,0.145,0.75,NA,NA,NA,NA,NA,12,9.207,0.767,0.339
+"LMDS [k=16] [kQuality=15] (Rcpp)","LMDS [k=16] [kQuality=15] (Rcpp)","LMDS (Rcpp)",16,NA,0.72,0.43,1,NA,0.144,0.75,NA,NA,NA,NA,NA,12,9.207,0.767,0.339
+"LMDS [k=16] [kQuality=16] (Rcpp)","LMDS [k=16] [kQuality=16] (Rcpp)","LMDS (Rcpp)",16,NA,0.73,0.43,1,NA,0.145,0.75,NA,NA,NA,NA,NA,8,4.966,0.621,0.335
+"LMDS [k=16] [kQuality=17] (Rcpp)","LMDS [k=16] [kQuality=17] (Rcpp)","LMDS (Rcpp)",16,NA,0.73,0.43,1,NA,0.143,0.75,NA,NA,NA,NA,NA,8,4.966,0.621,0.335
+"LMDS [k=16] [kQuality=18] (Rcpp)","LMDS [k=16] [kQuality=18] (Rcpp)","LMDS (Rcpp)",16,NA,0.73,0.43,1,NA,0.144,0.75,NA,NA,NA,NA,NA,8,4.966,0.621,0.335
+"LMDS [k=16] [kQuality=19] (Rcpp)","LMDS [k=16] [kQuality=19] (Rcpp)","LMDS (Rcpp)",16,NA,0.73,0.43,1,NA,0.145,0.75,NA,NA,NA,NA,NA,8,4.966,0.621,0.335
+"LMDS [k=17] (smacofx R)","LMDS [k=17] (smacofx R)","LMDS (smacofx R)",17,NA,0.67,0.31,1,NA,0.101,0.625,NA,NA,NA,NA,NA,2,0.759,0.379,0.308
+"LMDS [k=17] [kQuality=14] (Rcpp)","LMDS [k=17] [kQuality=14] (Rcpp)","LMDS (Rcpp)",17,NA,0.72,0.42,1,NA,0.179,0.75,NA,NA,NA,NA,NA,12,8.966,0.747,0.319
+"LMDS [k=17] [kQuality=15] (Rcpp)","LMDS [k=17] [kQuality=15] (Rcpp)","LMDS (Rcpp)",17,NA,0.72,0.42,1,NA,0.184,0.75,NA,NA,NA,NA,NA,12,8.966,0.747,0.319
+"LMDS [k=17] [kQuality=16] (Rcpp)","LMDS [k=17] [kQuality=16] (Rcpp)","LMDS (Rcpp)",17,NA,0.72,0.42,1,NA,0.184,0.5,NA,NA,NA,NA,NA,12,8.828,0.736,0.307
+"LMDS [k=17] [kQuality=17] (Rcpp)","LMDS [k=17] [kQuality=17] (Rcpp)","LMDS (Rcpp)",17,NA,0.72,0.42,1,NA,0.188,0.5,NA,NA,NA,NA,NA,12,8.828,0.736,0.307
+"LMDS [k=17] [kQuality=18] (Rcpp)","LMDS [k=17] [kQuality=18] (Rcpp)","LMDS (Rcpp)",17,NA,0.72,0.42,1,NA,0.183,0.5,NA,NA,NA,NA,NA,12,8.828,0.736,0.307
+"LMDS [k=17] [kQuality=19] (Rcpp)","LMDS [k=17] [kQuality=19] (Rcpp)","LMDS (Rcpp)",17,NA,0.72,0.42,1,NA,0.182,0.5,NA,NA,NA,NA,NA,12,8.828,0.736,0.307
+"LMDS [k=17] [kQuality=20] (Rcpp)","LMDS [k=17] [kQuality=20] (Rcpp)","LMDS (Rcpp)",17,NA,0.7,0.39,1,NA,0.182,0.375,NA,NA,NA,NA,NA,10,6.379,0.638,0.281
+"LMDS [k=18] (smacofx R)","LMDS [k=18] (smacofx R)","LMDS (smacofx R)",18,NA,0.67,0.31,1,NA,0.139,0.625,NA,NA,NA,NA,NA,2,0.759,0.379,0.308
+"LMDS [k=18] [kQuality=15] (Rcpp)","LMDS [k=18] [kQuality=15] (Rcpp)","LMDS (Rcpp)",18,NA,0.72,0.42,1,NA,0.167,0.625,NA,NA,NA,NA,NA,12,8.931,0.744,0.316
+"LMDS [k=18] [kQuality=16] (Rcpp)","LMDS [k=18] [kQuality=16] (Rcpp)","LMDS (Rcpp)",18,NA,0.72,0.42,1,NA,0.166,0.625,NA,NA,NA,NA,NA,12,8.931,0.744,0.316
+"LMDS [k=18] [kQuality=17] (Rcpp)","LMDS [k=18] [kQuality=17] (Rcpp)","LMDS (Rcpp)",18,NA,0.72,0.42,1,NA,0.165,0.625,NA,NA,NA,NA,NA,12,8.931,0.744,0.316
+"LMDS [k=18] [kQuality=18] (Rcpp)","LMDS [k=18] [kQuality=18] (Rcpp)","LMDS (Rcpp)",18,NA,0.72,0.42,1,NA,0.161,0.625,NA,NA,NA,NA,NA,12,8.931,0.744,0.316
+"LMDS [k=18] [kQuality=19] (Rcpp)","LMDS [k=18] [kQuality=19] (Rcpp)","LMDS (Rcpp)",18,NA,0.71,0.4,1,NA,0.165,0.5,NA,NA,NA,NA,NA,12,8.897,0.741,0.313
+"LMDS [k=18] [kQuality=20] (Rcpp)","LMDS [k=18] [kQuality=20] (Rcpp)","LMDS (Rcpp)",18,NA,0.71,0.4,1,NA,0.164,0.5,NA,NA,NA,NA,NA,12,8.897,0.741,0.313
+"LMDS [k=18] [kQuality=21] (Rcpp)","LMDS [k=18] [kQuality=21] (Rcpp)","LMDS (Rcpp)",18,NA,0.71,0.4,1,NA,0.164,0.5,NA,NA,NA,NA,NA,12,8.897,0.741,0.313
+"LMDS [k=19] (smacofx R)","LMDS [k=19] (smacofx R)","LMDS (smacofx R)",19,NA,0.67,0.31,1,NA,0.165,0.625,NA,NA,NA,NA,NA,2,0.759,0.379,0.308
+"LMDS [k=19] [kQuality=16] (Rcpp)","LMDS [k=19] [kQuality=16] (Rcpp)","LMDS (Rcpp)",19,NA,0.72,0.42,1,NA,0.129,0.625,NA,NA,NA,NA,NA,12,9.172,0.764,0.336
+"LMDS [k=19] [kQuality=17] (Rcpp)","LMDS [k=19] [kQuality=17] (Rcpp)","LMDS (Rcpp)",19,NA,0.71,0.39,1,NA,0.136,0.625,NA,NA,NA,NA,NA,12,8.966,0.747,0.319
+"LMDS [k=19] [kQuality=18] (Rcpp)","LMDS [k=19] [kQuality=18] (Rcpp)","LMDS (Rcpp)",19,NA,0.71,0.39,1,NA,0.135,0.625,NA,NA,NA,NA,NA,12,8.966,0.747,0.319
+"LMDS [k=19] [kQuality=19] (Rcpp)","LMDS [k=19] [kQuality=19] (Rcpp)","LMDS (Rcpp)",19,NA,0.72,0.42,1,NA,0.13,0.625,NA,NA,NA,NA,NA,12,9.172,0.764,0.336
+"LMDS [k=19] [kQuality=20] (Rcpp)","LMDS [k=19] [kQuality=20] (Rcpp)","LMDS (Rcpp)",19,NA,0.71,0.39,1,NA,0.13,0.625,NA,NA,NA,NA,NA,12,8.966,0.747,0.319
+"LMDS [k=19] [kQuality=21] (Rcpp)","LMDS [k=19] [kQuality=21] (Rcpp)","LMDS (Rcpp)",19,NA,0.71,0.39,1,NA,0.13,0.625,NA,NA,NA,NA,NA,12,8.966,0.747,0.319
+"LMDS [k=19] [kQuality=22] (Rcpp)","LMDS [k=19] [kQuality=22] (Rcpp)","LMDS (Rcpp)",19,NA,0.71,0.39,1,NA,0.129,0.625,NA,NA,NA,NA,NA,12,8.966,0.747,0.319
+"LMDS [k=20] (smacofx R)","LMDS [k=20] (smacofx R)","LMDS (smacofx R)",20,NA,0.67,0.31,1,NA,0.147,0.625,NA,NA,NA,NA,NA,2,0.759,0.379,0.308
+"LMDS [k=20] [kQuality=17] (Rcpp)","LMDS [k=20] [kQuality=17] (Rcpp)","LMDS (Rcpp)",20,NA,0.72,0.41,1,NA,0.147,0.375,NA,NA,NA,NA,NA,9,5.828,0.648,0.326
+"LMDS [k=20] [kQuality=18] (Rcpp)","LMDS [k=20] [kQuality=18] (Rcpp)","LMDS (Rcpp)",20,NA,0.72,0.41,1,NA,0.143,0.375,NA,NA,NA,NA,NA,9,5.828,0.648,0.326
+"LMDS [k=20] [kQuality=19] (Rcpp)","LMDS [k=20] [kQuality=19] (Rcpp)","LMDS (Rcpp)",20,NA,0.71,0.4,1,NA,0.146,0.625,NA,NA,NA,NA,NA,11,7.828,0.712,0.319
+"LMDS [k=20] [kQuality=20] (Rcpp)","LMDS [k=20] [kQuality=20] (Rcpp)","LMDS (Rcpp)",20,NA,0.71,0.4,1,NA,0.146,0.625,NA,NA,NA,NA,NA,11,7.828,0.712,0.319
+"LMDS [k=20] [kQuality=21] (Rcpp)","LMDS [k=20] [kQuality=21] (Rcpp)","LMDS (Rcpp)",20,NA,0.71,0.4,1,NA,0.146,0.625,NA,NA,NA,NA,NA,11,7.828,0.712,0.319
+"LMDS [k=20] [kQuality=22] (Rcpp)","LMDS [k=20] [kQuality=22] (Rcpp)","LMDS (Rcpp)",20,NA,0.71,0.4,1,NA,0.146,0.625,NA,NA,NA,NA,NA,11,7.828,0.712,0.319
+"LMDS [k=20] [kQuality=23] (Rcpp)","LMDS [k=20] [kQuality=23] (Rcpp)","LMDS (Rcpp)",20,NA,0.72,0.41,1,NA,0.147,0.375,NA,NA,NA,NA,NA,9,5.828,0.648,0.326
+"LMDS [k=21] (smacofx R)","LMDS [k=21] (smacofx R)","LMDS (smacofx R)",21,NA,0.67,0.31,1,NA,0.129,0.625,NA,NA,NA,NA,NA,2,0.759,0.379,0.308
+"LMDS [k=21] [kQuality=18] (Rcpp)","LMDS [k=21] [kQuality=18] (Rcpp)","LMDS (Rcpp)",21,NA,0.71,0.4,1,NA,0.161,0.375,NA,NA,NA,NA,NA,9,5.793,0.644,0.322
+"LMDS [k=21] [kQuality=19] (Rcpp)","LMDS [k=21] [kQuality=19] (Rcpp)","LMDS (Rcpp)",21,NA,0.71,0.4,1,NA,0.159,0.375,NA,NA,NA,NA,NA,9,5.793,0.644,0.322
+"LMDS [k=21] [kQuality=20] (Rcpp)","LMDS [k=21] [kQuality=20] (Rcpp)","LMDS (Rcpp)",21,NA,0.71,0.4,1,NA,0.157,0.375,NA,NA,NA,NA,NA,9,5.793,0.644,0.322
+"LMDS [k=21] [kQuality=21] (Rcpp)","LMDS [k=21] [kQuality=21] (Rcpp)","LMDS (Rcpp)",21,NA,0.71,0.4,1,NA,0.158,0.375,NA,NA,NA,NA,NA,10,6.862,0.686,0.329
+"LMDS [k=21] [kQuality=22] (Rcpp)","LMDS [k=21] [kQuality=22] (Rcpp)","LMDS (Rcpp)",21,NA,0.71,0.4,1,NA,0.158,0.375,NA,NA,NA,NA,NA,9,5.793,0.644,0.322
+"LMDS [k=21] [kQuality=23] (Rcpp)","LMDS [k=21] [kQuality=23] (Rcpp)","LMDS (Rcpp)",21,NA,0.71,0.4,1,NA,0.157,0.375,NA,NA,NA,NA,NA,9,5.793,0.644,0.322
+"LMDS [k=21] [kQuality=24] (Rcpp)","LMDS [k=21] [kQuality=24] (Rcpp)","LMDS (Rcpp)",21,NA,0.71,0.4,1,NA,0.157,0.375,NA,NA,NA,NA,NA,9,5.793,0.644,0.322
+"LMDS [k=22] (smacofx R)","LMDS [k=22] (smacofx R)","LMDS (smacofx R)",22,NA,0.67,0.31,1,NA,0.41,0.625,NA,NA,NA,NA,NA,2,0.759,0.379,0.308
+"LMDS [k=22] [kQuality=19] (Rcpp)","LMDS [k=22] [kQuality=19] (Rcpp)","LMDS (Rcpp)",22,NA,0.72,0.42,1,NA,0.183,0.625,NA,NA,NA,NA,NA,9,5.966,0.663,0.341
+"LMDS [k=22] [kQuality=20] (Rcpp)","LMDS [k=22] [kQuality=20] (Rcpp)","LMDS (Rcpp)",22,NA,0.72,0.42,1,NA,0.181,0.625,NA,NA,NA,NA,NA,9,5.966,0.663,0.341
+"LMDS [k=22] [kQuality=21] (Rcpp)","LMDS [k=22] [kQuality=21] (Rcpp)","LMDS (Rcpp)",22,NA,0.72,0.42,1,NA,0.176,0.625,NA,NA,NA,NA,NA,9,5.966,0.663,0.341
+"LMDS [k=22] [kQuality=22] (Rcpp)","LMDS [k=22] [kQuality=22] (Rcpp)","LMDS (Rcpp)",22,NA,0.72,0.42,1,NA,0.176,0.5,NA,NA,NA,NA,NA,9,5.862,0.651,0.33
+"LMDS [k=22] [kQuality=23] (Rcpp)","LMDS [k=22] [kQuality=23] (Rcpp)","LMDS (Rcpp)",22,NA,0.72,0.42,1,NA,0.181,0.625,NA,NA,NA,NA,NA,9,5.966,0.663,0.341
+"LMDS [k=22] [kQuality=24] (Rcpp)","LMDS [k=22] [kQuality=24] (Rcpp)","LMDS (Rcpp)",22,NA,0.72,0.42,1,NA,0.182,0.625,NA,NA,NA,NA,NA,9,5.966,0.663,0.341
+"LMDS [k=22] [kQuality=25] (Rcpp)","LMDS [k=22] [kQuality=25] (Rcpp)","LMDS (Rcpp)",22,NA,0.72,0.42,1,NA,0.181,0.625,NA,NA,NA,NA,NA,9,5.966,0.663,0.341
+"LMDS [k=23] (smacofx R)","LMDS [k=23] (smacofx R)","LMDS (smacofx R)",23,NA,0.67,0.31,1,NA,0.221,0.625,NA,NA,NA,NA,NA,2,0.759,0.379,0.308
+"LMDS [k=23] [kQuality=20] (Rcpp)","LMDS [k=23] [kQuality=20] (Rcpp)","LMDS (Rcpp)",23,NA,0.71,0.41,1,NA,0.189,0.75,NA,NA,NA,NA,NA,8,4.793,0.599,0.313
+"LMDS [k=23] [kQuality=21] (Rcpp)","LMDS [k=23] [kQuality=21] (Rcpp)","LMDS (Rcpp)",23,NA,0.71,0.41,1,NA,0.19,0.75,NA,NA,NA,NA,NA,8,4.793,0.599,0.313
+"LMDS [k=23] [kQuality=22] (Rcpp)","LMDS [k=23] [kQuality=22] (Rcpp)","LMDS (Rcpp)",23,NA,0.71,0.41,1,NA,0.188,0.75,NA,NA,NA,NA,NA,8,4.793,0.599,0.313
+"LMDS [k=23] [kQuality=23] (Rcpp)","LMDS [k=23] [kQuality=23] (Rcpp)","LMDS (Rcpp)",23,NA,0.71,0.41,1,NA,0.188,0.75,NA,NA,NA,NA,NA,8,4.793,0.599,0.313
+"LMDS [k=23] [kQuality=24] (Rcpp)","LMDS [k=23] [kQuality=24] (Rcpp)","LMDS (Rcpp)",23,NA,0.71,0.41,1,NA,0.188,0.75,NA,NA,NA,NA,NA,8,4.793,0.599,0.313
+"LMDS [k=23] [kQuality=25] (Rcpp)","LMDS [k=23] [kQuality=25] (Rcpp)","LMDS (Rcpp)",23,NA,0.71,0.41,1,NA,0.183,0.5,NA,NA,NA,NA,NA,2,0.759,0.379,0.308
+"LMDS [k=23] [kQuality=26] (Rcpp)","LMDS [k=23] [kQuality=26] (Rcpp)","LMDS (Rcpp)",23,NA,0.71,0.41,1,NA,0.188,0.5,NA,NA,NA,NA,NA,2,0.759,0.379,0.308
+"LMDS [k=24] (smacofx R)","LMDS [k=24] (smacofx R)","LMDS (smacofx R)",24,NA,0.67,0.31,1,NA,0.165,0.625,NA,NA,NA,NA,NA,2,0.759,0.379,0.308
+"LMDS [k=24] [kQuality=21] (Rcpp)","LMDS [k=24] [kQuality=21] (Rcpp)","LMDS (Rcpp)",24,NA,0.7,0.37,1,NA,0.177,0.75,NA,NA,NA,NA,NA,9,5.483,0.609,0.288
+"LMDS [k=24] [kQuality=22] (Rcpp)","LMDS [k=24] [kQuality=22] (Rcpp)","LMDS (Rcpp)",24,NA,0.69,0.35,1,NA,0.184,0.625,NA,NA,NA,NA,NA,11,7.241,0.658,0.265
+"LMDS [k=24] [kQuality=23] (Rcpp)","LMDS [k=24] [kQuality=23] (Rcpp)","LMDS (Rcpp)",24,NA,0.7,0.37,1,NA,0.177,0.75,NA,NA,NA,NA,NA,9,5.483,0.609,0.288
+"LMDS [k=24] [kQuality=24] (Rcpp)","LMDS [k=24] [kQuality=24] (Rcpp)","LMDS (Rcpp)",24,NA,0.7,0.37,1,NA,0.177,0.75,NA,NA,NA,NA,NA,9,5.483,0.609,0.288
+"LMDS [k=24] [kQuality=25] (Rcpp)","LMDS [k=24] [kQuality=25] (Rcpp)","LMDS (Rcpp)",24,NA,0.7,0.37,1,NA,0.178,0.75,NA,NA,NA,NA,NA,9,5.483,0.609,0.288
+"LMDS [k=24] [kQuality=26] (Rcpp)","LMDS [k=24] [kQuality=26] (Rcpp)","LMDS (Rcpp)",24,NA,0.69,0.35,1,NA,0.178,0.625,NA,NA,NA,NA,NA,11,7.241,0.658,0.265
+"LMDS [k=24] [kQuality=27] (Rcpp)","LMDS [k=24] [kQuality=27] (Rcpp)","LMDS (Rcpp)",24,NA,0.69,0.35,1,NA,0.178,0.625,NA,NA,NA,NA,NA,11,7.241,0.658,0.265
+"LMDS [k=25] (smacofx R)","LMDS [k=25] (smacofx R)","LMDS (smacofx R)",25,NA,0.67,0.31,1,NA,0.49,0.625,NA,NA,NA,NA,NA,2,0.759,0.379,0.308
+"LMDS [k=25] [kQuality=22] (Rcpp)","LMDS [k=25] [kQuality=22] (Rcpp)","LMDS (Rcpp)",25,NA,0.69,0.36,1,NA,0.197,0.5,NA,NA,NA,NA,NA,6,2.862,0.477,0.263
+"LMDS [k=25] [kQuality=23] (Rcpp)","LMDS [k=25] [kQuality=23] (Rcpp)","LMDS (Rcpp)",25,NA,0.7,0.37,1,NA,0.197,0.75,NA,NA,NA,NA,NA,8,4.586,0.573,0.288
+"LMDS [k=25] [kQuality=24] (Rcpp)","LMDS [k=25] [kQuality=24] (Rcpp)","LMDS (Rcpp)",25,NA,0.69,0.37,1,NA,0.194,0.5,NA,NA,NA,NA,NA,12,8.345,0.695,0.267
+"LMDS [k=25] [kQuality=25] (Rcpp)","LMDS [k=25] [kQuality=25] (Rcpp)","LMDS (Rcpp)",25,NA,0.69,0.36,1,NA,0.2,0.5,NA,NA,NA,NA,NA,6,2.862,0.477,0.263
+"LMDS [k=25] [kQuality=26] (Rcpp)","LMDS [k=25] [kQuality=26] (Rcpp)","LMDS (Rcpp)",25,NA,0.69,0.37,1,NA,0.193,0.5,NA,NA,NA,NA,NA,12,8.345,0.695,0.267
+"LMDS [k=25] [kQuality=27] (Rcpp)","LMDS [k=25] [kQuality=27] (Rcpp)","LMDS (Rcpp)",25,NA,0.7,0.37,1,NA,0.195,0.75,NA,NA,NA,NA,NA,8,4.586,0.573,0.288
+"LMDS [k=25] [kQuality=28] (Rcpp)","LMDS [k=25] [kQuality=28] (Rcpp)","LMDS (Rcpp)",25,NA,0.7,0.37,1,NA,0.197,0.75,NA,NA,NA,NA,NA,8,4.586,0.573,0.288
+"LMDS [k=26] (smacofx R)","LMDS [k=26] (smacofx R)","LMDS (smacofx R)",26,NA,0.67,0.31,1,NA,0.457,0.625,NA,NA,NA,NA,NA,2,0.759,0.379,0.308
+"LMDS [k=26] [kQuality=23] (Rcpp)","LMDS [k=26] [kQuality=23] (Rcpp)","LMDS (Rcpp)",26,NA,0.7,0.38,1,NA,0.222,0.5,NA,NA,NA,NA,NA,2,0.724,0.362,0.291
+"LMDS [k=26] [kQuality=24] (Rcpp)","LMDS [k=26] [kQuality=24] (Rcpp)","LMDS (Rcpp)",26,NA,0.7,0.38,1,NA,0.224,0.5,NA,NA,NA,NA,NA,2,0.724,0.362,0.291
+"LMDS [k=26] [kQuality=25] (Rcpp)","LMDS [k=26] [kQuality=25] (Rcpp)","LMDS (Rcpp)",26,NA,0.7,0.38,1,NA,0.219,0.75,NA,NA,NA,NA,NA,1,0.31,0.31,0.275
+"LMDS [k=26] [kQuality=26] (Rcpp)","LMDS [k=26] [kQuality=26] (Rcpp)","LMDS (Rcpp)",26,NA,0.7,0.38,1,NA,0.222,0.5,NA,NA,NA,NA,NA,2,0.724,0.362,0.291
+"LMDS [k=26] [kQuality=27] (Rcpp)","LMDS [k=26] [kQuality=27] (Rcpp)","LMDS (Rcpp)",26,NA,0.7,0.38,1,NA,0.215,0.5,NA,NA,NA,NA,NA,2,0.724,0.362,0.291
+"LMDS [k=26] [kQuality=28] (Rcpp)","LMDS [k=26] [kQuality=28] (Rcpp)","LMDS (Rcpp)",26,NA,0.7,0.38,1,NA,0.222,0.5,NA,NA,NA,NA,NA,2,0.724,0.362,0.291
+"LMDS [k=27] (smacofx R)","LMDS [k=27] (smacofx R)","LMDS (smacofx R)",27,NA,0.67,0.31,1,NA,1.113,0.625,NA,NA,NA,NA,NA,2,0.759,0.379,0.308
+"LMDS [k=27] [kQuality=24] (Rcpp)","LMDS [k=27] [kQuality=24] (Rcpp)","LMDS (Rcpp)",27,NA,0.7,0.38,1,NA,0.245,0.5,NA,NA,NA,NA,NA,1,0.414,0.414,0.378
+"LMDS [k=27] [kQuality=25] (Rcpp)","LMDS [k=27] [kQuality=25] (Rcpp)","LMDS (Rcpp)",27,NA,0.7,0.38,1,NA,0.247,0.5,NA,NA,NA,NA,NA,1,0.414,0.414,0.378
+"LMDS [k=27] [kQuality=26] (Rcpp)","LMDS [k=27] [kQuality=26] (Rcpp)","LMDS (Rcpp)",27,NA,0.7,0.38,1,NA,0.247,0.5,NA,NA,NA,NA,NA,1,0.414,0.414,0.378
+"LMDS [k=27] [kQuality=27] (Rcpp)","LMDS [k=27] [kQuality=27] (Rcpp)","LMDS (Rcpp)",27,NA,0.7,0.38,1,NA,0.247,0.5,NA,NA,NA,NA,NA,1,0.414,0.414,0.378
+"LMDS [k=27] [kQuality=28] (Rcpp)","LMDS [k=27] [kQuality=28] (Rcpp)","LMDS (Rcpp)",27,NA,0.7,0.38,1,NA,0.241,0.5,NA,NA,NA,NA,NA,1,0.414,0.414,0.378
+"LMDS [k=28] (smacofx R)","LMDS [k=28] (smacofx R)","LMDS (smacofx R)",28,NA,0.67,0.31,1,NA,0.449,0.625,NA,NA,NA,NA,NA,2,0.759,0.379,0.308
+"LMDS [k=28] [kQuality=25] (Rcpp)","LMDS [k=28] [kQuality=25] (Rcpp)","LMDS (Rcpp)",28,NA,0.67,0.32,1,NA,0.176,0.75,NA,NA,NA,NA,NA,8,4.207,0.526,0.24
+"LMDS [k=28] [kQuality=26] (Rcpp)","LMDS [k=28] [kQuality=26] (Rcpp)","LMDS (Rcpp)",28,NA,0.67,0.32,1,NA,0.171,0.5,NA,NA,NA,NA,NA,2,0.69,0.345,0.273
+"LMDS [k=28] [kQuality=27] (Rcpp)","LMDS [k=28] [kQuality=27] (Rcpp)","LMDS (Rcpp)",28,NA,0.67,0.32,1,NA,0.174,0.5,NA,NA,NA,NA,NA,2,0.69,0.345,0.273
+"LMDS [k=28] [kQuality=28] (Rcpp)","LMDS [k=28] [kQuality=28] (Rcpp)","LMDS (Rcpp)",28,NA,0.67,0.31,1,NA,0.175,0.625,NA,NA,NA,NA,NA,1,0.276,0.276,0.24
+"LMDS [k=3] (smacofx R)","LMDS [k=3] (smacofx R)","LMDS (smacofx R)",3,NA,0.67,0.31,1,NA,0.707,0.625,NA,NA,NA,NA,NA,2,0.759,0.379,0.308
+"LMDS [k=3] [kQuality=1] (Rcpp)","LMDS [k=3] [kQuality=1] (Rcpp)","LMDS (Rcpp)",3,NA,0.68,0.34,1,NA,0.176,0.625,NA,NA,NA,NA,NA,3,1.448,0.483,0.376
+"LMDS [k=3] [kQuality=2] (Rcpp)","LMDS [k=3] [kQuality=2] (Rcpp)","LMDS (Rcpp)",3,NA,0.68,0.33,1,NA,0.176,0.625,NA,NA,NA,NA,NA,3,1.448,0.483,0.376
+"LMDS [k=3] [kQuality=3] (Rcpp)","LMDS [k=3] [kQuality=3] (Rcpp)","LMDS (Rcpp)",3,NA,0.68,0.33,1,NA,0.176,0.625,NA,NA,NA,NA,NA,3,1.448,0.483,0.376
+"LMDS [k=3] [kQuality=4] (Rcpp)","LMDS [k=3] [kQuality=4] (Rcpp)","LMDS (Rcpp)",3,NA,0.68,0.33,1,NA,0.174,0.625,NA,NA,NA,NA,NA,3,1.448,0.483,0.376
+"LMDS [k=3] [kQuality=5] (Rcpp)","LMDS [k=3] [kQuality=5] (Rcpp)","LMDS (Rcpp)",3,NA,0.68,0.34,1,NA,0.177,0.625,NA,NA,NA,NA,NA,3,1.448,0.483,0.376
+"LMDS [k=3] [kQuality=6] (Rcpp)","LMDS [k=3] [kQuality=6] (Rcpp)","LMDS (Rcpp)",3,NA,0.68,0.33,1,NA,0.181,0.625,NA,NA,NA,NA,NA,3,1.448,0.483,0.376
+"LMDS [k=4] (smacofx R)","LMDS [k=4] (smacofx R)","LMDS (smacofx R)",4,NA,0.67,0.31,1,NA,0.494,0.625,NA,NA,NA,NA,NA,2,0.759,0.379,0.308
+"LMDS [k=4] [kQuality=1] (Rcpp)","LMDS [k=4] [kQuality=1] (Rcpp)","LMDS (Rcpp)",4,NA,0.7,0.38,1,NA,0.226,0.75,NA,NA,NA,NA,NA,2,0.862,0.431,0.36
+"LMDS [k=4] [kQuality=2] (Rcpp)","LMDS [k=4] [kQuality=2] (Rcpp)","LMDS (Rcpp)",4,NA,0.7,0.38,1,NA,0.214,0.75,NA,NA,NA,NA,NA,2,0.862,0.431,0.36
+"LMDS [k=4] [kQuality=3] (Rcpp)","LMDS [k=4] [kQuality=3] (Rcpp)","LMDS (Rcpp)",4,NA,0.7,0.38,1,NA,0.219,0.75,NA,NA,NA,NA,NA,2,0.862,0.431,0.36
+"LMDS [k=4] [kQuality=4] (Rcpp)","LMDS [k=4] [kQuality=4] (Rcpp)","LMDS (Rcpp)",4,NA,0.7,0.38,1,NA,0.219,0.75,NA,NA,NA,NA,NA,2,0.862,0.431,0.36
+"LMDS [k=4] [kQuality=5] (Rcpp)","LMDS [k=4] [kQuality=5] (Rcpp)","LMDS (Rcpp)",4,NA,0.7,0.38,1,NA,0.22,0.75,NA,NA,NA,NA,NA,2,0.862,0.431,0.36
+"LMDS [k=4] [kQuality=6] (Rcpp)","LMDS [k=4] [kQuality=6] (Rcpp)","LMDS (Rcpp)",4,NA,0.69,0.36,1,NA,0.218,0.75,NA,NA,NA,NA,NA,6,3.172,0.529,0.314
+"LMDS [k=4] [kQuality=7] (Rcpp)","LMDS [k=4] [kQuality=7] (Rcpp)","LMDS (Rcpp)",4,NA,0.69,0.36,1,NA,0.219,0.75,NA,NA,NA,NA,NA,6,3.172,0.529,0.314
+"LMDS [k=5] (smacofx R)","LMDS [k=5] (smacofx R)","LMDS (smacofx R)",5,NA,0.67,0.31,1,NA,0.557,0.625,NA,NA,NA,NA,NA,2,0.759,0.379,0.308
+"LMDS [k=5] [kQuality=2] (Rcpp)","LMDS [k=5] [kQuality=2] (Rcpp)","LMDS (Rcpp)",5,NA,0.71,0.4,1,NA,0.141,0.5,NA,NA,NA,NA,NA,7,4.138,0.591,0.341
+"LMDS [k=5] [kQuality=3] (Rcpp)","LMDS [k=5] [kQuality=3] (Rcpp)","LMDS (Rcpp)",5,NA,0.71,0.4,1,NA,0.142,0.5,NA,NA,NA,NA,NA,7,4.138,0.591,0.341
+"LMDS [k=5] [kQuality=4] (Rcpp)","LMDS [k=5] [kQuality=4] (Rcpp)","LMDS (Rcpp)",5,NA,0.71,0.4,1,NA,0.138,0.5,NA,NA,NA,NA,NA,7,4.138,0.591,0.341
+"LMDS [k=5] [kQuality=5] (Rcpp)","LMDS [k=5] [kQuality=5] (Rcpp)","LMDS (Rcpp)",5,NA,0.71,0.4,1,NA,0.143,0.5,NA,NA,NA,NA,NA,5,2.655,0.531,0.352
+"LMDS [k=5] [kQuality=6] (Rcpp)","LMDS [k=5] [kQuality=6] (Rcpp)","LMDS (Rcpp)",5,NA,0.71,0.4,1,NA,0.14,0.5,NA,NA,NA,NA,NA,7,4.138,0.591,0.341
+"LMDS [k=5] [kQuality=7] (Rcpp)","LMDS [k=5] [kQuality=7] (Rcpp)","LMDS (Rcpp)",5,NA,0.71,0.4,1,NA,0.142,0.5,NA,NA,NA,NA,NA,5,2.655,0.531,0.352
+"LMDS [k=5] [kQuality=8] (Rcpp)","LMDS [k=5] [kQuality=8] (Rcpp)","LMDS (Rcpp)",5,NA,0.71,0.4,1,NA,0.142,0.5,NA,NA,NA,NA,NA,5,2.655,0.531,0.352
+"LMDS [k=6] (smacofx R)","LMDS [k=6] (smacofx R)","LMDS (smacofx R)",6,NA,0.67,0.31,1,NA,0.721,0.625,NA,NA,NA,NA,NA,2,0.759,0.379,0.308
+"LMDS [k=6] [kQuality=3] (Rcpp)","LMDS [k=6] [kQuality=3] (Rcpp)","LMDS (Rcpp)",6,NA,0.71,0.41,1,NA,0.16,0.75,NA,NA,NA,NA,NA,3,1.31,0.437,0.33
+"LMDS [k=6] [kQuality=4] (Rcpp)","LMDS [k=6] [kQuality=4] (Rcpp)","LMDS (Rcpp)",6,NA,0.71,0.41,1,NA,0.155,0.75,NA,NA,NA,NA,NA,3,1.31,0.437,0.33
+"LMDS [k=6] [kQuality=5] (Rcpp)","LMDS [k=6] [kQuality=5] (Rcpp)","LMDS (Rcpp)",6,NA,0.71,0.41,1,NA,0.16,0.75,NA,NA,NA,NA,NA,3,1.31,0.437,0.33
+"LMDS [k=6] [kQuality=6] (Rcpp)","LMDS [k=6] [kQuality=6] (Rcpp)","LMDS (Rcpp)",6,NA,0.71,0.39,1,NA,0.159,0.625,NA,NA,NA,NA,NA,7,4.069,0.581,0.331
+"LMDS [k=6] [kQuality=7] (Rcpp)","LMDS [k=6] [kQuality=7] (Rcpp)","LMDS (Rcpp)",6,NA,0.7,0.38,1,NA,0.159,0.5,NA,NA,NA,NA,NA,7,4.138,0.591,0.341
+"LMDS [k=6] [kQuality=8] (Rcpp)","LMDS [k=6] [kQuality=8] (Rcpp)","LMDS (Rcpp)",6,NA,0.7,0.38,1,NA,0.16,0.5,NA,NA,NA,NA,NA,7,4.138,0.591,0.341
+"LMDS [k=6] [kQuality=9] (Rcpp)","LMDS [k=6] [kQuality=9] (Rcpp)","LMDS (Rcpp)",6,NA,0.71,0.41,1,NA,0.159,0.75,NA,NA,NA,NA,NA,3,1.31,0.437,0.33
+"LMDS [k=7] (smacofx R)","LMDS [k=7] (smacofx R)","LMDS (smacofx R)",7,NA,0.67,0.31,1,NA,0.444,0.625,NA,NA,NA,NA,NA,2,0.759,0.379,0.308
+"LMDS [k=7] [kQuality=10] (Rcpp)","LMDS [k=7] [kQuality=10] (Rcpp)","LMDS (Rcpp)",7,NA,0.7,0.38,1,NA,0.162,0.625,NA,NA,NA,NA,NA,7,4.103,0.586,0.336
+"LMDS [k=7] [kQuality=4] (Rcpp)","LMDS [k=7] [kQuality=4] (Rcpp)","LMDS (Rcpp)",7,NA,0.7,0.38,1,NA,0.163,0.625,NA,NA,NA,NA,NA,8,5,0.625,0.339
+"LMDS [k=7] [kQuality=5] (Rcpp)","LMDS [k=7] [kQuality=5] (Rcpp)","LMDS (Rcpp)",7,NA,0.7,0.38,1,NA,0.163,0.625,NA,NA,NA,NA,NA,8,5,0.625,0.339
+"LMDS [k=7] [kQuality=6] (Rcpp)","LMDS [k=7] [kQuality=6] (Rcpp)","LMDS (Rcpp)",7,NA,0.7,0.38,1,NA,0.163,0.625,NA,NA,NA,NA,NA,8,5,0.625,0.339
+"LMDS [k=7] [kQuality=7] (Rcpp)","LMDS [k=7] [kQuality=7] (Rcpp)","LMDS (Rcpp)",7,NA,0.7,0.38,1,NA,0.171,0.625,NA,NA,NA,NA,NA,7,4.103,0.586,0.336
+"LMDS [k=7] [kQuality=8] (Rcpp)","LMDS [k=7] [kQuality=8] (Rcpp)","LMDS (Rcpp)",7,NA,0.7,0.38,1,NA,0.164,0.625,NA,NA,NA,NA,NA,8,5,0.625,0.339
+"LMDS [k=7] [kQuality=9] (Rcpp)","LMDS [k=7] [kQuality=9] (Rcpp)","LMDS (Rcpp)",7,NA,0.7,0.38,1,NA,0.164,0.625,NA,NA,NA,NA,NA,7,4.103,0.586,0.336
+"LMDS [k=8] (smacofx R)","LMDS [k=8] (smacofx R)","LMDS (smacofx R)",8,NA,0.67,0.31,1,NA,0.326,0.625,NA,NA,NA,NA,NA,2,0.759,0.379,0.308
+"LMDS [k=8] [kQuality=10] (Rcpp)","LMDS [k=8] [kQuality=10] (Rcpp)","LMDS (Rcpp)",8,NA,0.72,0.43,1,NA,0.183,0.625,NA,NA,NA,NA,NA,9,6.103,0.678,0.357
+"LMDS [k=8] [kQuality=11] (Rcpp)","LMDS [k=8] [kQuality=11] (Rcpp)","LMDS (Rcpp)",8,NA,0.72,0.43,1,NA,0.182,0.625,NA,NA,NA,NA,NA,9,6.103,0.678,0.357
+"LMDS [k=8] [kQuality=5] (Rcpp)","LMDS [k=8] [kQuality=5] (Rcpp)","LMDS (Rcpp)",8,NA,0.72,0.43,1,NA,0.181,0.625,NA,NA,NA,NA,NA,9,6.103,0.678,0.357
+"LMDS [k=8] [kQuality=6] (Rcpp)","LMDS [k=8] [kQuality=6] (Rcpp)","LMDS (Rcpp)",8,NA,0.72,0.41,1,NA,0.183,0.625,NA,NA,NA,NA,NA,10,6.966,0.697,0.339
+"LMDS [k=8] [kQuality=7] (Rcpp)","LMDS [k=8] [kQuality=7] (Rcpp)","LMDS (Rcpp)",8,NA,0.72,0.43,1,NA,0.182,0.625,NA,NA,NA,NA,NA,9,6.103,0.678,0.357
+"LMDS [k=8] [kQuality=8] (Rcpp)","LMDS [k=8] [kQuality=8] (Rcpp)","LMDS (Rcpp)",8,NA,0.72,0.43,1,NA,0.184,0.625,NA,NA,NA,NA,NA,9,6.103,0.678,0.357
+"LMDS [k=8] [kQuality=9] (Rcpp)","LMDS [k=8] [kQuality=9] (Rcpp)","LMDS (Rcpp)",8,NA,0.72,0.43,1,NA,0.182,0.625,NA,NA,NA,NA,NA,9,6.103,0.678,0.357
+"LMDS [k=9] (smacofx R)","LMDS [k=9] (smacofx R)","LMDS (smacofx R)",9,NA,0.67,0.31,1,NA,0.481,0.625,NA,NA,NA,NA,NA,2,0.759,0.379,0.308
+"LMDS [k=9] [kQuality=10] (Rcpp)","LMDS [k=9] [kQuality=10] (Rcpp)","LMDS (Rcpp)",9,NA,0.73,0.43,1,NA,0.137,0.625,NA,NA,NA,NA,NA,10,7.103,0.71,0.353
+"LMDS [k=9] [kQuality=11] (Rcpp)","LMDS [k=9] [kQuality=11] (Rcpp)","LMDS (Rcpp)",9,NA,0.73,0.43,1,NA,0.138,0.625,NA,NA,NA,NA,NA,10,7.103,0.71,0.353
+"LMDS [k=9] [kQuality=12] (Rcpp)","LMDS [k=9] [kQuality=12] (Rcpp)","LMDS (Rcpp)",9,NA,0.73,0.43,1,NA,0.138,0.625,NA,NA,NA,NA,NA,10,7.103,0.71,0.353
+"LMDS [k=9] [kQuality=6] (Rcpp)","LMDS [k=9] [kQuality=6] (Rcpp)","LMDS (Rcpp)",9,NA,0.72,0.42,1,NA,0.138,0.625,NA,NA,NA,NA,NA,9,6,0.667,0.345
+"LMDS [k=9] [kQuality=7] (Rcpp)","LMDS [k=9] [kQuality=7] (Rcpp)","LMDS (Rcpp)",9,NA,0.73,0.43,1,NA,0.137,0.625,NA,NA,NA,NA,NA,10,7.103,0.71,0.353
+"LMDS [k=9] [kQuality=8] (Rcpp)","LMDS [k=9] [kQuality=8] (Rcpp)","LMDS (Rcpp)",9,NA,0.73,0.43,1,NA,0.147,0.625,NA,NA,NA,NA,NA,10,7.103,0.71,0.353
+"LMDS [k=9] [kQuality=9] (Rcpp)","LMDS [k=9] [kQuality=9] (Rcpp)","LMDS (Rcpp)",9,NA,0.73,0.43,1,NA,0.137,0.625,NA,NA,NA,NA,NA,10,7.103,0.71,0.353
+"MDS (Rcpp)","MDS (Rcpp)","MDS (Rcpp)",NA,NA,0.67,0.31,3,0,0.016,0.625,NA,NA,NA,NA,NA,1,0.276,0.276,0.24
+"smacof_MDS (R)","smacof_MDS (R)","smacof_MDS (R)",NA,NA,0.66,0.3,3,0,0.003,0.625,NA,NA,NA,NA,NA,8,4.276,0.534,0.249
+"PCA_SVD","PCA_SVD","PCA_SVD",NA,NA,0.59,0.16,3,0.02,0.298,0.375,NA,NA,NA,NA,NA,12,6.759,0.563,0.135
+"PPCA","PPCA","PPCA",NA,NA,0.67,0.31,3,0.115,0.952,0.625,NA,NA,NA,NA,NA,2,0.724,0.362,0.291
+"tSNE [perp=3]","tSNE [perp=3]","tSNE",NA,3,0.7,0.38,1,NA,0.073,0.75,NA,NA,NA,NA,NA,1,0.69,0.69,0.654
+"tSNE [perp=4]","tSNE [perp=4]","tSNE",NA,4,0.71,0.39,1,NA,0.071,0.625,NA,NA,NA,NA,NA,1,0.724,0.724,0.688
+"tSNE [perp=5]","tSNE [perp=5]","tSNE",NA,5,0.72,0.41,1,NA,0.073,0.75,NA,NA,NA,NA,NA,1,0.759,0.759,0.723
+"tSNE [perp=6]","tSNE [perp=6]","tSNE",NA,6,0.73,0.43,1,NA,0.069,0.625,NA,NA,NA,NA,NA,1,0.759,0.759,0.723
+"tSNE [perp=7]","tSNE [perp=7]","tSNE",NA,7,0.71,0.4,1,NA,0.074,0.75,NA,NA,NA,NA,NA,1,0.621,0.621,0.585
+"tSNE [perp=8]","tSNE [perp=8]","tSNE",NA,8,0.71,0.4,1,NA,0.071,0.375,NA,NA,NA,NA,NA,1,0.586,0.586,0.55
+"tSNE [perp=9]","tSNE [perp=9]","tSNE",NA,9,0.72,0.42,1,NA,0.07,0.625,NA,NA,NA,NA,NA,1,0.724,0.724,0.688
+"UMAP [k=10]","UMAP [k=10]","UMAP",10,NA,0.64,0.26,1,NA,0.057,0.75,NA,NA,NA,NA,NA,2,0.724,0.362,0.291
+"UMAP [k=11]","UMAP [k=11]","UMAP",11,NA,0.64,0.26,1,NA,0.06,0.625,NA,NA,NA,NA,NA,1,0.31,0.31,0.275
+"UMAP [k=12]","UMAP [k=12]","UMAP",12,NA,0.64,0.26,1,NA,0.061,0.875,NA,NA,NA,NA,NA,2,0.759,0.379,0.308
+"UMAP [k=13]","UMAP [k=13]","UMAP",13,NA,0.64,0.25,1,NA,0.062,0.625,NA,NA,NA,NA,NA,2,0.724,0.362,0.291
+"UMAP [k=14]","UMAP [k=14]","UMAP",14,NA,0.64,0.26,1,NA,0.063,0.625,NA,NA,NA,NA,NA,2,0.759,0.379,0.308
+"UMAP [k=15]","UMAP [k=15]","UMAP",15,NA,0.63,0.23,1,NA,0.064,0.75,NA,NA,NA,NA,NA,1,0.276,0.276,0.24
+"UMAP [k=16]","UMAP [k=16]","UMAP",16,NA,0.63,0.23,1,NA,0.067,0.625,NA,NA,NA,NA,NA,3,1.034,0.345,0.238
+"UMAP [k=17]","UMAP [k=17]","UMAP",17,NA,0.65,0.28,1,NA,0.067,0.625,NA,NA,NA,NA,NA,8,4.414,0.552,0.266
+"UMAP [k=18]","UMAP [k=18]","UMAP",18,NA,0.64,0.26,1,NA,0.07,0.625,NA,NA,NA,NA,NA,3,1.069,0.356,0.249
+"UMAP [k=19]","UMAP [k=19]","UMAP",19,NA,0.63,0.23,1,NA,0.07,0.625,NA,NA,NA,NA,NA,3,1,0.333,0.226
+"UMAP [k=20]","UMAP [k=20]","UMAP",20,NA,0.65,0.26,1,NA,0.073,0.75,NA,NA,NA,NA,NA,1,0.345,0.345,0.309
+"UMAP [k=21]","UMAP [k=21]","UMAP",21,NA,0.63,0.23,1,NA,0.073,0.625,NA,NA,NA,NA,NA,1,0.31,0.31,0.275
+"UMAP [k=22]","UMAP [k=22]","UMAP",22,NA,0.62,0.22,1,NA,0.073,0.625,NA,NA,NA,NA,NA,3,0.966,0.322,0.215
+"UMAP [k=23]","UMAP [k=23]","UMAP",23,NA,0.65,0.28,1,NA,0.074,0.625,NA,NA,NA,NA,NA,3,1.069,0.356,0.249
+"UMAP [k=24]","UMAP [k=24]","UMAP",24,NA,0.62,0.21,1,NA,0.074,0.625,NA,NA,NA,NA,NA,3,1,0.333,0.226
+"UMAP [k=25]","UMAP [k=25]","UMAP",25,NA,0.62,0.21,1,NA,0.075,0.625,NA,NA,NA,NA,NA,2,0.621,0.31,0.239
+"UMAP [k=26]","UMAP [k=26]","UMAP",26,NA,0.64,0.25,1,NA,0.078,0.625,NA,NA,NA,NA,NA,1,0.414,0.414,0.378
+"UMAP [k=27]","UMAP [k=27]","UMAP",27,NA,0.61,0.19,1,NA,0.078,0.625,NA,NA,NA,NA,NA,3,1.034,0.345,0.238
+"UMAP [k=28]","UMAP [k=28]","UMAP",28,NA,0.63,0.23,1,NA,0.078,0.625,NA,NA,NA,NA,NA,3,1.034,0.345,0.238
+"UMAP [k=3]","UMAP [k=3]","UMAP",3,NA,0.69,0.36,1,NA,0.046,0.75,NA,NA,NA,NA,NA,2,0.828,0.414,0.342
+"UMAP [k=4]","UMAP [k=4]","UMAP",4,NA,0.67,0.31,1,NA,0.044,0.625,NA,NA,NA,NA,NA,2,0.862,0.431,0.36
+"UMAP [k=5]","UMAP [k=5]","UMAP",5,NA,0.66,0.3,1,NA,0.048,0.75,NA,NA,NA,NA,NA,2,0.931,0.466,0.394
+"UMAP [k=6]","UMAP [k=6]","UMAP",6,NA,0.65,0.27,1,NA,0.05,0.625,NA,NA,NA,NA,NA,2,0.724,0.362,0.291
+"UMAP [k=7]","UMAP [k=7]","UMAP",7,NA,0.64,0.26,1,NA,0.052,0.625,NA,NA,NA,NA,NA,2,0.793,0.397,0.325
+"UMAP [k=8]","UMAP [k=8]","UMAP",8,NA,0.65,0.28,1,NA,0.054,0.75,NA,NA,NA,NA,NA,2,0.862,0.431,0.36
+"UMAP [k=9]","UMAP [k=9]","UMAP",9,NA,0.63,0.24,1,NA,0.056,0.75,NA,NA,NA,NA,NA,2,0.793,0.397,0.325

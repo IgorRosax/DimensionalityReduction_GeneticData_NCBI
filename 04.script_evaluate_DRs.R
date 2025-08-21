@@ -505,7 +505,7 @@ evaluate_DRs <- function (dirResult, datasetName){
 dirResult = "RD_Results"
 
 
-series = rbind('GSE14020','GSE28735','GSE18842','GSE35988','GSE21034')#,'GSE44076')
+series = rbind('GSE14020','GSE28735','GSE18842','GSE35988','GSE21034','GSE44076','GSE29272')
 for (serie in series){
   
   dataId = serie
