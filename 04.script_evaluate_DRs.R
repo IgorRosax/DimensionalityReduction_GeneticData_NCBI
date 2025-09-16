@@ -1,6 +1,6 @@
 remove(list = ls())
 
-library(RcppHSLocalMDS)
+library(HSLocalMDS)
 library(stringr)
 library(dplyr)
 library(RColorBrewer) 
@@ -75,7 +75,7 @@ bestLCMC <- function (dataDist, conf){
   k_end <- nrow(dataDist) - 1
   
   for ( k in k_start:k_end){
-    LCMC =RcppHSLocalMDS::RcppGetLocalContinuityMetaCriterion(data = dataDist, conf = conf, Rn = Rn, k = k)
+    LCMC =HSLocalMDS::RcppGetLocalContinuityMetaCriterion(data = dataDist, conf = conf, Rn = Rn, k = k)
     if (k == 1L){
       BestLCMC <- LCMC
       BestLCMC$k = k
@@ -132,7 +132,7 @@ genAgreeAvgComparisonGraphic <- function (resultsTable,diretorio_output, dataset
     geom_point(data = knnBasedResults, size = 2.5) +
     scale_linetype_manual(values = c("Knn Based" = "solid", "Not Knn Based" = "dashed")) +
     labs(
-      title = "Comparação de Métodos de Redução de Dimensionalidade",
+      #title = "Comparação de Métodos de Redução de Dimensionalidade",
       
       x = "Neighborhood/Perplexity (k)",
       y = "Average Agreement Rate (AgreeAvg)",
@@ -146,11 +146,11 @@ genAgreeAvgComparisonGraphic <- function (resultsTable,diretorio_output, dataset
     theme(
       legend.position = "bottom",
       legend.box = "vertical",
-      plot.title = element_text(hjust = 0.5, face = "bold", size = 16),
-      plot.subtitle = element_text(hjust = 0.5, size = 12)
+      #plot.title = element_text(hjust = 0.5, face = "bold", size = 16),
+      #plot.subtitle = element_text(hjust = 0.5, size = 12)
     )
   fileNamePlot = paste("07.agreeAvgComparison_k_perp_",datasetName,".png",sep="")
-  ggsave(paste(diretorio_output, datasetName,fileNamePlot,sep = "/"), plot = final_plot, width = 11, height = 8)
+  ggsave(paste(diretorio_output, datasetName,fileNamePlot,sep = "/"), plot = final_plot, width = 7, height = 4)
 }
 
 # ************************************************************************************************* #
@@ -476,7 +476,7 @@ evaluate_DRs <- function (dirResult, datasetName){
     geom_line(size = 1) +
     geom_point(data = best_records, size = 2.5) +
     labs(
-      title = paste("Agreement Rate Adjusted Curve (", datasetName,")",sep=""),
+      #title = paste("Agreement Rate Adjusted Curve (", datasetName,")",sep=""),
       x = "Neighborhood (k)",
       y = "Agreement Rate Adjusted (AR*)",
       color = "Method",
@@ -488,11 +488,11 @@ evaluate_DRs <- function (dirResult, datasetName){
     theme(
       legend.position = "bottom",
       legend.box = "vertical",
-      plot.title = element_text(hjust = 0.5, face = "bold", size = 16),
-      plot.subtitle = element_text(hjust = 0.5, size = 12)
+      #plot.title = element_text(hjust = 0.5, face = "bold", size = 16),
+      #plot.subtitle = element_text(hjust = 0.5, size = 12)
     )
   fileNamePlot = paste("06.comparativeAgreeCurve_best_AgreeAdjusted_kRed_",datasetName,".png",sep="")
-  ggsave(paste(diretorio_output, datasetName,fileNamePlot,sep = "/"), plot = comparativeAgreeCurve, width = 11, height = 8)
+  ggsave(paste(diretorio_output, datasetName,fileNamePlot,sep = "/"), plot = comparativeAgreeCurve, width = 7, height = 4)
   
   #comparisonGraphics
   genAgreeAvgComparisonGraphic(resultsTable = resultsTable, diretorio_output = diretorio_output, datasetName = datasetName)

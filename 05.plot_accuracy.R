@@ -1,6 +1,6 @@
 remove(list = ls())
 
-library(RcppHSLocalMDS)
+library(HSLocalMDS)
 library(stringr)
 library(dplyr)
 library(RColorBrewer) 
@@ -63,9 +63,9 @@ performance_plot <- ggplot(
   
   #facet_wrap(~ dataset, scales = "free_x") + 
   labs(
-    title = "Dimentionality Reduction Methods Performance by Sample Size",
-    subtitle = "Mean execution time comparison",
-    x = "Number of Samples",
+    #title = "Dimentionality Reduction Methods Performance by Sample Size",
+    #subtitle = "Mean execution time comparison",
+    x = "Number of Samples (n)",
     y = "Mean Execution Time (seconds)",
     color = "Method",
     shape = "Method"
@@ -75,14 +75,13 @@ performance_plot <- ggplot(
   scale_shape_manual(values = shape_palette) +
   theme(
     legend.position = "bottom",
-    legend.box = "vertical",
-    plot.title = element_text(hjust = 0.5, face = "bold", size = 16),
-    plot.subtitle = element_text(hjust = 0.5, size = 12)
+    legend.box = "vertical"
+    #plot.title = element_text(hjust = 0.5, face = "bold", size = 16),
+    #plot.subtitle = element_text(hjust = 0.5, size = 12)
   )
-
 # Exiba o gráfico
 
-ggsave(paste(diretorio_output,"10.timeComparison_method_n.png",sep = "/"), plot = performance_plot, width = 11, height = 8)
+ggsave(paste(diretorio_output,"10.timeComparison_method_n.png",sep = "/"), plot = performance_plot, width = 7, height = 4)
 
 
 performance_plot <- ggplot(
@@ -113,7 +112,7 @@ performance_plot <- ggplot(
 
 # Exiba o gráfico
 
-ggsave(paste(diretorio_output,"11.timeComparison_method_nXgen.png",sep = "/"), plot = performance_plot, width = 11, height = 8)
+ggsave(paste(diretorio_output,"11.timeComparison_method_nXgen.png",sep = "/"), plot = performance_plot, width = 7, height = 4)
 
 
 
@@ -156,7 +155,7 @@ write.csv(best_records, file = paste(diretorio_output, "01.resultsTable_best_Acc
 #     plot.subtitle = element_text(hjust = 0.5, size = 12)
 #   )
 # fileNamePlot = paste("03.comparativeAgreeCurve_best_Accuracy_",datasetName,".png",sep="")
-# ggsave(paste(diretorio_output, datasetName,fileNamePlot,sep = "/"), plot = comparativeAgreeCurve, width = 11, height = 8)
+# ggsave(paste(diretorio_output, datasetName,fileNamePlot,sep = "/"), plot = comparativeAgreeCurve, width = 7, height = 4)
 # 
 # 
 # plot(best_Accuracy_Plot)
@@ -186,7 +185,7 @@ chart_acc <- ggplot(df_melted_acc, aes(x = method, y = Valor, fill = dataset)) +
   theme(axis.text.x = element_text(angle = 45, hjust = 1)) + # Rotaciona rótulos do eixo X
   scale_y_continuous(labels = scales::comma) # Formata o eixo Y para números grandes
 
-ggsave(paste(diretorio_output, "01.comparative_best_Accuracy.png",sep = "/"), plot = chart_acc, width = 11, height = 8)
+ggsave(paste(diretorio_output, "01.comparative_best_Accuracy.png",sep = "/"), plot = chart_acc, width = 5.5, height = 3.5)
 
 #Sensitivity
 
@@ -221,7 +220,7 @@ chart_Sensitivity <- ggplot(df_melted_Sensitivity, aes(x = method, y = Valor, fi
   theme(axis.text.x = element_text(angle = 45, hjust = 1)) + # Rotaciona rótulos do eixo X
   scale_y_continuous(labels = scales::comma) # Formata o eixo Y para números grandes
 
-ggsave(paste(diretorio_output, "02.comparative_best_Sensitivity.png",sep = "/"), plot = chart_Sensitivity, width = 11, height = 8)
+ggsave(paste(diretorio_output, "02.comparative_best_Sensitivity.png",sep = "/"), plot = chart_Sensitivity, width = 5.5, height = 3.5)
 
 #Specificity
 best_records <- resultsTable %>%
@@ -255,7 +254,7 @@ chart_Specificity <- ggplot(df_melted_Specificity, aes(x = method, y = Valor, fi
   theme(axis.text.x = element_text(angle = 45, hjust = 1)) + # Rotaciona rótulos do eixo X
   scale_y_continuous(labels = scales::comma) # Formata o eixo Y para números grandes
 
-ggsave(paste(diretorio_output, "03.comparative_best_Specificity.png",sep = "/"), plot = chart_Specificity, width = 11, height = 8)
+ggsave(paste(diretorio_output, "03.comparative_best_Specificity.png",sep = "/"), plot = chart_Specificity, width = 5.5, height = 3.5)
 
 #Precision
 best_records <- resultsTable %>%
@@ -289,7 +288,7 @@ chart_Precision <- ggplot(df_melted_Precision, aes(x = method, y = Valor, fill =
   theme(axis.text.x = element_text(angle = 45, hjust = 1)) + # Rotaciona rótulos do eixo X
   scale_y_continuous(labels = scales::comma) # Formata o eixo Y para números grandes
 
-ggsave(paste(diretorio_output, "04.comparative_best_Precision.png",sep = "/"), plot = chart_Precision, width = 11, height = 8)
+ggsave(paste(diretorio_output, "04.comparative_best_Precision.png",sep = "/"), plot = chart_Precision, width = 5.5, height = 3.5)
 
 #Recall
 best_records <- resultsTable %>%
@@ -323,7 +322,7 @@ chart_Recall <- ggplot(df_melted_Recall, aes(x = method, y = Valor, fill = datas
   theme(axis.text.x = element_text(angle = 45, hjust = 1)) + # Rotaciona rótulos do eixo X
   scale_y_continuous(labels = scales::comma) # Formata o eixo Y para números grandes
 
-ggsave(paste(diretorio_output, "05.comparative_best_Recall.png",sep = "/"), plot = chart_Recall, width = 11, height = 8)
+ggsave(paste(diretorio_output, "05.comparative_best_Recall.png",sep = "/"), plot = chart_Recall, width = 5.5, height = 3.5)
 
 #F1
 best_records <- resultsTable %>%
@@ -357,5 +356,5 @@ chart_F1 <- ggplot(df_melted_F1, aes(x = method, y = Valor, fill = dataset)) +
   theme(axis.text.x = element_text(angle = 45, hjust = 1)) + # Rotaciona rótulos do eixo X
   scale_y_continuous(labels = scales::comma) # Formata o eixo Y para números grandes
 
-ggsave(paste(diretorio_output, "06.comparative_best_F1.png",sep = "/"), plot = chart_F1, width = 11, height = 8)
+ggsave(paste(diretorio_output, "06.comparative_best_F1.png",sep = "/"), plot = chart_F1, width = 5.5, height = 3.5)
 
