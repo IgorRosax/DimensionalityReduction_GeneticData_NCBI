@@ -128,7 +128,7 @@ genAgreeAvgComparisonGraphic <- function (resultsTable,diretorio_output, dataset
     data = resultsBinded, 
     aes(x = k, y = AgreeAvg, color = method, shape = method, group = method, linetype = tipo_linha)
   ) +
-    geom_line(size = 1) +
+    geom_line(linewidth = 0.7) +
     geom_point(data = knnBasedResults, size = 2.5) +
     scale_linetype_manual(values = c("Knn Based" = "solid", "Not Knn Based" = "dashed")) +
     labs(
@@ -150,7 +150,7 @@ genAgreeAvgComparisonGraphic <- function (resultsTable,diretorio_output, dataset
       #plot.subtitle = element_text(hjust = 0.5, size = 12)
     )
   fileNamePlot = paste("07.agreeAvgComparison_k_perp_",datasetName,".png",sep="")
-  ggsave(paste(diretorio_output, datasetName,fileNamePlot,sep = "/"), plot = final_plot, width = 7, height = 4)
+  ggsave(paste(diretorio_output, datasetName,fileNamePlot,sep = "/"), plot = final_plot, width = 8, height = 4)
 }
 
 # ************************************************************************************************* #
@@ -468,31 +468,9 @@ evaluate_DRs <- function (dirResult, datasetName){
     slice_head(n = 1) %>%
     ungroup() %>%
     arrange(method,k)
-  
-  comparativeAgreeCurve <- ggplot(
-    data = best_records,
-    aes(x = k, y = AgrAdj, color = method, shape = method, group = method)
-  ) +
-    geom_line(size = 1) +
-    geom_point(data = best_records, size = 2.5) +
-    labs(
-      #title = paste("Agreement Rate Adjusted Curve (", datasetName,")",sep=""),
-      x = "Neighborhood (k)",
-      y = "Agreement Rate Adjusted (AR*)",
-      color = "Method",
-      shape = "Method"
-    ) +
-    theme_minimal() +
-    scale_color_manual(values = color_palette) +
-    scale_shape_manual(values = shape_palette) +
-    theme(
-      legend.position = "bottom",
-      legend.box = "vertical",
-      #plot.title = element_text(hjust = 0.5, face = "bold", size = 16),
-      #plot.subtitle = element_text(hjust = 0.5, size = 12)
-    )
-  fileNamePlot = paste("06.comparativeAgreeCurve_best_AgreeAdjusted_kRed_",datasetName,".png",sep="")
-  ggsave(paste(diretorio_output, datasetName,fileNamePlot,sep = "/"), plot = comparativeAgreeCurve, width = 7, height = 4)
+  fileNameCSV = paste("06.comparativeAgreeAdjusted_kRed_",datasetName,".csv",sep="")
+  message('save: ', paste(diretorio_output,datasetName,fileNameCSV,sep="/"))
+  write.csv(best_records, file = paste(diretorio_output,datasetName,fileNameCSV,sep="/"))
   
   #comparisonGraphics
   genAgreeAvgComparisonGraphic(resultsTable = resultsTable, diretorio_output = diretorio_output, datasetName = datasetName)

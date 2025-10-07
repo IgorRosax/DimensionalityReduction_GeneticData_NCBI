@@ -22,6 +22,13 @@ color_palette <- c(
 
 shape_palette <- rep(c(15, 16, 17, 18, 19), times = 3)
 
+#methodsList <- levels(factor(resultsTable$method))
+methodsList <-c("DiffusionMaps", "DRR", "HSLMDS (HSLocalMDS)", "HSMDS (HSLocalMDS)", "Isomap", "kPCA",
+ "LMDS (HSLocalMDS)", "LMDS (smacofx)", "MDS (HSLocalMDS)", "MDS (smacof)", "PCA_SVD", "PPCA","tSNE", "UMAP")
+
+color_palette <- setNames(color_palette, methodsList)
+shape_palette <- setNames(shape_palette, methodsList)
+
 diretorio_output = "./output"
 
 resultsTable <- data.frame()
@@ -31,6 +38,40 @@ for (datasetName in series){
   datasetName
   
   message('DataSet: ', datasetName)
+  
+  fileNameCSV = paste("06.comparativeAgreeAdjusted_kRed_",datasetName,".csv",sep="")
+  AgreeAdjResults = read.csv(paste(diretorio_output,datasetName,fileNameCSV, sep = "/"), sep = "," )
+  
+  comparativeAgreeCurve <- ggplot(
+    data = AgreeAdjResults,
+    aes(x = k, y = AgrAdj, color = method, shape = method, group = method)
+  ) +
+    geom_line(linewidth = 0.5) +
+    geom_point(data = . %>% filter(k %% max(1, round(max(AgreeAdjResults$k) / 50)) == 0 | k == min(k) | k == max(k)), 
+               size = 2) +
+    labs(
+      #title = paste("Agreement Rate Adjusted Curve (", datasetName,")",sep=""),
+      x = "Neighborhood (k)",
+      y = "Agreement Rate Adjusted (AR*)",
+      color = "Method",
+      shape = "Method"
+    ) +
+    theme_minimal() +
+    scale_color_manual(values = color_palette) +
+    scale_shape_manual(values = shape_palette) +
+    theme(
+      legend.position = "bottom",
+      legend.box = "vertical",
+      #plot.title = element_text(hjust = 0.5, face = "bold", size = 16),
+      #plot.subtitle = element_text(hjust = 0.5, size = 12)
+    )
+  fileNamePlot = paste("06.comparativeAgreeCurve_best_AgreeAdjusted_kRed_",datasetName,".png",sep="")
+  ggsave(paste(diretorio_output, datasetName,fileNamePlot,sep = "/"), plot = comparativeAgreeCurve, width = 8, height = 4)
+  
+  rm(fileNameCSV)
+  rm(AgreeAdjResults)
+  rm(comparativeAgreeCurve)
+  rm(fileNamePlot)
   
   load(paste("./datasets/",datasetName,".RData",sep = ""))
   
@@ -58,8 +99,8 @@ performance_plot <- ggplot(
   data = timeResults, 
   aes(x = n_samples, y = meanElapsedTime, color = method, shape = method, group = method)
 ) +
-  geom_line(linewidth = 0.8) +
-  geom_point(size = 3) +
+  geom_line(linewidth = 0.5) +
+  geom_point(size = 2) +
   
   #facet_wrap(~ dataset, scales = "free_x") + 
   labs(
@@ -81,15 +122,15 @@ performance_plot <- ggplot(
   )
 # Exiba o gráfico
 
-ggsave(paste(diretorio_output,"10.timeComparison_method_n.png",sep = "/"), plot = performance_plot, width = 7, height = 4)
+ggsave(paste(diretorio_output,"10.timeComparison_method_n.png",sep = "/"), plot = performance_plot, width = 8, height = 4)
 
 
 performance_plot <- ggplot(
   data = timeResults, 
   aes(x = n_values, y = meanElapsedTime, color = method, shape = method, group = method)
 ) +
-  geom_line(linewidth = 0.8) +
-  geom_point(size = 3) +
+  geom_line(linewidth = 0.7) +
+  geom_point(size = 2.5) +
   
   #facet_wrap(~ dataset, scales = "free_x") + 
   labs(

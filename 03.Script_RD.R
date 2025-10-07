@@ -30,7 +30,7 @@ gen_DRs <- function  (dirResult, dataSetId){
   library(umap)
   
   library(smacofx)
-  library(RcppHSLocalMDS)
+  library(HSLocalMDS)
   
   library(pcaMethods)
   
@@ -48,7 +48,7 @@ gen_DRs <- function  (dirResult, dataSetId){
       conf = as.matrix(conf$points)
     }
     
-    melhorresul =RcppHSLocalMDS::RcppGetLocalContinuityMetaCriterion(data = data, conf = conf, Rn = Rn, k = k)
+    melhorresul =HSLocalMDS::RcppGetLocalContinuityMetaCriterion(data = data, conf = conf, Rn = Rn, k = k)
     initConf = conf
     BestRD = list("conf" = initConf,
                   "bestTau" = 0,
@@ -56,7 +56,7 @@ gen_DRs <- function  (dirResult, dataSetId){
     for(i in 1:length(unitfree)) {
       resultRD<-smacofx::lmds(delta = data, init = initConf, k = k, tau = unitfree[i], ndim = Rn, itmax = itmax)
       
-      CurrentLC<- RcppHSLocalMDS::RcppGetLocalContinuityMetaCriterion(data = data, conf = initConf, Rn = Rn, k = k)
+      CurrentLC<- HSLocalMDS::RcppGetLocalContinuityMetaCriterion(data = data, conf = initConf, Rn = Rn, k = k)
       
       if(CurrentLC$Nk>melhorresul$Nk){
         BestRD = list("conf" = resultRD$conf,
@@ -105,10 +105,10 @@ gen_DRs <- function  (dirResult, dataSetId){
     
     for ( kQuality in max(1,valor_k-variacaoKReducaoVsKQuality): min(nrow(datasetDist) - 1, valor_k + variacaoKReducaoVsKQuality))
     {
-      # 1. Rcpp Lmds (c++)
-      message('1. Rcpp Lmds (c++) [k=',valor_k,']')
-      TimeMeasurement = TimeMeasurementFunction( function(){RcppHSlocalMDS(data = datasetDist, conf = as.matrix(conf), Rn = Rn, Kproj = valor_k, Kquality = kQuality, verbose = TRUE,selectBetterUnitFree = TRUE, smallerUnitFree = minTau, n_t = nTau, ratio = ratio, applyHiperbolicSmoothing = FALSE,maxIt = maxIt, optMethod = optimMethod)}, numberExecutions)
-      RcppLocalMDSResult = RcppHSlocalMDS(data = datasetDist, conf = as.matrix(conf), Rn = Rn, Kproj = valor_k, Kquality = kQuality, verbose = TRUE,selectBetterUnitFree = TRUE, smallerUnitFree = minTau, n_t = nTau, ratio = ratio, applyHiperbolicSmoothing = FALSE,maxIt = maxIt, optMethod = optimMethod)
+      # 1. Lmds (HSLocalMDS)
+      message('1. Lmds (HSLocalMDS) [k=',valor_k,']')
+      TimeMeasurement = TimeMeasurementFunction( function(){HSLocalMDS::HSlocalMDS(data = datasetDist, conf = as.matrix(conf), Rn = Rn, Kproj = valor_k, Kquality = kQuality, verbose = TRUE,selectBetterUnitFree = TRUE, smallerUnitFree = minTau, n_t = nTau, ratio = ratio, applyHyperbolicSmoothing = FALSE,maxIt = maxIt, optMethod = optimMethod)}, numberExecutions)
+      RcppLocalMDSResult = HSLocalMDS::HSlocalMDS(data = datasetDist, conf = as.matrix(conf), Rn = Rn, Kproj = valor_k, Kquality = kQuality, verbose = TRUE,selectBetterUnitFree = TRUE, smallerUnitFree = minTau, n_t = nTau, ratio = ratio, applyHyperbolicSmoothing = FALSE,maxIt = maxIt, optMethod = optimMethod)
       
       #RcppLocalMDSResult$dataset = dataset
       #RcppLocalMDSResult$datasetDist = datasetDist
@@ -116,18 +116,18 @@ gen_DRs <- function  (dirResult, dataSetId){
       RcppLocalMDSResult$categorias = categorias
       RcppLocalMDSResult$k = valor_k
       RcppLocalMDSResult$kQuality = kQuality
-      RcppLocalMDSResult$method = paste("LMDS", " [k=",valor_k,"]", " [kQuality=",kQuality,"]"," (Rcpp)",sep = "")
+      RcppLocalMDSResult$method = paste("LMDS", " [k=",valor_k,"]", " [kQuality=",kQuality,"]"," (HSLocalMDS)",sep = "")
       
       rdFileName = paste(RcppLocalMDSResult$method,"RData",sep = ".")
       saveRDS(RcppLocalMDSResult, file = paste(".",dirResult,datasetName,rdFileName, sep = "/"))
       rm(rdFileName)
       rm(RcppLocalMDSResult)
       
-      # 2. Rcpp HSLmds (c++)
-      message('2. Rcpp HSLmds (c++) [k=',valor_k,']')
+      # 2. HSLmds (HSLocalMDS)
+      message('2. HSLmds (HSLocalMDS) [k=',valor_k,']')
       
-      TimeMeasurement = TimeMeasurementFunction( function(){RcppHSlocalMDS(data = datasetDist, conf = as.matrix(conf), Rn = Rn, Kproj = valor_k, Kquality = kQuality, verbose = TRUE, selectBetterUnitFree = TRUE, smallerUnitFree = minTau, n_t = nTau, ratio = ratio, applyHiperbolicSmoothing = TRUE, gamma = mean(dataset), n_gamma = maxIt, rho = 0.5, maxIt = maxIt, optMethod = optimMethod)}, numberExecutions)
-      RcppHSlocalMDSResult = RcppHSlocalMDS(data = datasetDist, conf = as.matrix(conf), Rn = Rn, Kproj = valor_k, Kquality = kQuality, verbose = TRUE, selectBetterUnitFree = TRUE, smallerUnitFree = minTau, n_t = nTau, ratio = ratio, applyHiperbolicSmoothing = TRUE, gamma = mean(dataset), n_gamma = maxIt, rho = 0.5, maxIt = maxIt, optMethod = optimMethod)
+      TimeMeasurement = TimeMeasurementFunction( function(){HSLocalMDS::HSlocalMDS(data = datasetDist, conf = as.matrix(conf), Rn = Rn, Kproj = valor_k, Kquality = kQuality, verbose = TRUE, selectBetterUnitFree = TRUE, smallerUnitFree = minTau, n_t = nTau, ratio = ratio, applyHyperbolicSmoothing = TRUE, gamma = mean(datasetDist), n_gamma = maxIt, rho = 0.5, maxIt = maxIt, optMethod = optimMethod)}, numberExecutions)
+      RcppHSlocalMDSResult = HSLocalMDS::HSlocalMDS(data = datasetDist, conf = as.matrix(conf), Rn = Rn, Kproj = valor_k, Kquality = kQuality, verbose = TRUE, selectBetterUnitFree = TRUE, smallerUnitFree = minTau, n_t = nTau, ratio = ratio, applyHyperbolicSmoothing = TRUE, gamma = mean(datasetDist), n_gamma = maxIt, rho = 0.5, maxIt = maxIt, optMethod = optimMethod)
       
       #RcppHSlocalMDSResult$dataset = dataset
       #RcppHSlocalMDSResult$datasetDist = datasetDist
@@ -135,7 +135,7 @@ gen_DRs <- function  (dirResult, dataSetId){
       RcppHSlocalMDSResult$categorias = categorias
       RcppHSlocalMDSResult$k = valor_k
       RcppHSlocalMDSResult$kQuality = kQuality
-      RcppHSlocalMDSResult$method = paste("HSLMDS", " [k=",valor_k,"]", " [kQuality=",kQuality,"]"," (Rcpp)",sep = "")
+      RcppHSlocalMDSResult$method = paste("HSLMDS", " [k=",valor_k,"]", " [kQuality=",kQuality,"]"," (HSLocalMDS)",sep = "")
       
       rdFileName = paste(RcppHSlocalMDSResult$method,"RData",sep = ".")
       saveRDS(RcppHSlocalMDSResult, file = paste(".",dirResult,datasetName,rdFileName, sep = "/"))
@@ -145,18 +145,18 @@ gen_DRs <- function  (dirResult, dataSetId){
       
     }
     
-    
     # 3. Smacofx LMDS (R)
-    message('3. Smacofx LMDS (R) [k=',valor_k,']')
+    message('3. LMDS (Smacofx) [k=',valor_k,']')
     TimeMeasurement = TimeMeasurementFunction( function(){smacofx_LMDS_parSel (data = datasetDist, conf = conf, Rn = Rn, k = valor_k, itmax = maxIt, smallerunitfree = minTau, ratio = ratio, n_t = nTau)},numberExecutions)
     smacofxLMDSResult = smacofx_LMDS_parSel (data = datasetDist, conf = conf, Rn = Rn, k = valor_k, itmax = maxIt, smallerunitfree = minTau, ratio = ratio, n_t = nTau)
     
     #smacofxLMDSResult$dataset = dataset
     #smacofxLMDSResult$datasetDist = datasetDist
     smacofxLMDSResultSave <- list()
-    smacofxLMDSResultSave$conf = smacofxLMDSResult$conf
     smacofxLMDSResultSave$TimeMeasurement = TimeMeasurement
-    smacofxLMDSResultSave$method = paste("LMDS", " [k=",valor_k,"]"," (smacofx R)",sep = "")
+    smacofxLMDSResultSave$conf = smacofxLMDSResult$conf
+    smacofxLMDSResultSave$LocalContinuityResult = RcppGetLocalContinuityMetaCriterion(data = datasetDist, conf = as.matrix(smacofxLMDSResultSave$conf), Rn = Rn, k = valor_k)
+    smacofxLMDSResultSave$method = paste("LMDS", " [k=",valor_k,"]"," (smacofx)",sep = "")
     smacofxLMDSResultSave$categorias = categorias
     smacofxLMDSResultSave$k = valor_k
     
@@ -212,9 +212,9 @@ gen_DRs <- function  (dirResult, dataSetId){
       rm(isomapResultSet)
     }
     
-    # # 6. Hessian Locally Linear Embedding
+    # # ?. Hessian Locally Linear Embedding
     # ## Constraints: min(k, n) > d
-    # message('6. Hessian Locally Linear Embedding [k=',valor_k,']')
+    # message('?. Hessian Locally Linear Embedding [k=',valor_k,']')
     # 
     # TimeMeasurement = TimeMeasurementFunction( function(){embed(dataset, "HLLE", .mute = NULL, knn = valor_k, ndim = Rn)},numberExecutions)
     # HLLEResult <- embed(dataset, "HLLE", .mute = NULL, knn = valor_k, ndim = Rn)
@@ -237,9 +237,9 @@ gen_DRs <- function  (dirResult, dataSetId){
     # rm(HLLEResult)
     # rm(HLLEResultSet)
     
-    # 7. t-SNE
+    # 6. t-SNE
     if (valor_k <= 100 & (valor_k<(nrow(dataset)-1)/3)){
-      message('7. t-SNE [perp=',valor_k,']')
+      message('6. t-SNE [perp=',valor_k,']')
       
       theta = 0.0
       perp = valor_k
@@ -271,8 +271,8 @@ gen_DRs <- function  (dirResult, dataSetId){
   numberExecutions = 3
   k = 20
   
-  # 8. PCA SVD
-  message('8. PCA SVD')
+  # 7. PCA SVD
+  message('7. PCA SVD')
   
   TimeMeasurement = TimeMeasurementFunction( function(){pcaMethods::pca(dataset, method = "svd", nPcs = Rn)},numberExecutions)
   PcaSvdResult <- pcaMethods::pca(dataset, method = "svd", nPcs = Rn)
@@ -289,9 +289,9 @@ gen_DRs <- function  (dirResult, dataSetId){
   rm(PcaSvdResult)
   rm(PcaSvdResultSet)
   
-  # 9. PPCA
-  message('9. PPCA')
-  
+  # 8. PPCA
+  message('8. PPCA')
+
   TimeMeasurement = TimeMeasurementFunction( function(){pcaMethods::pca(dataset, method = "ppca", nPcs = Rn)},numberExecutions)
   PPcaResult <- pcaMethods::pca(dataset, method = "ppca", nPcs = Rn)
   
@@ -308,8 +308,8 @@ gen_DRs <- function  (dirResult, dataSetId){
   rm(PPcaResultSet)
   
   
-  # 10. Kernel PCA
-  message('10. Kernel PCA')
+  # 9. Kernel PCA
+  message('9. Kernel PCA')
   TimeMeasurement = TimeMeasurementFunction( function(){embed(dataset, "kPCA", .mute = NULL, knn = 5, ndim = 1)},numberExecutions)
   kPcaResult <- embed(dataset, "kPCA", .mute = NULL, knn = 5, ndim = 1)
   
@@ -326,8 +326,8 @@ gen_DRs <- function  (dirResult, dataSetId){
   rm(kPcaResult)
   
   
-  # 11. Diffusion Maps 
-  message('11. Diffusion Maps ')
+  # 10. Diffusion Maps 
+  message('10. Diffusion Maps ')
   TimeMeasurement = TimeMeasurementFunction( function(){embed(dataset, "DiffusionMaps", .mute = NULL, ndim = Rn)},numberExecutions)
   DiffusionMapsResult <- embed(dataset, "DiffusionMaps", .mute = NULL, ndim = Rn)
   
@@ -343,8 +343,8 @@ gen_DRs <- function  (dirResult, dataSetId){
   rm(DiffusionMapsResult)
   rm(DiffusionMapsResultSet)
   
-  # 12. Dimensionality Reduction via Regression  
-  message('12. Dimensionality Reduction via Regression  ')
+  # 11. Dimensionality Reduction via Regression  
+  message('11. Dimensionality Reduction via Regression  ')
   
   TimeMeasurement = TimeMeasurementFunction( function(){embed(dataset, "DRR", .mute = NULL, ndim = Rn)}, numberExecutions)
   DdrResult <- embed(dataset, "DRR", .mute = NULL, ndim = Rn)
@@ -362,46 +362,46 @@ gen_DRs <- function  (dirResult, dataSetId){
   rm(DdrResultSet)
   
   
-  # 13. Multidimensional Scaling Smacof
-  message('13. Multidimensional Scaling Smacof')
+  # 12. Multidimensional Scaling Smacof
+  message('12. Multidimensional Scaling Smacof')
   TimeMeasurement = TimeMeasurementFunction( function(){smacof::mds(delta = datasetDist, ndim = Rn, type = "ratio")},numberExecutions)
   smacofMDSResult <- smacof::mds(delta = datasetDist, ndim = Rn, type = "ratio")
   
   #smacofMDSResult$dataset = dataset
   smacofMDSResult$TimeMeasurement= TimeMeasurement
   smacofMDSResult$LocalContinuityResult = RcppGetLocalContinuityMetaCriterion(data = datasetDist, conf = as.matrix(smacofMDSResult$conf), Rn = Rn, k = k)
-  smacofMDSResult$method = "smacof_MDS (R)"
+  smacofMDSResult$method = "MDS (smacof)"
   smacofMDSResult$categorias = categorias
   
-  saveRDS(smacofMDSResult, file = paste(".",dirResult,datasetName,"MDS smacof (R).RData", sep = "/"))
+  saveRDS(smacofMDSResult, file = paste(".",dirResult,datasetName,"MDS (smacof).RData", sep = "/"))
   rm(smacofMDSResult)
   
-  # 14. MDS
-  message('14. MDS')
-  TimeMeasurement = TimeMeasurementFunction( function(){RcppHSMDS(data = datasetDist, conf = conf, Rn = Rn, Kquality = k, verbose = TRUE, applyHiperbolicSmoothing = FALSE, maxIt = maxIt, optMethod = "CG")},numberExecutions)
-  RcppKruskalMDSResult = RcppHSMDS(data = datasetDist, conf = conf, Rn = Rn, Kquality = k, verbose = TRUE, applyHiperbolicSmoothing = FALSE, maxIt = maxIt, optMethod = "CG")
+  # 13. MDS
+  message('13. MDS')
+  TimeMeasurement = TimeMeasurementFunction( function(){HSLocalMDS::HSMDS(data = datasetDist, conf = conf, Rn = Rn, Kquality = k, verbose = TRUE, applyHyperbolicSmoothing = FALSE, maxIt = maxIt, optMethod = "CG")},numberExecutions)
+  RcppKruskalMDSResult = HSLocalMDS::HSMDS(data = datasetDist, conf = conf, Rn = Rn, Kquality = k, verbose = TRUE, applyHyperbolicSmoothing = FALSE, maxIt = maxIt, optMethod = "CG")
   
   #RcppKruskalMDSResult$dataset = dataset
   #RcppKruskalMDSResult$datasetDist = datasetDist
   RcppKruskalMDSResult$TimeMeasurement = TimeMeasurement
-  RcppKruskalMDSResult$method = "MDS (Rcpp)"
+  RcppKruskalMDSResult$method = "MDS (HSLocalMDS)"
   RcppKruskalMDSResult$categorias = categorias
   
-  saveRDS(RcppKruskalMDSResult, file = paste(".",dirResult,datasetName,"MDS (Rcpp).RData", sep = "/"))
+  saveRDS(RcppKruskalMDSResult, file = paste(".",dirResult,datasetName,"MDS (HSLocalMDS).RData", sep = "/"))
   rm(RcppKruskalMDSResult)
   
-  # 15. HS MDS
-  message('15. HS MDS')
-  TimeMeasurement = TimeMeasurementFunction( function(){RcppHSMDS(data = datasetDist, conf = conf, Rn = Rn, Kquality = k, verbose = TRUE, applyHiperbolicSmoothing = TRUE, gamma = mean(datasetDist), n_gamma = maxIt, rho = 0.5, maxIt = maxIt, optMethod = "CG")},numberExecutions)
-  RcppHSMDSResult = RcppHSMDS(data = datasetDist, conf = conf, Rn = Rn, Kquality = k, verbose = TRUE, applyHiperbolicSmoothing = TRUE, gamma = mean(datasetDist), n_gamma = maxIt, rho = 0.5, maxIt = maxIt, optMethod = "CG")
+  # 14. HS MDS
+  message('14. HS MDS')
+  TimeMeasurement = TimeMeasurementFunction( function(){HSLocalMDS::HSMDS(data = datasetDist, conf = conf, Rn = Rn, Kquality = k, verbose = TRUE, applyHyperbolicSmoothing = TRUE, gamma = mean(datasetDist), n_gamma = maxIt, rho = 0.5, maxIt = maxIt, optMethod = "CG")},numberExecutions)
+  RcppHSMDSResult = HSLocalMDS::HSMDS(data = datasetDist, conf = conf, Rn = Rn, Kquality = k, verbose = TRUE, applyHyperbolicSmoothing = TRUE, gamma = mean(datasetDist), n_gamma = maxIt, rho = 0.5, maxIt = maxIt, optMethod = "CG")
   
   #RcppHSMDSResult$dataset = dataset
   #RcppHSMDSResult$datasetDist = datasetDist
   RcppHSMDSResult$TimeMeasurement = TimeMeasurement
-  RcppHSMDSResult$method = "HSMDS (Rcpp)"
+  RcppHSMDSResult$method = "HSMDS (HSLocalMDS)"
   RcppHSMDSResult$categorias = categorias
   
-  saveRDS(RcppHSMDSResult, file = paste(".",dirResult,datasetName,"HSMDS (Rcpp).RData", sep = "/"))
+  saveRDS(RcppHSMDSResult, file = paste(".",dirResult,datasetName,"HSMDS (HSLocalMDS).RData", sep = "/"))
   rm(RcppHSMDSResult)
 }
 
