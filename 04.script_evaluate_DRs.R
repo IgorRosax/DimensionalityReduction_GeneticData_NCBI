@@ -75,7 +75,7 @@ bestLCMC <- function (dataDist, conf){
   k_end <- nrow(dataDist) - 1
   
   for ( k in k_start:k_end){
-    LCMC =HSLocalMDS::RcppGetLocalContinuityMetaCriterion(data = dataDist, conf = conf, Rn = Rn, k = k)
+    LCMC =NLDR::RcppGetLocalContinuityMetaCriterion(data = dataDist, conf = conf, Rn = Rn, k = k)
     if (k == 1L){
       BestLCMC <- LCMC
       BestLCMC$k = k

@@ -1,13 +1,13 @@
 
-# HSLocalMDS: Experiments and Results for Dimensionality Reduction in Genetic Data
+# NLDR: Experiments and Results for Dimensionality Reduction in Genetic Data
 
 This repository contains the scripts, results, and visualizations supporting the article:
 
-**"HSLocalMDS: An R library for dimensionality reduction based on Hyperbolic Smoothing Local Multidimensional Scaling"**
+**"NLDR: An R library for dimensionality reduction based on Hyperbolic Smoothing Local Multidimensional Scaling"**
 
 **Authors:** Igor da Silva, Fabiano Oliveira, Vinicius Xavier
 
-In this work, we introduce the `HSLocalMDS` R package, which implements the Hyperbolic Smoothing Local Multidimensional Scaling (HSLocalMDS) method for dimensionality reduction. The experiments in this repository compare HSLocalMDS with other dimensionality reduction techniques using real genetic datasets from the NCBI GEO database.
+In this work, we introduce the `NLDR` R package, which implements the Hyperbolic Smoothing Local Multidimensional Scaling (HSLocalMDS) method for dimensionality reduction. The experiments in this repository compare HSLocalMDS with other dimensionality reduction techniques using real genetic datasets from the NCBI GEO database.
 
 ## Repository Structure
 
@@ -28,7 +28,7 @@ The experiments use several GEO datasets: `GSE14020`, `GSE28735`, `GSE18842`, `G
 
 ## How to Reproduce the Results
 
-1. Install the required R packages, including `HSLocalMDS` (see the article or package documentation for installation instructions), `GEOquery`, and other dependencies for dimensionality reduction and visualization.
+1. Install the required R packages, including `NLDR` (see the article or package documentation for installation instructions), `GEOquery`, and other dependencies for dimensionality reduction and visualization.
 2. Run the scripts in the suggested order above using R.
 3. Results will be automatically saved in the `output/` and `RD_Results/` folders.
 
@@ -42,6 +42,6 @@ The experiments use several GEO datasets: `GSE14020`, `GSE28735`, `GSE18842`, `G
 
 If you use these scripts or results, please cite the article:
 
-> Igor da Silva, Fabiano Oliveira, Vinicius Xavier. "HSLocalMDS: An R library for dimensionality reduction based on Hyperbolic Smoothing Local Multidimensional Scaling". 2025.
+> Igor da Silva, Fabiano Oliveira, Vinicius Xavier. "NLDR: An R library for dimensionality reduction based on Hyperbolic Smoothing Local Multidimensional Scaling". 2025.
 
 This repository was developed to support academic experiments and the evaluation of dimensionality reduction methods on public genetic datasets.

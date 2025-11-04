@@ -48,7 +48,7 @@ gen_DRs <- function  (dirResult, dataSetId){
       conf = as.matrix(conf$points)
     }
     
-    melhorresul =HSLocalMDS::RcppGetLocalContinuityMetaCriterion(data = data, conf = conf, Rn = Rn, k = k)
+    melhorresul =NLDR::RcppGetLocalContinuityMetaCriterion(data = data, conf = conf, Rn = Rn, k = k)
     initConf = conf
     BestRD = list("conf" = initConf,
                   "bestTau" = 0,
@@ -56,7 +56,7 @@ gen_DRs <- function  (dirResult, dataSetId){
     for(i in 1:length(unitfree)) {
       resultRD<-smacofx::lmds(delta = data, init = initConf, k = k, tau = unitfree[i], ndim = Rn, itmax = itmax)
       
-      CurrentLC<- HSLocalMDS::RcppGetLocalContinuityMetaCriterion(data = data, conf = initConf, Rn = Rn, k = k)
+      CurrentLC<- NLDR::RcppGetLocalContinuityMetaCriterion(data = data, conf = initConf, Rn = Rn, k = k)
       
       if(CurrentLC$Nk>melhorresul$Nk){
         BestRD = list("conf" = resultRD$conf,
@@ -107,8 +107,8 @@ gen_DRs <- function  (dirResult, dataSetId){
     {
       # 1. Lmds (HSLocalMDS)
       message('1. Lmds (HSLocalMDS) [k=',valor_k,']')
-      TimeMeasurement = TimeMeasurementFunction( function(){HSLocalMDS::HSlocalMDS(data = datasetDist, conf = as.matrix(conf), Rn = Rn, Kproj = valor_k, Kquality = kQuality, verbose = TRUE,selectBetterUnitFree = TRUE, smallerUnitFree = minTau, n_t = nTau, ratio = ratio, applyHyperbolicSmoothing = FALSE,maxIt = maxIt, optMethod = optimMethod)}, numberExecutions)
-      RcppLocalMDSResult = HSLocalMDS::HSlocalMDS(data = datasetDist, conf = as.matrix(conf), Rn = Rn, Kproj = valor_k, Kquality = kQuality, verbose = TRUE,selectBetterUnitFree = TRUE, smallerUnitFree = minTau, n_t = nTau, ratio = ratio, applyHyperbolicSmoothing = FALSE,maxIt = maxIt, optMethod = optimMethod)
+      TimeMeasurement = TimeMeasurementFunction( function(){NLDR::HSlocalMDS(data = datasetDist, conf = as.matrix(conf), Rn = Rn, Kproj = valor_k, Kquality = kQuality, verbose = TRUE,selectBetterUnitFree = TRUE, smallerUnitFree = minTau, n_t = nTau, ratio = ratio, applyHyperbolicSmoothing = FALSE,maxIt = maxIt, optMethod = optimMethod)}, numberExecutions)
+      RcppLocalMDSResult = NLDR::HSlocalMDS(data = datasetDist, conf = as.matrix(conf), Rn = Rn, Kproj = valor_k, Kquality = kQuality, verbose = TRUE,selectBetterUnitFree = TRUE, smallerUnitFree = minTau, n_t = nTau, ratio = ratio, applyHyperbolicSmoothing = FALSE,maxIt = maxIt, optMethod = optimMethod)
       
       #RcppLocalMDSResult$dataset = dataset
       #RcppLocalMDSResult$datasetDist = datasetDist
@@ -126,8 +126,8 @@ gen_DRs <- function  (dirResult, dataSetId){
       # 2. HSLmds (HSLocalMDS)
       message('2. HSLmds (HSLocalMDS) [k=',valor_k,']')
       
-      TimeMeasurement = TimeMeasurementFunction( function(){HSLocalMDS::HSlocalMDS(data = datasetDist, conf = as.matrix(conf), Rn = Rn, Kproj = valor_k, Kquality = kQuality, verbose = TRUE, selectBetterUnitFree = TRUE, smallerUnitFree = minTau, n_t = nTau, ratio = ratio, applyHyperbolicSmoothing = TRUE, gamma = mean(datasetDist), n_gamma = maxIt, rho = 0.5, maxIt = maxIt, optMethod = optimMethod)}, numberExecutions)
-      RcppHSlocalMDSResult = HSLocalMDS::HSlocalMDS(data = datasetDist, conf = as.matrix(conf), Rn = Rn, Kproj = valor_k, Kquality = kQuality, verbose = TRUE, selectBetterUnitFree = TRUE, smallerUnitFree = minTau, n_t = nTau, ratio = ratio, applyHyperbolicSmoothing = TRUE, gamma = mean(datasetDist), n_gamma = maxIt, rho = 0.5, maxIt = maxIt, optMethod = optimMethod)
+      TimeMeasurement = TimeMeasurementFunction( function(){NLDR::HSlocalMDS(data = datasetDist, conf = as.matrix(conf), Rn = Rn, Kproj = valor_k, Kquality = kQuality, verbose = TRUE, selectBetterUnitFree = TRUE, smallerUnitFree = minTau, n_t = nTau, ratio = ratio, applyHyperbolicSmoothing = TRUE, gamma = mean(datasetDist), n_gamma = maxIt, rho = 0.5, maxIt = maxIt, optMethod = optimMethod)}, numberExecutions)
+      RcppHSlocalMDSResult = NLDR::HSlocalMDS(data = datasetDist, conf = as.matrix(conf), Rn = Rn, Kproj = valor_k, Kquality = kQuality, verbose = TRUE, selectBetterUnitFree = TRUE, smallerUnitFree = minTau, n_t = nTau, ratio = ratio, applyHyperbolicSmoothing = TRUE, gamma = mean(datasetDist), n_gamma = maxIt, rho = 0.5, maxIt = maxIt, optMethod = optimMethod)
       
       #RcppHSlocalMDSResult$dataset = dataset
       #RcppHSlocalMDSResult$datasetDist = datasetDist
@@ -378,8 +378,8 @@ gen_DRs <- function  (dirResult, dataSetId){
   
   # 13. MDS
   message('13. MDS')
-  TimeMeasurement = TimeMeasurementFunction( function(){HSLocalMDS::HSMDS(data = datasetDist, conf = conf, Rn = Rn, Kquality = k, verbose = TRUE, applyHyperbolicSmoothing = FALSE, maxIt = maxIt, optMethod = "CG")},numberExecutions)
-  RcppKruskalMDSResult = HSLocalMDS::HSMDS(data = datasetDist, conf = conf, Rn = Rn, Kquality = k, verbose = TRUE, applyHyperbolicSmoothing = FALSE, maxIt = maxIt, optMethod = "CG")
+  TimeMeasurement = TimeMeasurementFunction( function(){NLDR::HSMDS(data = datasetDist, conf = conf, Rn = Rn, Kquality = k, verbose = TRUE, applyHyperbolicSmoothing = FALSE, maxIt = maxIt, optMethod = "CG")},numberExecutions)
+  RcppKruskalMDSResult = NLDR::HSMDS(data = datasetDist, conf = conf, Rn = Rn, Kquality = k, verbose = TRUE, applyHyperbolicSmoothing = FALSE, maxIt = maxIt, optMethod = "CG")
   
   #RcppKruskalMDSResult$dataset = dataset
   #RcppKruskalMDSResult$datasetDist = datasetDist
@@ -392,8 +392,8 @@ gen_DRs <- function  (dirResult, dataSetId){
   
   # 14. HS MDS
   message('14. HS MDS')
-  TimeMeasurement = TimeMeasurementFunction( function(){HSLocalMDS::HSMDS(data = datasetDist, conf = conf, Rn = Rn, Kquality = k, verbose = TRUE, applyHyperbolicSmoothing = TRUE, gamma = mean(datasetDist), n_gamma = maxIt, rho = 0.5, maxIt = maxIt, optMethod = "CG")},numberExecutions)
-  RcppHSMDSResult = HSLocalMDS::HSMDS(data = datasetDist, conf = conf, Rn = Rn, Kquality = k, verbose = TRUE, applyHyperbolicSmoothing = TRUE, gamma = mean(datasetDist), n_gamma = maxIt, rho = 0.5, maxIt = maxIt, optMethod = "CG")
+  TimeMeasurement = TimeMeasurementFunction( function(){NLDR::HSMDS(data = datasetDist, conf = conf, Rn = Rn, Kquality = k, verbose = TRUE, applyHyperbolicSmoothing = TRUE, gamma = mean(datasetDist), n_gamma = maxIt, rho = 0.5, maxIt = maxIt, optMethod = "CG")},numberExecutions)
+  RcppHSMDSResult = NLDR::HSMDS(data = datasetDist, conf = conf, Rn = Rn, Kquality = k, verbose = TRUE, applyHyperbolicSmoothing = TRUE, gamma = mean(datasetDist), n_gamma = maxIt, rho = 0.5, maxIt = maxIt, optMethod = "CG")
   
   #RcppHSMDSResult$dataset = dataset
   #RcppHSMDSResult$datasetDist = datasetDist

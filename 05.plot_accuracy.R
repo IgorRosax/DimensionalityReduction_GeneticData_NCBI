@@ -24,10 +24,25 @@ shape_palette <- rep(c(15, 16, 17, 18, 19), times = 3)
 
 #methodsList <- levels(factor(resultsTable$method))
 methodsList <-c("DiffusionMaps", "DRR", "HSLMDS (HSLocalMDS)", "HSMDS (HSLocalMDS)", "Isomap", "kPCA",
- "LMDS (HSLocalMDS)", "LMDS (smacofx)", "MDS (HSLocalMDS)", "MDS (smacof)", "PCA_SVD", "PPCA","tSNE", "UMAP")
+                "LMDS (HSLocalMDS)", "LMDS (smacofx)", "MDS (HSLocalMDS)", "MDS (smacof)", "PCA_SVD", "PPCA","tSNE", "UMAP")
 
 color_palette <- setNames(color_palette, methodsList)
 shape_palette <- setNames(shape_palette, methodsList)
+
+methodsListRenamed <-c("DiffusionMaps" = "DiffusionMaps", 
+                       "DRR" = "DRR", 
+                       "HSLMDS (HSLocalMDS)" = "HSLocalMDS (this work)", 
+                       "HSMDS (HSLocalMDS)" = "HSMDS (this work)", 
+                       "Isomap" = "Isomap", 
+                       "kPCA" = "kPCA",
+                       "LMDS (HSLocalMDS)" = "LocalMDS (this work)", 
+                       "LMDS (smacofx)" = "LocalMDS (smacofx)", 
+                       "MDS (HSLocalMDS)" = "MDS (this work)", 
+                       "MDS (smacof)" = "MDS (smacof)", 
+                       "PCA_SVD" = "PCA", 
+                       "PPCA" = "PPCA",
+                       "tSNE" = "t-SNE", 
+                       "UMAP" = "UMAP")
 
 diretorio_output = "./output"
 
@@ -57,8 +72,15 @@ for (datasetName in series){
       shape = "Method"
     ) +
     theme_minimal() +
-    scale_color_manual(values = color_palette) +
-    scale_shape_manual(values = shape_palette) +
+    scale_color_manual(
+      values = color_palette,
+      labels = methodsListRenamed) +
+    scale_shape_manual(
+      values = shape_palette,
+      labels = methodsListRenamed) +
+    guides(
+      color = guide_legend(nrow = 4, ncol = 4),
+      shape = guide_legend(nrow = 4, ncol = 4)) +
     theme(
       legend.position = "bottom",
       legend.box = "vertical",
@@ -66,7 +88,7 @@ for (datasetName in series){
       #plot.subtitle = element_text(hjust = 0.5, size = 12)
     )
   fileNamePlot = paste("06.comparativeAgreeCurve_best_AgreeAdjusted_kRed_",datasetName,".png",sep="")
-  ggsave(paste(diretorio_output, datasetName,fileNamePlot,sep = "/"), plot = comparativeAgreeCurve, width = 8, height = 4)
+  ggsave(paste(diretorio_output, datasetName,fileNamePlot,sep = "/"), plot = comparativeAgreeCurve, width = 6.5, height = 4)
   
   rm(fileNameCSV)
   rm(AgreeAdjResults)
@@ -112,8 +134,12 @@ performance_plot <- ggplot(
     shape = "Method"
   ) +
   theme_minimal() +
-  scale_color_manual(values = color_palette) +
-  scale_shape_manual(values = shape_palette) +
+  scale_color_manual(
+    values = color_palette,
+    labels = methodsListRenamed) +
+  scale_shape_manual(
+    values = shape_palette,
+    labels = methodsListRenamed) +
   theme(
     legend.position = "bottom",
     legend.box = "vertical"
@@ -142,8 +168,12 @@ performance_plot <- ggplot(
     shape = "Method"
   ) +
   theme_minimal() +
-  scale_color_manual(values = color_palette) +
-  scale_shape_manual(values = shape_palette) +
+  scale_color_manual(
+    values = color_palette,
+    labels = methodsListRenamed) +
+  scale_shape_manual(
+    values = shape_palette,
+    labels = methodsListRenamed) +
   theme(
     legend.position = "bottom",
     legend.box = "vertical",
@@ -187,8 +217,12 @@ write.csv(best_records, file = paste(diretorio_output, "01.resultsTable_best_Acc
 #     linetype = "Method"
 #   ) +
 #   theme_minimal() +
-#   scale_color_manual(values = color_palette) +
-#   scale_shape_manual(values = shape_palette) +
+#   scale_color_manual(
+#     values = color_palette,
+#     labels = methodsListRenamed) +
+#   scale_shape_manual(
+#     values = shape_palette,
+#     labels = methodsListRenamed) +
 #   theme(
 #     legend.position = "bottom",
 #     legend.box = "vertical",
@@ -224,6 +258,7 @@ chart_acc <- ggplot(df_melted_acc, aes(x = method, y = Valor, fill = dataset)) +
   scale_color_manual(values = color_palette) +
   scale_shape_manual(values = shape_palette) +
   theme(axis.text.x = element_text(angle = 45, hjust = 1)) + # Rotaciona rótulos do eixo X
+  scale_x_discrete(labels = methodsListRenamed) +
   scale_y_continuous(labels = scales::comma) # Formata o eixo Y para números grandes
 
 ggsave(paste(diretorio_output, "01.comparative_best_Accuracy.png",sep = "/"), plot = chart_acc, width = 5.5, height = 3.5)
@@ -259,6 +294,7 @@ chart_Sensitivity <- ggplot(df_melted_Sensitivity, aes(x = method, y = Valor, fi
   scale_color_manual(values = color_palette) +
   scale_shape_manual(values = shape_palette) +
   theme(axis.text.x = element_text(angle = 45, hjust = 1)) + # Rotaciona rótulos do eixo X
+  scale_x_discrete(labels = methodsListRenamed) +
   scale_y_continuous(labels = scales::comma) # Formata o eixo Y para números grandes
 
 ggsave(paste(diretorio_output, "02.comparative_best_Sensitivity.png",sep = "/"), plot = chart_Sensitivity, width = 5.5, height = 3.5)
@@ -293,6 +329,7 @@ chart_Specificity <- ggplot(df_melted_Specificity, aes(x = method, y = Valor, fi
   scale_color_manual(values = color_palette) +
   scale_shape_manual(values = shape_palette) +
   theme(axis.text.x = element_text(angle = 45, hjust = 1)) + # Rotaciona rótulos do eixo X
+  scale_x_discrete(labels = methodsListRenamed) +
   scale_y_continuous(labels = scales::comma) # Formata o eixo Y para números grandes
 
 ggsave(paste(diretorio_output, "03.comparative_best_Specificity.png",sep = "/"), plot = chart_Specificity, width = 5.5, height = 3.5)
@@ -327,6 +364,7 @@ chart_Precision <- ggplot(df_melted_Precision, aes(x = method, y = Valor, fill =
   scale_color_manual(values = color_palette) +
   scale_shape_manual(values = shape_palette) +
   theme(axis.text.x = element_text(angle = 45, hjust = 1)) + # Rotaciona rótulos do eixo X
+  scale_x_discrete(labels = methodsListRenamed) +
   scale_y_continuous(labels = scales::comma) # Formata o eixo Y para números grandes
 
 ggsave(paste(diretorio_output, "04.comparative_best_Precision.png",sep = "/"), plot = chart_Precision, width = 5.5, height = 3.5)
@@ -361,6 +399,7 @@ chart_Recall <- ggplot(df_melted_Recall, aes(x = method, y = Valor, fill = datas
   scale_color_manual(values = color_palette) +
   scale_shape_manual(values = shape_palette) +
   theme(axis.text.x = element_text(angle = 45, hjust = 1)) + # Rotaciona rótulos do eixo X
+  scale_x_discrete(labels = methodsListRenamed) +
   scale_y_continuous(labels = scales::comma) # Formata o eixo Y para números grandes
 
 ggsave(paste(diretorio_output, "05.comparative_best_Recall.png",sep = "/"), plot = chart_Recall, width = 5.5, height = 3.5)
@@ -395,6 +434,7 @@ chart_F1 <- ggplot(df_melted_F1, aes(x = method, y = Valor, fill = dataset)) +
   scale_color_manual(values = color_palette) +
   scale_shape_manual(values = shape_palette) +
   theme(axis.text.x = element_text(angle = 45, hjust = 1)) + # Rotaciona rótulos do eixo X
+  scale_x_discrete(labels = methodsListRenamed) +
   scale_y_continuous(labels = scales::comma) # Formata o eixo Y para números grandes
 
 ggsave(paste(diretorio_output, "06.comparative_best_F1.png",sep = "/"), plot = chart_F1, width = 5.5, height = 3.5)
