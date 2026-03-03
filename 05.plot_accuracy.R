@@ -1,6 +1,6 @@
 remove(list = ls())
 
-library(HSLocalMDS)
+library(NLDR)
 library(stringr)
 library(dplyr)
 library(RColorBrewer) 
@@ -17,27 +17,29 @@ source(HMapSinglegg_source, encoding = "UTF8")
 
 color_palette <- c(
   brewer.pal(8, "Dark2"), 
-  brewer.pal(7, "Set1")
+  brewer.pal(8, "Set1")
 )
 
-shape_palette <- rep(c(15, 16, 17, 18, 19), times = 3)
+shape_palette <- rep(c(0,1,2,5,6,15,16,17,18), times = 2)
 
 #methodsList <- levels(factor(resultsTable$method))
-methodsList <-c("DiffusionMaps", "DRR", "HSLMDS (HSLocalMDS)", "HSMDS (HSLocalMDS)", "Isomap", "kPCA",
-                "LMDS (HSLocalMDS)", "LMDS (smacofx)", "MDS (HSLocalMDS)", "MDS (smacof)", "PCA_SVD", "PPCA","tSNE", "UMAP")
+methodsList <-c("DiffusionMaps", "DRR", "HSLMDS (NLDR)", "HSMDS (NLDR)", "Isomap", "kPCA", "LMDS (NLDR)", "LMDS (smacofx)", 
+                "MDS (NLDR)", "MDS (smacof)", "PCA_SVD", "PPCA","tSNE", "UMAP")#, "HSLMDS (rNLDR)", "LMDS (rNLDR)")
 
 color_palette <- setNames(color_palette, methodsList)
 shape_palette <- setNames(shape_palette, methodsList)
 
 methodsListRenamed <-c("DiffusionMaps" = "DiffusionMaps", 
                        "DRR" = "DRR", 
-                       "HSLMDS (HSLocalMDS)" = "HSLocalMDS (this work)", 
-                       "HSMDS (HSLocalMDS)" = "HSMDS (this work)", 
+                       "HSLMDS (NLDR)" = "HSLocalMDS (NLDR)", 
+                       #"HSLMDS (rNLDR)" = "HSLocalMDS (R)", 
+                       "HSMDS (NLDR)" = "HSMDS (NLDR)", 
                        "Isomap" = "Isomap", 
                        "kPCA" = "kPCA",
-                       "LMDS (HSLocalMDS)" = "LocalMDS (this work)", 
+                       "LMDS (NLDR)" = "LocalMDS (NLDR)",
+                       #"LMDS (rNLDR)" = "LocalMDS (R)",
                        "LMDS (smacofx)" = "LocalMDS (smacofx)", 
-                       "MDS (HSLocalMDS)" = "MDS (this work)", 
+                       "MDS (NLDR)" = "MDS (NLDR)", 
                        "MDS (smacof)" = "MDS (smacof)", 
                        "PCA_SVD" = "PCA", 
                        "PPCA" = "PPCA",
@@ -58,7 +60,7 @@ for (datasetName in series){
   AgreeAdjResults = read.csv(paste(diretorio_output,datasetName,fileNameCSV, sep = "/"), sep = "," )
   
   comparativeAgreeCurve <- ggplot(
-    data = AgreeAdjResults,
+    data = subset(AgreeAdjResults, method %in% names(methodsListRenamed)),
     aes(x = k, y = AgrAdj, color = method, shape = method, group = method)
   ) +
     geom_line(linewidth = 0.5) +
@@ -66,10 +68,10 @@ for (datasetName in series){
                size = 2) +
     labs(
       #title = paste("Agreement Rate Adjusted Curve (", datasetName,")",sep=""),
-      x = "Neighborhood (k)",
-      y = "Agreement Rate Adjusted (AR*)",
-      color = "Method",
-      shape = "Method"
+      x = "Vizinhança (k)",
+      y = "Taxa de Concordância Ajustada (AR*)",
+      color = "Método",
+      shape = "Método"
     ) +
     theme_minimal() +
     scale_color_manual(
@@ -79,16 +81,16 @@ for (datasetName in series){
       values = shape_palette,
       labels = methodsListRenamed) +
     guides(
-      color = guide_legend(nrow = 4, ncol = 4),
-      shape = guide_legend(nrow = 4, ncol = 4)) +
+      color = guide_legend(nrow = 16, ncol = 1),
+      shape = guide_legend(nrow = 16, ncol = 1)) +
     theme(
-      legend.position = "bottom",
+      legend.position = "right",
       legend.box = "vertical",
       #plot.title = element_text(hjust = 0.5, face = "bold", size = 16),
       #plot.subtitle = element_text(hjust = 0.5, size = 12)
     )
   fileNamePlot = paste("06.comparativeAgreeCurve_best_AgreeAdjusted_kRed_",datasetName,".png",sep="")
-  ggsave(paste(diretorio_output, datasetName,fileNamePlot,sep = "/"), plot = comparativeAgreeCurve, width = 6.5, height = 4)
+  ggsave(paste(diretorio_output, datasetName,fileNamePlot,sep = "/"), plot = comparativeAgreeCurve, width = 10, height = 6)
   
   rm(fileNameCSV)
   rm(AgreeAdjResults)
@@ -118,7 +120,7 @@ timeResults <- resultsTable %>%
 
 
 performance_plot <- ggplot(
-  data = timeResults, 
+  data = subset(timeResults, method %in% names(methodsListRenamed)), 
   aes(x = n_samples, y = meanElapsedTime, color = method, shape = method, group = method)
 ) +
   geom_line(linewidth = 0.5) +
@@ -128,10 +130,10 @@ performance_plot <- ggplot(
   labs(
     #title = "Dimentionality Reduction Methods Performance by Sample Size",
     #subtitle = "Mean execution time comparison",
-    x = "Number of Samples (n)",
-    y = "Mean Execution Time (seconds)",
-    color = "Method",
-    shape = "Method"
+    x = "Número de Amostras (n)",
+    y = "Média do Tempo de Execução (seconds)",
+    color = "Método",
+    shape = "Método"
   ) +
   theme_minimal() +
   scale_color_manual(
@@ -140,19 +142,22 @@ performance_plot <- ggplot(
   scale_shape_manual(
     values = shape_palette,
     labels = methodsListRenamed) +
+  guides(
+    color = guide_legend(nrow = 16, ncol = 1),
+    shape = guide_legend(nrow = 16, ncol = 1)) +
   theme(
-    legend.position = "bottom",
-    legend.box = "vertical"
+    legend.position = "right",
+    legend.box = "vertical",
     #plot.title = element_text(hjust = 0.5, face = "bold", size = 16),
     #plot.subtitle = element_text(hjust = 0.5, size = 12)
   )
 # Exiba o gráfico
 
-ggsave(paste(diretorio_output,"10.timeComparison_method_n.png",sep = "/"), plot = performance_plot, width = 8, height = 4)
+ggsave(paste(diretorio_output,"10.timeComparison_method_n.png",sep = "/"), plot = performance_plot, width = 10, height = 6)
 
 
 performance_plot <- ggplot(
-  data = timeResults, 
+  data =  subset(timeResults, method %in% names(methodsListRenamed)), 
   aes(x = n_values, y = meanElapsedTime, color = method, shape = method, group = method)
 ) +
   geom_line(linewidth = 0.7) +
@@ -246,12 +251,14 @@ df_melted_acc <- best_records %>%
     values_to = "Valor"
   )
 
-chart_acc <- ggplot(df_melted_acc, aes(x = method, y = Valor, fill = dataset)) +
+chart_acc <- ggplot(
+  subset(df_melted_acc, method %in% names(methodsListRenamed)),
+  aes(x = method, y = Valor, fill = dataset)) +
   geom_bar(stat = "identity", position = "stack") +
   labs(
     #title = "Média(AR_k) por Método e Dataset",
-    x = "Method",
-    y = "Accuracy",
+    x = "Método",
+    y = "Acurácia",
     fill = "Dataset"
   ) +
   theme_minimal() +
@@ -282,12 +289,14 @@ df_melted_Sensitivity <- best_records %>%
     values_to = "Valor"
   )
 
-chart_Sensitivity <- ggplot(df_melted_Sensitivity, aes(x = method, y = Valor, fill = dataset)) +
+chart_Sensitivity <- ggplot(
+  subset(df_melted_Sensitivity, method %in% names(methodsListRenamed)),
+  aes(x = method, y = Valor, fill = dataset)) +
   geom_bar(stat = "identity", position = "stack") +
   labs(
     #title = "Média(AR_k) por Método e Dataset",
-    x = "Method",
-    y = "Sensitivity",
+    x = "Método",
+    y = "Sensibilidade",
     fill = "Dataset"
   ) +
   theme_minimal() +
@@ -317,12 +326,14 @@ df_melted_Specificity <- best_records %>%
     values_to = "Valor"
   )
 
-chart_Specificity <- ggplot(df_melted_Specificity, aes(x = method, y = Valor, fill = dataset)) +
+chart_Specificity <- ggplot(
+  subset(df_melted_Specificity, method %in% names(methodsListRenamed)),
+  aes(x = method, y = Valor, fill = dataset)) +
   geom_bar(stat = "identity", position = "stack") +
   labs(
     #title = "Média(AR_k) por Método e Dataset",
-    x = "Method",
-    y = "Specificity",
+    x = "Método",
+    y = "Especificidade",
     fill = "Dataset"
   ) +
   theme_minimal() +
@@ -352,12 +363,14 @@ df_melted_Precision <- best_records %>%
     values_to = "Valor"
   )
 
-chart_Precision <- ggplot(df_melted_Precision, aes(x = method, y = Valor, fill = dataset)) +
+chart_Precision <- ggplot(
+  subset(df_melted_Precision, method %in% names(methodsListRenamed)),
+  aes(x = method, y = Valor, fill = dataset)) +
   geom_bar(stat = "identity", position = "stack") +
   labs(
     #title = "Média(AR_k) por Método e Dataset",
-    x = "Method",
-    y = "Precision",
+    x = "Método",
+    y = "Precisão",
     fill = "Dataset"
   ) +
   theme_minimal() +
@@ -387,11 +400,13 @@ df_melted_Recall <- best_records %>%
     values_to = "Valor"
   )
 
-chart_Recall <- ggplot(df_melted_Recall, aes(x = method, y = Valor, fill = dataset)) +
+chart_Recall <- ggplot(
+  subset(df_melted_Recall, method %in% names(methodsListRenamed)),
+  aes(x = method, y = Valor, fill = dataset)) +
   geom_bar(stat = "identity", position = "stack") +
   labs(
     #title = "Média(AR_k) por Método e Dataset",
-    x = "Method",
+    x = "Método",
     y = "Recall",
     fill = "Dataset"
   ) +
@@ -422,12 +437,14 @@ df_melted_F1 <- best_records %>%
     values_to = "Valor"
   )
 
-chart_F1 <- ggplot(df_melted_F1, aes(x = method, y = Valor, fill = dataset)) +
+chart_F1 <- ggplot(
+  subset(df_melted_F1, method %in% names(methodsListRenamed)),
+  aes(x = method, y = Valor, fill = dataset)) +
   geom_bar(stat = "identity", position = "stack") +
   labs(
     #title = "Média(AR_k) por Método e Dataset",
-    x = "Method",
-    y = "F1",
+    x = "Método",
+    y = "F1-Score",
     fill = "Dataset"
   ) +
   theme_minimal() +

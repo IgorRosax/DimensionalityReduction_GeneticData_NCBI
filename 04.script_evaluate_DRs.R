@@ -1,6 +1,6 @@
 remove(list = ls())
 
-library(HSLocalMDS)
+library(NLDR)
 library(stringr)
 library(dplyr)
 library(RColorBrewer) 
@@ -13,10 +13,10 @@ source(HMapSinglegg_source, encoding = "UTF8")
 
 color_palette <- c(
   brewer.pal(8, "Dark2"), 
-  brewer.pal(7, "Set1")
+  brewer.pal(8, "Set1")
 )
 
-shape_palette <- rep(c(15, 16, 17, 18, 19), times = 3)
+shape_palette <- rep(c(0,1,2,5,6,15,16,17,18), times = 2)
 # ************************************************************************************************* #
 # Functions
 # ************************************************************************************************* #
