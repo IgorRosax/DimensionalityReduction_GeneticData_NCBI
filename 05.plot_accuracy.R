@@ -32,12 +32,12 @@ shape_palette <- setNames(shape_palette, methodsList)
 methodsListRenamed <-c("DiffusionMaps" = "DiffusionMaps", 
                        "DRR" = "DRR", 
                        "HSLMDS (NLDR)" = "HSLocalMDS (NLDR)", 
-                       #"HSLMDS (rNLDR)" = "HSLocalMDS (R)", 
+                       "HSLMDS (rNLDR)" = "HSLocalMDS (R)", 
                        "HSMDS (NLDR)" = "HSMDS (NLDR)", 
                        "Isomap" = "Isomap", 
                        "kPCA" = "kPCA",
                        "LMDS (NLDR)" = "LocalMDS (NLDR)",
-                       #"LMDS (rNLDR)" = "LocalMDS (R)",
+                       "LMDS (rNLDR)" = "LocalMDS (R)",
                        "LMDS (smacofx)" = "LocalMDS (smacofx)", 
                        "MDS (NLDR)" = "MDS (NLDR)", 
                        "MDS (smacof)" = "MDS (smacof)", 
@@ -46,7 +46,7 @@ methodsListRenamed <-c("DiffusionMaps" = "DiffusionMaps",
                        "tSNE" = "t-SNE", 
                        "UMAP" = "UMAP")
 
-diretorio_output = "./output"
+diretorio_output = "./output - with rNLDR"
 
 resultsTable <- data.frame()
 series = rbind('GSE14020','GSE28735','GSE18842','GSE35988','GSE21034','GSE44076','GSE29272')
@@ -131,7 +131,7 @@ performance_plot <- ggplot(
     #title = "Dimentionality Reduction Methods Performance by Sample Size",
     #subtitle = "Mean execution time comparison",
     x = "Número de Amostras (n)",
-    y = "Média do Tempo de Execução (seconds)",
+    y = "Média do Tempo de Execução (segundos)",
     color = "Método",
     shape = "Método"
   ) +
@@ -168,7 +168,7 @@ performance_plot <- ggplot(
     title = "Dimentionality Reduction Methods Performance by Dataset Size",
     subtitle = "Mean execution time comparison",
     x = "Number of Samples * Number of genes",
-    y = "Mean Execution Time (seconds)",
+    y = "Mean Execution Time (segundos)",
     color = "Method",
     shape = "Method"
   ) +
